@@ -74,17 +74,20 @@ button:hover {
 }
 .head-section__developer-div--description-div--link {
   margin-left: 30%;
+  width: 13rem;
 }
 .head-section__developer-div--description-div--link--button {
-  display: flex;
-  align-items: center;
   font-size: 1.1rem;
   border: 0.1rem solid white;
   background-color: #222222;
   /*color: #81d4fa;*/
   color: #80d8ff;
   border-radius: 0.3rem;
-  padding: 0.5rem 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.7rem 0;
 }
 .head-section__developer-div--description-div--link--button--icon {
   width: 1.3rem;
@@ -211,18 +214,24 @@ button:hover {
 }
 .project-section__project-div--top-container--italiener-div--link-div--link {
   margin: 1rem 0;
+  width: 10rem;
+  height: 3rem;
 }
 .project-section__project-div--top-container--italiener-div--link-div--link--button {
+  width: 100%;
+  padding: 0.5rem 0;
   border: 0.1rem solid #222222;
   background-color: #f3f5f6;
   /*color: #81d4fa;*/
   color: #006db5;
   border-radius: 0.3rem;
-  padding: 0.5rem 0.7rem;
   font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .project-section__project-div--top-container--italiener-div--link-div--link--button:hover {
-  background-color: #222222;
+  background-color: #006db5;
   border-color: white;
   color: white;
 }
@@ -300,6 +309,8 @@ button:hover {
 }
 .project-section__project-div--top-container--note-app-div--link-div--link {
   margin: 1rem 0;
+  width: 10rem;
+  height: 2rem;
 }
 .project-section__project-div--top-container--note-app-div--link-div--link--button {
   border: 0.1rem solid #222222;
@@ -307,11 +318,15 @@ button:hover {
   /*color: #81d4fa;*/
   color: #006db5;
   border-radius: 0.3rem;
-  padding: 0.5rem 0.7rem;
   font-size: 1rem;
+  width: 100%;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .project-section__project-div--top-container--note-app-div--link-div--link--button:hover {
-  background-color: #222222;
+  background-color: #006db5;
   border-color: white;
   color: white;
 }
@@ -394,6 +409,8 @@ button:hover {
 }
 .project-section__project-div--bottom-container--online-shop-div--link-div--link {
   margin: 1rem 0;
+  width: 10rem;
+  height: 2rem;
 }
 .project-section__project-div--bottom-container--online-shop-div--link-div--link--button {
   border: 0.1rem solid #222222;
@@ -401,11 +418,15 @@ button:hover {
   /*color: #81d4fa;*/
   color: #006db5;
   border-radius: 0.3rem;
-  padding: 0.5rem 0.7rem;
   font-size: 1rem;
+  width: 100%;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .project-section__project-div--bottom-container--online-shop-div--link-div--link--button:hover {
-  background-color: #222222;
+  background-color: #006db5;
   border-color: white;
   color: white;
 }
@@ -483,6 +504,8 @@ button:hover {
 }
 .project-section__project-div--bottom-container--crm-program-div--link-div--link {
   margin: 1rem 0;
+  width: 10rem;
+  height: 2rem;
 }
 .project-section__project-div--bottom-container--crm-program-div--link-div--link--button {
   border: 0.1rem solid #222222;
@@ -490,11 +513,15 @@ button:hover {
   /*color: #81d4fa;*/
   color: #006db5;
   border-radius: 0.3rem;
-  padding: 0.5rem 0.7rem;
   font-size: 1rem;
+  width: 100%;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .project-section__project-div--bottom-container--crm-program-div--link-div--link--button:hover {
-  background-color: #222222;
+  background-color: #006db5;
   border-color: white;
   color: white;
 }
@@ -679,6 +706,26 @@ button:hover {
   width: 1.5rem;
   height: auto;
   margin-right: 1rem;
+}
+.contact-section__to-top {
+  font-size: 1.3rem;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=websoftware.css.map */

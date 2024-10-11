@@ -45,11 +45,11 @@ $border-color: #fff;
   /*color: #81d4fa;*/
   color: #80d8ff;
   border-radius: 0.3rem;
-  padding: 0.5rem 0.7rem;
 }
 
 @mixin headline-button-hover-properties {
   background-color: white;
+  color: black;
   border-color: black;
 }
 
@@ -59,7 +59,12 @@ $border-color: #fff;
   /*color: #81d4fa;*/
   color: #006db5;
   border-radius: 0.3rem;
-  padding: 0.5rem 0.7rem;
+}
+
+@mixin center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin project-button-hover-properties {
@@ -223,15 +228,17 @@ $border-color: #fff;
           }
 
           &--link-div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            column-gap: 7rem;
-            margin: 2rem 0;
+            margin: 2rem 0 0 0;
+            row-gap: 1.5rem;
+            width: 30rem;
+            height: 5rem;
 
             &--link {
+              width: 100%;
+
               &--button {
-                padding: 0.3rem 0.5rem;
+                width: 100%;
+                padding: 0.4rem 0;
                 font-size: 1.3rem;
               }
             }
@@ -264,8 +271,7 @@ $border-color: #fff;
           &--description-div {
             &--text {
               font-size: 1.2rem;
-              padding-bottom: 1.7rem;
-              margin: 1.3rem 1rem;
+              margin: 1.5rem 1rem 0 1rem;
             }
 
             &--description-point-div {
@@ -280,6 +286,7 @@ $border-color: #fff;
                 justify-content: left;
                 align-items: center;
                 column-gap: 1rem;
+                margin-top: 3rem;
 
                 &--single-point {
                   font-size: 0.9rem;
@@ -292,7 +299,7 @@ $border-color: #fff;
                 justify-content: left;
                 align-items: center;
                 column-gap: 1rem;
-                margin-bottom: 1rem;
+                margin-bottom: 0;
 
                 &--single-point {
                   font-size: 0.9rem;
@@ -302,13 +309,18 @@ $border-color: #fff;
           }
 
           &--link-div {
-            column-gap: 7rem;
-            margin: 0 0 2rem 0;
+            margin: 0 0 1rem 0;
+            row-gap: 1.5rem;
+            width: 30rem;
+            height: 5rem;
 
             &--link {
+              width: 100%;
+
               &--button {
+                width: 100%;
+                padding: 0.4rem 0;
                 font-size: 1.3rem;
-                padding: 0.3rem 0.5rem;
               }
             }
           }
@@ -348,15 +360,15 @@ $border-color: #fff;
 
             &--text {
               font-size: 1.2rem;
-              padding: 1.2rem 0;
-              margin: 1.3rem 1rem;
+              padding: 1.5rem 0;
+              margin: 1.3rem 0 1rem 1rem;
             }
 
             &--description-point-div {
               width: 100%;
-              margin: 0.5rem 1rem;
+              margin: 1rem 0 0 1rem;
               @include column-flex-direction();
-              padding: 0.5rem 0;
+              padding: 0;
               row-gap: 1rem;
 
               &--description-top,
@@ -374,12 +386,17 @@ $border-color: #fff;
           }
 
           &--link-div {
-            margin: 1.3rem 0 2rem 0;
-            column-gap: 7rem;
+            margin: 1rem 0;
+            row-gap: 1.5rem;
+            width: 30rem;
+            height: 5rem;
 
             &--link {
+              width: 100%;
+
               &--button {
-                padding: 0.3rem 0.5rem;
+                width: 100%;
+                padding: 0.4rem 0;
                 font-size: 1.3rem;
               }
             }
@@ -437,12 +454,16 @@ $border-color: #fff;
           }
 
           &--link-div {
-            margin: 1.5rem 0 2rem 0;
-            column-gap: 7rem;
+            margin: 1.5rem 0 2.7rem 0;
+            row-gap: 2rem;
+            width: 33rem;
 
             &--link {
+              width: 100%;
+              margin: 0;
+
               &--button {
-                padding: 0.3rem 0.5rem;
+                padding: 0.5rem 0;
                 font-size: 1.3rem;
               }
             }
@@ -649,7 +670,7 @@ $border-color: #fff;
         &--headline {
           font-size: 1.7rem;
           text-align: left;
-          margin: 0 3% 0 30%;
+          margin: 1rem 3% 0 30%;
 
           &--focus-text {
             font-size: 2.3rem;
@@ -659,13 +680,17 @@ $border-color: #fff;
         &--text {
           text-align: left;
           font-size: 1.3rem;
-          margin: 0.5rem 5% 0 30%;
+          margin: 1rem 5% 0 30%;
         }
 
         &--link {
-          margin: 3rem 0 0 30%;
+          margin: 2rem 0 0 30%;
+          width: 12rem;
+          height: 4rem;
 
           &--button {
+            width: 100%;
+            padding: 0.5rem 0;
             font-size: 1rem;
             @include headline-button-properties();
 
@@ -740,6 +765,7 @@ $border-color: #fff;
           &--description-div {
             &--text {
               font-size: 1.2rem;
+              margin-top: 1.3rem;
             }
 
             &--description-point-div {
@@ -750,7 +776,7 @@ $border-color: #fff;
               grid-template-columns: 1fr 1fr;
               row-gap: 1rem;
               column-gap: 3rem;
-              max-width: 27rem;
+              max-width: 30rem;
 
               &--single-point {
                 font-size: 0.9rem;
@@ -760,11 +786,16 @@ $border-color: #fff;
 
           &--link-div {
             margin: 0.5rem 0 1rem 0;
-            column-gap: 5rem;
+            row-gap: 1.5rem;
+            width: 30rem;
+            height: 5rem;
 
             &--link {
+              width: 100%;
+
               &--button {
-                padding: 0.3rem 0.5rem;
+                width: 100%;
+                padding: 0.4rem 0;
                 font-size: 1.3rem;
               }
             }
@@ -778,7 +809,7 @@ $border-color: #fff;
 
           &--headline {
             font-size: 1.8rem;
-            margin: 2rem 0;
+            margin: 2.3rem 0 2rem 0;
           }
 
           &--img-div {
@@ -798,7 +829,7 @@ $border-color: #fff;
             &--text {
               font-size: 1.2rem;
               margin: 1.3rem 1rem;
-              padding-bottom: 1.7rem;
+              margin-top: 1rem;
             }
 
             &--description-point-div {
@@ -807,7 +838,7 @@ $border-color: #fff;
               @include column-flex-direction();
               padding: 0.5rem 0;
               row-gap: 1rem;
-              max-width: 27rem;
+              max-width: 30rem;
 
               &--description-top {
                 width: 100%;
@@ -815,7 +846,7 @@ $border-color: #fff;
                 grid-template-columns: 1fr 1fr;
                 row-gap: 1rem;
                 column-gap: 1.5rem;
-                padding-top: 1rem;
+                padding-top: 2.5rem;
 
                 &--single-point {
                   font-size: 0.9rem;
@@ -827,23 +858,29 @@ $border-color: #fff;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                margin-bottom: 0.5rem;
+                margin-bottom: 0.3rem;
 
                 &--single-point {
                   font-size: 0.9rem;
+                  padding: 0.1rem 2rem;
                 }
               }
             }
           }
 
           &--link-div {
-            margin: 0 0 1rem 0;
-            column-gap: 5rem;
+            margin: 0 0 1.5rem 0;
+            row-gap: 1.5rem;
+            width: 30rem;
+            height: 5rem;
 
             &--link {
+              width: 100%;
+
               &--button {
+                width: 100%;
+                padding: 0.4rem 0;
                 font-size: 1.3rem;
-                padding: 0.3rem 0.5rem;
               }
             }
           }
@@ -883,7 +920,7 @@ $border-color: #fff;
 
             &--text {
               font-size: 1.2rem;
-              padding: 1.2rem 0;
+              padding: 1.3rem 0;
               margin: 1.3rem 1rem;
             }
 
@@ -892,7 +929,7 @@ $border-color: #fff;
               margin: 0.5rem auto;
               display: flex;
               flex-direction: column;
-              max-width: 27rem;
+              max-width: 30rem;
               padding: 0.5rem 0;
               row-gap: 1rem;
 
@@ -918,6 +955,7 @@ $border-color: #fff;
                 &--single-point {
                   margin: 0;
                   font-size: 0.9rem;
+                  padding: 0.1rem 2rem;
                 }
               }
             }
@@ -925,11 +963,16 @@ $border-color: #fff;
 
           &--link-div {
             margin: 0.5rem 0 1rem 0;
-            column-gap: 5rem;
+            row-gap: 1.5rem;
+            width: 30rem;
+            height: 5rem;
 
             &--link {
+              width: 100%;
+
               &--button {
-                padding: 0.3rem 0.5rem;
+                width: 100%;
+                padding: 0.4rem 0;
                 font-size: 1.3rem;
               }
             }
@@ -968,7 +1011,7 @@ $border-color: #fff;
               margin: 0.5rem auto;
               display: flex;
               flex-direction: column;
-              max-width: 27rem;
+              max-width: 30rem;
               padding: 0.5rem 0;
               row-gap: 1rem;
 
@@ -993,6 +1036,7 @@ $border-color: #fff;
 
                 &--single-point {
                   margin: 0;
+                  padding: 0.1rem 2rem;
                   font-size: 0.9rem;
                 }
               }
@@ -1006,11 +1050,16 @@ $border-color: #fff;
 
           &--link-div {
             margin: 0.5rem 0 1rem 0;
-            column-gap: 5rem;
+            row-gap: 1.5rem;
+            width: 30rem;
+            height: 5rem;
 
             &--link {
+              width: 100%;
+
               &--button {
-                padding: 0.3rem 0.5rem;
+                width: 100%;
+                padding: 0.4rem 0;
                 font-size: 1.3rem;
               }
             }
@@ -1231,9 +1280,13 @@ $border-color: #fff;
         }
 
         &--link {
-          margin: 1.5rem 0 0 30%;
+          margin: 1rem 0 0 30%;
+          width: 12rem;
+          height: 4rem;
 
           &--button {
+            width: 100%;
+            padding: 0.5rem 0;
             font-size: 1rem;
             @include headline-button-properties();
 
@@ -1308,7 +1361,8 @@ $border-color: #fff;
           &--description-div {
             &--text {
               font-size: 1.2rem;
-              margin: 1.5rem 6rem;
+              margin: 2rem auto 1.5rem auto;
+              width: 80%;
             }
 
             &--description-point-div {
@@ -1319,7 +1373,7 @@ $border-color: #fff;
               grid-template-columns: 1fr 1fr;
               row-gap: 1rem;
               column-gap: 1.5rem;
-              max-width: 23rem;
+              max-width: 28rem;
 
               &--single-point {
                 font-size: 0.9rem;
@@ -1330,10 +1384,14 @@ $border-color: #fff;
           &--link-div {
             margin: 0.5rem 0 1rem 0;
             column-gap: 3rem;
+            width: 28rem;
 
             &--link {
+              width: 100%;
+
               &--button {
-                padding: 0.3rem 0.5rem;
+                width: 100%;
+                padding: 0.5rem 0;
                 font-size: 1.3rem;
               }
             }
@@ -1364,9 +1422,13 @@ $border-color: #fff;
           }
 
           &--description-div {
+            row-gap: 0;
+            padding: 0;
+
             &--text {
               font-size: 1.2rem;
-              margin: 1.5rem 6rem 0 6rem;
+              margin: 2rem auto 0 auto;
+              width: 80%;
             }
 
             &--description-point-div {
@@ -1374,7 +1436,7 @@ $border-color: #fff;
               @include column-flex-direction();
               padding: 0.5rem 0;
               row-gap: 1rem;
-              max-width: 23rem;
+              max-width: 28rem;
 
               &--description-top {
                 width: 100%;
@@ -1382,6 +1444,7 @@ $border-color: #fff;
                 grid-template-columns: 1fr 1fr;
                 row-gap: 1rem;
                 column-gap: 1.5rem;
+                padding: 0;
 
                 &--single-point {
                   font-size: 0.9rem;
@@ -1397,6 +1460,7 @@ $border-color: #fff;
 
                 &--single-point {
                   font-size: 0.9rem;
+                  padding: 0.1rem 1.5rem;
                 }
               }
             }
@@ -1405,11 +1469,15 @@ $border-color: #fff;
           &--link-div {
             margin: 0.5rem 0 1rem 0;
             column-gap: 3rem;
+            width: 28rem;
 
             &--link {
+              width: 100%;
+
               &--button {
+                width: 100%;
+                padding: 0.5rem 0;
                 font-size: 1.3rem;
-                padding: 0.3rem 0.5rem;
               }
             }
           }
@@ -1447,7 +1515,8 @@ $border-color: #fff;
             margin: 0;
             &--text {
               font-size: 1.2rem;
-              margin: 0 6rem;
+              margin: 2rem auto 0 auto;
+              width: 80%;
             }
 
             &--description-point-div {
@@ -1455,7 +1524,7 @@ $border-color: #fff;
               margin: 0.5rem auto;
               display: flex;
               flex-direction: column;
-              max-width: 23rem;
+              max-width: 28rem;
               padding: 0.5rem 0;
               row-gap: 1rem;
 
@@ -1481,6 +1550,7 @@ $border-color: #fff;
                 &--single-point {
                   margin: 0;
                   font-size: 0.9rem;
+                  padding: 0.1rem 1.5rem;
                 }
               }
             }
@@ -1489,10 +1559,14 @@ $border-color: #fff;
           &--link-div {
             margin: 0.5rem 0 1rem 0;
             column-gap: 3rem;
+            width: 28rem;
 
             &--link {
+              width: 100%;
+
               &--button {
-                padding: 0.3rem 0.5rem;
+                width: 100%;
+                padding: 0.5rem 0;
                 font-size: 1.3rem;
               }
             }
@@ -1524,7 +1598,8 @@ $border-color: #fff;
           &--description-div {
             &--text {
               font-size: 1.2rem;
-              margin: 1rem 2rem;
+              margin: 2rem auto 1rem auto;
+              width: 85%;
             }
 
             &--description-point-div {
@@ -1557,6 +1632,7 @@ $border-color: #fff;
 
                 &--single-point {
                   margin: 0;
+                  padding: 0.1rem 1.5rem;
                   font-size: 0.9rem;
                 }
               }
@@ -1571,10 +1647,14 @@ $border-color: #fff;
           &--link-div {
             margin: 0.5rem 0 1rem 0;
             column-gap: 3rem;
+            width: 31rem;
 
             &--link {
+              width: 100%;
+
               &--button {
-                padding: 0.3rem 0.5rem;
+                width: 100%;
+                padding: 0.5rem 0;
                 font-size: 1.3rem;
               }
             }
@@ -1698,7 +1778,7 @@ $border-color: #fff;
           }
 
           &--img-div {
-            @include column-flex-direction();
+            @include row-flex-direction();
 
             &--img {
               width: 7rem;
@@ -1745,6 +1825,10 @@ $border-color: #fff;
           margin-right: 1rem;
         }
       }
+    }
+
+    &__to-top {
+      font-size: 1.3rem;
     }
   }
 }
@@ -1799,14 +1883,18 @@ $border-color: #fff;
         }
 
         &--link {
-          margin: 2rem auto 0 auto;
+          margin: 3rem auto 0 auto;
+          width: 14rem;
+          height: 5rem;
 
           &--button {
-            font-size: 1rem;
+            width: 100%;
+            padding: 0.5rem 0;
+            font-size: 1.2rem;
             @include headline-button-properties();
 
             &--icon {
-              width: 1.3rem;
+              width: 1.6rem;
               height: auto;
             }
           }
@@ -1895,12 +1983,18 @@ $border-color: #fff;
           }
 
           &--link-div {
-            margin: 1.5rem 0 2rem 0;
-            column-gap: 3rem;
+            margin: 3rem 0;
+            row-gap: 1.7rem;
+            @include column-flex-direction();
+            width: 15rem;
+            height: 3rem;
 
             &--link {
+              width: 100%;
+              margin: 0;
+
               &--button {
-                padding: 0.3rem 0.5rem;
+                padding: 0.5rem 0;
                 font-size: 1.3rem;
               }
             }
@@ -1971,13 +2065,19 @@ $border-color: #fff;
           }
 
           &--link-div {
-            margin: 1.5rem 0 2rem 0;
-            column-gap: 2rem;
+            margin: 3rem 0;
+            row-gap: 1.7rem;
+            @include column-flex-direction();
+            width: 15rem;
+            height: 3rem;
 
             &--link {
+              width: 100%;
+              margin: 0;
+
               &--button {
+                padding: 0.5rem 0;
                 font-size: 1.3rem;
-                padding: 0.3rem 0.5rem;
               }
             }
           }
@@ -2051,12 +2151,18 @@ $border-color: #fff;
           }
 
           &--link-div {
-            margin: 1.5rem 0 2rem 0;
-            column-gap: 2rem;
+            margin: 3rem 0;
+            row-gap: 1.7rem;
+            @include column-flex-direction();
+            width: 15rem;
+            height: 3rem;
 
             &--link {
+              width: 100%;
+              margin: 0;
+
               &--button {
-                padding: 0.3rem 0.5rem;
+                padding: 0.5rem 0;
                 font-size: 1.3rem;
               }
             }
@@ -2130,12 +2236,18 @@ $border-color: #fff;
           }
 
           &--link-div {
-            margin: 1.5rem 0 2rem 0;
-            column-gap: 2rem;
+            margin: 3rem 0;
+            row-gap: 1.7rem;
+            @include column-flex-direction();
+            width: 15rem;
+            height: 3rem;
 
             &--link {
+              width: 100%;
+              margin: 0;
+
               &--button {
-                padding: 0.3rem 0.5rem;
+                padding: 0.5rem 0;
                 font-size: 1.3rem;
               }
             }
@@ -2304,6 +2416,10 @@ $border-color: #fff;
         }
       }
     }
+
+    &__to-top {
+      font-size: 1.3rem;
+    }
   }
 }
 
@@ -2356,14 +2472,18 @@ $border-color: #fff;
         }
 
         &--link {
-          margin: 2rem auto 0 auto;
+          margin: 3rem auto 0 auto;
+          width: 14rem;
+          height: 5rem;
 
           &--button {
-            font-size: 1rem;
+            width: 100%;
+            padding: 0.5rem 0;
+            font-size: 1.2rem;
             @include headline-button-properties();
 
             &--icon {
-              width: 1.3rem;
+              width: 1.6rem;
               height: auto;
             }
           }
@@ -2373,7 +2493,7 @@ $border-color: #fff;
       &--portrait-container {
         width: 90%;
         max-width: 17rem;
-        margin: 3rem 0 2rem 0;
+        margin: 2rem 0;
         padding: 0;
 
         &--img {
@@ -2451,12 +2571,20 @@ $border-color: #fff;
           }
 
           &--link-div {
-            column-gap: 10%;
+            margin: 2.5rem 0;
+            row-gap: 1.3rem;
+            @include column-flex-direction();
+            width: 12rem;
+            height: 3rem;
 
             &--link {
+              width: 100%;
+              margin: 0;
+
               &--button {
-                padding: 0.3rem 0.5rem;
                 font-size: 1rem;
+                width: 100%;
+                padding: 0.7rem 0;
               }
             }
           }
@@ -2521,12 +2649,20 @@ $border-color: #fff;
           }
 
           &--link-div {
-            column-gap: 10%;
+            margin: 2.5rem 0;
+            row-gap: 1.3rem;
+            @include column-flex-direction();
+            width: 12rem;
+            height: 3rem;
 
             &--link {
+              width: 100%;
+              margin: 0;
+
               &--button {
                 font-size: 1rem;
-                padding: 0.3rem 0.5rem;
+                width: 100%;
+                padding: 0.7rem 0;
               }
             }
           }
@@ -2586,11 +2722,19 @@ $border-color: #fff;
           }
 
           &--link-div {
-            column-gap: 10%;
+            margin: 2.5rem 0;
+            row-gap: 1.3rem;
+            @include column-flex-direction();
+            width: 12rem;
+            height: 3rem;
 
             &--link {
+              width: 100%;
+              margin: 0;
+
               &--button {
-                padding: 0.3rem 0.5rem;
+                width: 100%;
+                padding: 0.7rem 0;
                 font-size: 1rem;
               }
             }
@@ -2645,11 +2789,19 @@ $border-color: #fff;
           }
 
           &--link-div {
-            column-gap: 10%;
+            margin: 2.5rem 0;
+            row-gap: 1.3rem;
+            @include column-flex-direction();
+            width: 12rem;
+            height: 3rem;
 
             &--link {
+              width: 100%;
+              margin: 0;
+
               &--button {
-                padding: 0.3rem 0.5rem;
+                width: 100%;
+                padding: 0.7rem 0;
                 font-size: 1rem;
               }
             }
@@ -2867,8 +3019,12 @@ $border-color: #fff;
 
         &--link {
           margin: 1rem auto 0 auto;
+          width: 10rem;
+          height: 4rem;
 
           &--button {
+            width: 100%;
+            padding: 0.3rem 0;
             font-size: 0.9rem;
             @include headline-button-properties();
 
@@ -2957,11 +3113,19 @@ $border-color: #fff;
           }
 
           &--link-div {
-            column-gap: 1rem;
+            row-gap: 0;
+            @include column-flex-direction();
+            width: 10rem;
+            height: 2rem;
+            row-gap: 0.7rem;
 
             &--link {
+              width: 100%;
+              margin: 0;
+
               &--button {
-                padding: 0.3rem 0.5rem;
+                width: 100%;
+                padding: 0.5rem 0;
                 font-size: 0.9rem;
               }
             }
@@ -3023,12 +3187,19 @@ $border-color: #fff;
           }
 
           &--link-div {
-            column-gap: 1rem;
+            row-gap: 0.7rem;
+            width: 10rem;
+            height: 2rem;
+            @include column-flex-direction();
 
             &--link {
+              width: 100%;
+              margin: 0;
+
               &--button {
+                width: 100%;
+                padding: 0.5rem 0;
                 font-size: 0.9rem;
-                height: 4rem;
               }
             }
           }
@@ -3087,11 +3258,18 @@ $border-color: #fff;
           }
 
           &--link-div {
-            column-gap: 1rem;
+            row-gap: 0.7rem;
+            @include column-flex-direction();
+            width: 10rem;
+            height: 2rem;
 
             &--link {
+              width: 100%;
+              margin: 0;
+
               &--button {
-                height: 4rem;
+                width: 100%;
+                padding: 0.5rem 0;
                 font-size: 0.9rem;
               }
             }
@@ -3145,11 +3323,18 @@ $border-color: #fff;
           }
 
           &--link-div {
-            column-gap: 1rem;
+            row-gap: 0.7rem;
+            @include column-flex-direction();
+            width: 10rem;
+            height: 2rem;
 
             &--link {
+              margin: 0;
+              width: 100%;
+
               &--button {
-                height: 4rem;
+                width: 100%;
+                padding: 0.5rem 0;
                 font-size: 0.9rem;
               }
             }
@@ -3293,7 +3478,7 @@ $border-color: #fff;
     &__contact-div {
       margin-top: 0;
       border-width: 0.2rem;
-      padding: 1rem 0.5rem;
+      padding: 1rem 0.1rem;
 
       &--headline {
         font-size: 1rem;
@@ -3302,19 +3487,23 @@ $border-color: #fff;
 
       &--text {
         margin-top: 1rem;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         text-align: left;
       }
 
       &--mail-address {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         text-align: left;
 
         &--icon {
           width: 2rem;
-          margin-right: 1rem;
+          margin-right: 0.5rem;
         }
       }
+    }
+
+    &__to-top {
+      font-size: 1rem;
     }
   }
 }

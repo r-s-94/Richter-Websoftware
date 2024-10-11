@@ -27,6 +27,12 @@ $border-color: #fff;
   align-items: center;
 }
 
+@mixin center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin gray-border-for-section {
   border: 0.5rem solid #e0e0e0;
   border-radius: 0.3rem;
@@ -45,7 +51,6 @@ $border-color: #fff;
   /*color: #81d4fa;*/
   color: #80d8ff;
   border-radius: 0.3rem;
-  padding: 0.5rem 0.7rem;
 }
 
 @mixin headline-button-hover-properties {
@@ -59,11 +64,10 @@ $border-color: #fff;
   /*color: #81d4fa;*/
   color: #006db5;
   border-radius: 0.3rem;
-  padding: 0.5rem 0.7rem;
 }
 
 @mixin project-button-hover-properties {
-  background-color: #222222;
+  background-color: #006db5;
   border-color: white;
   color: white;
 }
@@ -145,12 +149,14 @@ button:hover {
 
       &--link {
         margin-left: 30%;
+        width: 13rem;
 
         &--button {
-          display: flex;
-          align-items: center;
           font-size: 1.1rem;
           @include headline-button-properties();
+          @include center-content();
+          width: 100%;
+          padding: 0.7rem 0;
 
           &--icon {
             width: 1.3rem;
@@ -273,18 +279,21 @@ button:hover {
         }
 
         &--link-div {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include center-content();
           column-gap: 2rem;
           width: 100%;
 
           &--link {
             margin: 1rem 0;
+            width: 10rem;
+            height: 3rem;
 
             &--button {
+              width: 100%;
+              padding: 0.5rem 0;
               @include project-button-properties();
               font-size: 1rem;
+              @include center-content();
             }
 
             &--button:hover {
@@ -356,18 +365,21 @@ button:hover {
         }
 
         &--link-div {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include center-content();
           column-gap: 2rem;
           width: 100%;
 
           &--link {
             margin: 1rem 0;
+            width: 10rem;
+            height: 2rem;
 
             &--button {
               @include project-button-properties();
               font-size: 1rem;
+              width: 100%;
+              padding: 0.5rem 0;
+              @include center-content();
             }
 
             &--button:hover {
@@ -447,18 +459,21 @@ button:hover {
         }
 
         &--link-div {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include center-content();
           column-gap: 2rem;
           width: 100%;
 
           &--link {
             margin: 1rem 0;
+            width: 10rem;
+            height: 2rem;
 
             &--button {
               @include project-button-properties();
               font-size: 1rem;
+              width: 100%;
+              padding: 0.5rem 0;
+              @include center-content();
             }
 
             &--button:hover {
@@ -532,18 +547,21 @@ button:hover {
         }
 
         &--link-div {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include center-content();
           column-gap: 2rem;
           width: 100%;
 
           &--link {
             margin: 1rem 0;
+            width: 10rem;
+            height: 2rem;
 
             &--button {
               @include project-button-properties();
               font-size: 1rem;
+              width: 100%;
+              padding: 0.5rem 0;
+              @include center-content();
             }
 
             &--button:hover {
@@ -734,4 +752,25 @@ button:hover {
       }
     }
   }
+
+  &__to-top {
+    font-size: 1.3rem;
+  }
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
