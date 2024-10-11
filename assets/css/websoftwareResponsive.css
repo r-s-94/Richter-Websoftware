@@ -498,6 +498,9 @@
     width: 2rem;
     margin-right: 1rem;
   }
+  .contact-section__to-top {
+    margin: 2rem;
+  }
 }
 @media screen and (max-width: 1600px) {
   .head-section {
@@ -695,7 +698,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 1rem;
-    column-gap: 1.5rem;
+    column-gap: 3rem;
     padding-top: 2.5rem;
   }
   .project-section__project-div--top-container--note-app-div--description-div--description-point-div--description-top--single-point {
@@ -707,6 +710,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.3rem;
+    column-gap: 1.5rem;
   }
   .project-section__project-div--top-container--note-app-div--description-div--description-point-div--description-bottom--single-point {
     font-size: 0.9rem;
@@ -775,7 +779,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 1rem;
-    column-gap: 1.5rem;
+    column-gap: 3rem;
   }
   .project-section__project-div--bottom-container--online-shop-div--description-div--description-point-div--description-top--single-point {
     margin: 0;
@@ -786,6 +790,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    column-gap: 1.5rem;
   }
   .project-section__project-div--bottom-container--online-shop-div--description-div--description-point-div--description-bottom--single-point {
     margin: 0;
@@ -845,7 +850,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 1rem;
-    column-gap: 1.5rem;
+    column-gap: 3rem;
   }
   .project-section__project-div--bottom-container--crm-program-div--description-div--description-point-div--description-top--single-point {
     margin: 0;
@@ -856,6 +861,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    column-gap: 1.5rem;
   }
   .project-section__project-div--bottom-container--crm-program-div--description-div--description-point-div--description-bottom--single-point {
     margin: 0;
@@ -889,12 +895,13 @@
     font-size: 2rem;
   }
   .technology-section__technology-div {
-    margin-top: 3rem;
+    margin: 3rem auto 7rem auto;
     border-width: 0.4rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 3rem 0;
+    width: 100%;
   }
   .technology-section__technology-div--markup-language-div {
     display: flex;
@@ -1036,6 +1043,9 @@
     width: 2rem;
     margin-right: 1rem;
   }
+  .contact-section__to-top {
+    margin: 1rem;
+  }
 }
 @media screen and (max-width: 1300px) {
   .head-section {
@@ -1173,7 +1183,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 1rem;
-    column-gap: 1.5rem;
+    column-gap: 3rem;
     max-width: 28rem;
   }
   .project-section__project-div--top-container--italiener-div--description-div--description-point-div--single-point {
@@ -1225,7 +1235,7 @@
     width: 80%;
   }
   .project-section__project-div--top-container--note-app-div--description-div--description-point-div {
-    margin: 0.5rem auto;
+    margin: 1.7rem auto 0.5rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1239,7 +1249,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 1rem;
-    column-gap: 1.5rem;
+    column-gap: 3rem;
     padding: 0;
   }
   .project-section__project-div--top-container--note-app-div--description-div--description-point-div--description-top--single-point {
@@ -1304,7 +1314,7 @@
   }
   .project-section__project-div--bottom-container--online-shop-div--description-div--text {
     font-size: 1.2rem;
-    margin: 2rem auto 0 auto;
+    margin: 1rem auto 0 auto;
     width: 80%;
   }
   .project-section__project-div--bottom-container--online-shop-div--description-div--description-point-div {
@@ -1321,7 +1331,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 1rem;
-    column-gap: 1.5rem;
+    column-gap: 3rem;
   }
   .project-section__project-div--bottom-container--online-shop-div--description-div--description-point-div--description-top--single-point {
     margin: 0;
@@ -1717,7 +1727,7 @@
   }
   .project-section__project-div--top-container--italiener-div--description-div--text {
     font-size: 1.2rem;
-    margin: 1rem 2rem;
+    margin: 2rem 2rem 1rem 2rem;
   }
   .project-section__project-div--top-container--italiener-div--description-div--description-point-div {
     margin: 0.5rem auto;
@@ -1725,7 +1735,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 1rem;
-    column-gap: 5%;
+    column-gap: 2.5rem;
     max-width: 24rem;
   }
   .project-section__project-div--top-container--italiener-div--description-div--description-point-div--single-point {
@@ -1774,7 +1784,7 @@
   }
   .project-section__project-div--top-container--note-app-div--description-div--text {
     font-size: 1.2rem;
-    margin: 1rem 2rem 0 2rem;
+    margin: 2rem 2rem 1.5rem 2rem;
   }
   .project-section__project-div--top-container--note-app-div--description-div--description-point-div {
     margin: 0 auto;
@@ -1791,7 +1801,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 1rem;
-    column-gap: 5%;
+    column-gap: 2.5rem;
   }
   .project-section__project-div--top-container--note-app-div--description-div--description-point-div--description-top--single-point {
     font-size: 0.9rem;
@@ -1801,7 +1811,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 5%;
+    column-gap: 1.5rem;
     margin-top: 0.3rem;
   }
   .project-section__project-div--top-container--note-app-div--description-div--description-point-div--description-bottom--single-point {
@@ -1857,11 +1867,11 @@
   }
   .project-section__project-div--bottom-container--online-shop-div--description-div--text {
     font-size: 1.2rem;
-    margin: 0 2rem;
+    margin: 0.7rem 2rem 0 2rem;
   }
   .project-section__project-div--bottom-container--online-shop-div--description-div--description-point-div {
     width: 100%;
-    margin: 0.5rem auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     max-width: 24rem;
@@ -1874,6 +1884,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 1rem;
+    column-gap: 2.5rem;
   }
   .project-section__project-div--bottom-container--online-shop-div--description-div--description-point-div--description-top--single-point {
     margin: 0;
@@ -1881,6 +1892,7 @@
   }
   .project-section__project-div--bottom-container--online-shop-div--description-div--description-point-div--description-bottom {
     width: 100%;
+    column-gap: 1.5rem;
   }
   .project-section__project-div--bottom-container--online-shop-div--description-div--description-point-div--description-bottom--single-point {
     margin: 0;
@@ -1927,12 +1939,12 @@
     height: auto;
   }
   .project-section__project-div--bottom-container--crm-program-div--description-div--text {
-    margin: 1rem 1rem;
+    margin: 2rem 1rem 1rem 1rem;
     font-size: 1.2rem;
   }
   .project-section__project-div--bottom-container--crm-program-div--description-div--description-point-div {
     width: 100%;
-    margin: 0.5rem auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     max-width: 25rem;
@@ -1945,6 +1957,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 1rem;
+    column-gap: 2.5rem;
   }
   .project-section__project-div--bottom-container--crm-program-div--description-div--description-point-div--description-top--single-point {
     margin: 0;
@@ -1956,6 +1969,7 @@
   .project-section__project-div--bottom-container--crm-program-div--description-div--description-point-div--description-bottom--single-point {
     margin: 0;
     font-size: 0.9rem;
+    column-gap: 1.5rem;
   }
   .project-section__project-div--bottom-container--crm-program-div--description-div--description-point-div--single-point {
     margin: 0;
@@ -2281,6 +2295,7 @@
   }
   .project-section__project-div--top-container--italiener-div--description-div--description-point-div--single-point {
     margin: 0;
+    padding: 0.3rem 0;
     font-size: 0.8rem;
   }
   .project-section__project-div--top-container--italiener-div--link-div {
@@ -2323,37 +2338,28 @@
     height: auto;
   }
   .project-section__project-div--top-container--note-app-div--description-div--text {
-    margin: 1rem 1%;
+    margin: 1.5rem 1% 1rem 1%;
   }
   .project-section__project-div--top-container--note-app-div--description-div--description-point-div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 1rem auto 0 auto;
     padding: 0;
     row-gap: 1rem;
     max-width: 23rem;
   }
-  .project-section__project-div--top-container--note-app-div--description-div--description-point-div--description-top {
+  .project-section__project-div--top-container--note-app-div--description-div--description-point-div--description-top, .project-section__project-div--top-container--note-app-div--description-div--description-point-div--description-bottom {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 1rem;
     column-gap: 10%;
   }
-  .project-section__project-div--top-container--note-app-div--description-div--description-point-div--description-top--single-point {
+  .project-section__project-div--top-container--note-app-div--description-div--description-point-div--description-top--single-point, .project-section__project-div--top-container--note-app-div--description-div--description-point-div--description-top--single-point, .project-section__project-div--top-container--note-app-div--description-div--description-point-div--description-bottom--single-point, .project-section__project-div--top-container--note-app-div--description-div--description-point-div--description-bottom--single-point {
     font-size: 0.7rem;
-  }
-  .project-section__project-div--top-container--note-app-div--description-div--description-point-div--description-bottom {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 1.3rem;
-  }
-  .project-section__project-div--top-container--note-app-div--description-div--description-point-div--description-bottom--single-point {
-    font-size: 0.7rem;
+    padding: 0.3rem 0;
   }
   .project-section__project-div--top-container--note-app-div--link-div {
     margin: 2.5rem 0;
@@ -2403,7 +2409,7 @@
     height: auto;
   }
   .project-section__project-div--bottom-container--online-shop-div--description-div--text {
-    margin: 1rem 1%;
+    margin: 0 1%;
   }
   .project-section__project-div--bottom-container--online-shop-div--description-div--description-point-div {
     margin: 0 auto;
@@ -2424,6 +2430,7 @@
   .project-section__project-div--bottom-container--online-shop-div--description-div--description-point-div--description-top--single-point, .project-section__project-div--bottom-container--online-shop-div--description-div--description-point-div--description-bottom--single-point {
     margin: 0;
     font-size: 0.8rem;
+    padding: 0.3rem 0;
   }
   .project-section__project-div--bottom-container--online-shop-div--link-div {
     margin: 2.5rem 0;
@@ -2465,7 +2472,7 @@
     height: auto;
   }
   .project-section__project-div--bottom-container--crm-program-div--description-div--text {
-    margin: 1rem 1%;
+    margin: 1.5rem 1% 1rem 1%;
   }
   .project-section__project-div--bottom-container--crm-program-div--description-div--description-point-div {
     margin: 0 auto;
@@ -2486,6 +2493,7 @@
   .project-section__project-div--bottom-container--crm-program-div--description-div--description-point-div--description-top--single-point, .project-section__project-div--bottom-container--crm-program-div--description-div--description-point-div--description-bottom--single-point {
     margin: 0;
     font-size: 0.8rem;
+    padding: 0.3rem 0;
   }
   .project-section__project-div--bottom-container--crm-program-div--link-div {
     margin: 2.5rem 0;
@@ -2786,6 +2794,9 @@
     width: 100%;
     height: auto;
   }
+  .project-section__project-div--top-container--italiener-div--description-div--text {
+    margin-top: 1.3rem;
+  }
   .project-section__project-div--top-container--italiener-div--description-div--description-point-div {
     margin: 0.5rem 0;
     display: grid;
@@ -2796,7 +2807,7 @@
   .project-section__project-div--top-container--italiener-div--description-div--description-point-div--single-point {
     margin: 0;
     font-size: 0.8rem;
-    padding: 0.1rem 0.2rem;
+    padding: 0.2rem;
   }
   .project-section__project-div--top-container--italiener-div--link-div {
     row-gap: 0;
@@ -2837,6 +2848,9 @@
     width: 100%;
     height: auto;
   }
+  .project-section__project-div--top-container--note-app-div--description-div--text {
+    margin-top: 1.5rem;
+  }
   .project-section__project-div--top-container--note-app-div--description-div--description-point-div {
     margin: 0.5rem 0;
     display: flex;
@@ -2849,16 +2863,15 @@
   .project-section__project-div--top-container--note-app-div--description-div--description-point-div--description-top {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 0.5rem;
+    row-gap: 1rem;
   }
   .project-section__project-div--top-container--note-app-div--description-div--description-point-div--description-top--single-point {
     font-size: 0.7rem;
+    padding: 0.2rem;
   }
   .project-section__project-div--top-container--note-app-div--description-div--description-point-div--description-bottom {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    column-gap: 0.3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   .project-section__project-div--top-container--note-app-div--description-div--description-point-div--description-bottom--single-point {
     font-size: 0.7rem;
@@ -2910,6 +2923,13 @@
     width: 100%;
     height: auto;
   }
+  .project-section__project-div--bottom-container--online-shop-div--description-div {
+    padding: 1.3rem 0 0 0;
+  }
+  .project-section__project-div--bottom-container--online-shop-div--description-div--text {
+    margin: 0;
+    padding: 0;
+  }
   .project-section__project-div--bottom-container--online-shop-div--description-div--description-point-div {
     margin: 0.5rem 0;
     display: flex;
@@ -2917,6 +2937,7 @@
     align-items: center;
   }
   .project-section__project-div--bottom-container--online-shop-div--description-div--description-point-div--description-top, .project-section__project-div--bottom-container--online-shop-div--description-div--description-point-div--description-bottom {
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0.5rem 0;
@@ -2964,6 +2985,9 @@
   .project-section__project-div--bottom-container--crm-program-div--img-div--img {
     width: 100%;
     height: auto;
+  }
+  .project-section__project-div--bottom-container--crm-program-div--description-div--text {
+    margin-top: 1.3rem;
   }
   .project-section__project-div--bottom-container--crm-program-div--description-div--description-point-div {
     margin: 0.5rem 0;
