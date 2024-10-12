@@ -515,6 +515,10 @@ html {
   background-color: #006db5;
   border-color: white;
   color: white;
+  text-decoration: none;
+}
+.project-section__project-div--bottom-container--crm-program-div--link-div--link:hover {
+  text-decoration: none;
 }
 
 .technology-section {
@@ -708,6 +712,10 @@ html {
 
 .link:hover {
   text-decoration: underline;
+}
+
+.no-underline:hover {
+  text-decoration: none;
 }
 
 a {

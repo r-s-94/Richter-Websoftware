@@ -557,7 +557,12 @@ html {
 
             &--button:hover {
               @include project-button-hover-properties();
+              text-decoration: none;
             }
+          }
+
+          &--link:hover {
+            text-decoration: none;
           }
         }
       }
@@ -755,6 +760,10 @@ html {
 
 .link:hover {
   text-decoration: underline;
+}
+
+.no-underline:hover {
+  text-decoration: none;
 }
 
 a {
