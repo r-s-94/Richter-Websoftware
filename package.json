@@ -1,0 +1,15 @@
+{
+  "name": "richter-softwaresystems",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "Richter-Websoftware": " sass --watch --update assets/scss:assets/css "
+  },
+  "keywords": [],
+  "author": "Richter",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}
