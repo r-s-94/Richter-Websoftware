@@ -140,6 +140,649 @@ a:hover {
   text-decoration: underline;
 }*/
 
+@media screen and (min-width: 1700px) {
+  .nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 3rem;
+  }
+
+  .control-link {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .head-section {
+    @include column-flex-direction();
+    background-image: url(../img/conny-schneider-pREq0ns_p_E-unsplash.jpg);
+    /*box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
+
+    &__decoration-div {
+      margin: 4rem auto 2rem auto;
+      @include center-content();
+      column-gap: 3rem;
+    }
+
+    &__logo {
+      width: 8rem;
+      height: auto;
+      border-radius: 0.5rem;
+    }
+
+    &__headline {
+      font-size: 2.7rem;
+      color: white;
+      font-family: $headline-font-family;
+      font-weight: 200;
+    }
+
+    &__developer-div {
+      margin: 5rem;
+      padding: 5rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #00021f;
+      border-radius: 0.2rem;
+    }
+
+    &__description-div {
+      @include column-flex-direction-left-side();
+      width: 50%;
+      margin-left: 10rem;
+      padding: 1.5rem 2rem 1.5rem 3rem;
+    }
+
+    &__h2-headline {
+      font-size: 2rem;
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    &__focus-text {
+      font-size: 2rem;
+      color: white;
+    }
+
+    &__text {
+      font-size: 1.3rem;
+      color: white;
+      margin-top: -0.5rem;
+    }
+
+    &__sozial-media-div {
+      width: 25%;
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    &__sozial-media-link {
+    }
+
+    &__sozial-media-img {
+      width: 2.5rem;
+
+      &--github-icon {
+        width: 2.5rem;
+        background-color: white;
+        border: 0.3rem;
+      }
+    }
+
+    &__link {
+      width: 13rem;
+    }
+
+    &__button {
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+      @include blue-button-style();
+      @include center-content();
+      width: 13rem;
+      height: 2.3rem;
+      column-gap: 0.3rem;
+      transition: ease-in-out;
+      border-radius: 0.1rem;
+    }
+
+    &__icon {
+      width: 1.6rem;
+      height: auto;
+    }
+
+    &__button:hover {
+      @include blue-button-hover-style();
+      text-decoration: none;
+    }
+
+    &__portrait-div {
+      width: 50%;
+      height: 100%;
+      padding-left: 7rem;
+    }
+
+    &__img {
+      @include gray-border-for-section();
+      border-color: white;
+      border-width: 0.4rem;
+      width: 15rem;
+      height: auto;
+    }
+  }
+
+  .project-section {
+    @include column-flex-direction();
+    margin: 5rem 0;
+    /*background-color: black;*/
+    /*background-color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
+
+    &__h2-headline {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 2.3rem;
+      margin: 5rem auto 2rem auto;
+      color: white;
+    }
+
+    &__text {
+      font-size: 1.7rem;
+      margin: 3rem 0;
+      color: white;
+    }
+
+    &__project-div {
+      margin: 3rem;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      row-gap: 15rem;
+    }
+
+    &__crm-program,
+    &__italiner {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+    }
+
+    &__online-shop,
+    &__note-app {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__headline-left {
+      font-size: 1.8rem;
+      margin: 0 0 -3rem 15rem;
+      color: white;
+    }
+
+    &__headline-right {
+      font-size: 1.8rem;
+      margin: 0 0 -2.5rem 50rem;
+      color: white;
+    }
+
+    &__application-img-description-div-reverse {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    &__application-img-description-div {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__application-description-div {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      width: 50%;
+      row-gap: 2rem;
+    }
+
+    &__application-description-left,
+    &__application-description-right {
+      font-size: 1.3rem;
+      color: white;
+      line-height: 1.7rem;
+    }
+
+    &__application-description-left {
+      padding: 0 5rem 0 2.5rem;
+    }
+
+    &__application-description-right {
+      padding: 0 1rem 0 6.5rem;
+    }
+
+    &__application-technology-div-left,
+    &__application-technology-div-right {
+      display: flex;
+      width: 100%;
+      gap: 0.3rem;
+    }
+
+    &__application-technology-div-left {
+      margin-left: 2.5rem;
+    }
+
+    &__application-technology-div-right {
+      width: 40rem;
+      margin-left: 6.5rem;
+    }
+
+    &__application-technology {
+      @include center-content();
+      background-color: #0086d0;
+      border-radius: 0.5rem;
+
+      padding: 2.5px 5px;
+      font-size: 0.8rem;
+      color: white;
+    }
+
+    &__img-div {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.3rem 0;
+      box-sizing: border-box;
+    }
+
+    &__crm-carousel {
+      width: 100%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    &__shop-carousel,
+    &__website-carousel,
+    &__note-carousel {
+      width: 265px;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    &__crm-carousel-images,
+    &__shop-carousel-images,
+    &__website-carousel-images,
+    &__note-carousel-images {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    &__crm-carousel-images img,
+    &__shop-carousel-images img,
+    &__website-carousel-images img,
+    &__note-carousel-images img {
+      width: 100%;
+      height: auto;
+    }
+
+    .carousel-button {
+      transform: translateY(-50%);
+      background-color: #006db5;
+      color: white;
+      border: none;
+      font-size: 24px;
+      /*padding: 10px;*/
+      width: 2.1rem;
+      height: 3.3rem;
+      border-radius: 0.1rem;
+    }
+
+    &__carousel-prev-button {
+      margin-right: 1rem;
+    }
+
+    &__carousel-next-button {
+      margin-left: 1rem;
+    }
+
+    &__shop-carousel-prev-button,
+    &__website-carousel-prev-button,
+    &__note-carousel-prev-button {
+      margin-right: 5rem;
+    }
+
+    &__shop-carousel-next-button,
+    &__website-carousel-next-button,
+    &__note-carousel-next-button {
+      margin-left: 5rem;
+    }
+
+    .carousel-button:hover {
+      background-color: white;
+      color: #039be5;
+    }
+
+    /*.crm-img {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .four-img {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  
+    .three-img {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  
+    .two-img {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }*/
+
+    /*.crm-img {
+      width: 55rem;
+      height: auto;
+      object-fit: cover;
+      border-radius: 0.1rem;
+    }*/
+
+    .mobile-img {
+      height: 30rem;
+      border-radius: 0.1rem;
+    }
+
+    /* &__img {
+      width: 100%;
+      height: auto;
+      border-radius: 0.1rem;
+  
+      &--note-img {
+        height: 30rem;
+      }
+    }*/
+
+    &__button-div-left {
+      display: flex;
+      margin: -4rem 0 0 10rem;
+      column-gap: 7rem;
+      width: 30rem;
+    }
+
+    &__button-div-right {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      margin: -5rem 35rem 0 0;
+      column-gap: 7rem;
+      width: 100%;
+    }
+
+    &__link {
+      margin: 1rem 0;
+      width: 10rem;
+      height: 2rem;
+    }
+
+    &__button {
+      @include blue-button-style();
+      font-size: 1.2rem;
+      width: 14rem;
+      height: 2.3rem;
+      @include center-content();
+
+      border-radius: 0.1rem;
+    }
+
+    &__button:hover {
+      @include blue-button-hover-style();
+    }
+
+    &__link:hover {
+      text-decoration: none;
+    }
+  }
+
+  .technology-section {
+    @include column-flex-direction();
+    margin: 10rem 0 5rem 0;
+    padding: 10rem 0;
+    /*border-radius: 0.2rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
+
+    &__h2-headline {
+      margin: 1rem auto 2rem auto;
+      font-size: 2.3rem;
+      color: white;
+    }
+
+    &__technology-div {
+      width: 90%;
+      padding: 5rem 0;
+    }
+
+    &__top-div,
+    &__bottom-div {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    &__top-div {
+      margin-bottom: 7rem;
+      padding-right: 10rem;
+      box-sizing: border-box;
+    }
+
+    &__markup-language-div,
+    &__programming-language-div,
+    &__framework-div,
+    &__version-control-div,
+    &__database-technology-div {
+      @include column-flex-direction();
+    }
+
+    &__headline {
+      font-size: 1.7rem;
+      color: white;
+      text-decoration: underline;
+      text-align: center;
+    }
+
+    &__subdivision-div {
+      display: flex;
+      align-items: center;
+      column-gap: 1rem;
+    }
+
+    &__html-div,
+    &__css-div,
+    &__scss-div,
+    &__javascript-div,
+    &__typescript-div,
+    &__react-div,
+    &__github-div,
+    &__supabase-div {
+      @include column-flex-direction();
+    }
+
+    &__text {
+      color: white;
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    &__img-div {
+      @include center-content();
+      column-gap: 1rem;
+    }
+
+    &__img {
+      width: 9rem;
+      height: 9rem;
+
+      &--github-icon {
+        background-color: white;
+        border-radius: 0.2rem;
+      }
+    }
+  }
+
+  .contact-section {
+    @include column-flex-direction();
+    margin: 5rem 0;
+    padding: 0 5%;
+
+    &__headline {
+      font-size: 2rem;
+      margin-top: 3rem;
+      color: white;
+    }
+
+    &__contact-div {
+      @include column-flex-direction-left-side();
+      width: 100%;
+      margin: 3rem 0;
+      padding: 3rem 0;
+    }
+
+    &__question-headline {
+      font-size: 1.5rem;
+      margin: 1rem 0 0 5%;
+      color: white;
+    }
+
+    &__text {
+      margin: 3rem 0 0 5%;
+      font-size: 1.3rem;
+      color: white;
+    }
+
+    &__mail-address {
+      margin: 1rem 0 1rem 5%;
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+
+    &__icon {
+      width: 1.7rem;
+      height: auto;
+      margin-right: 1rem;
+      color: #039be5;
+    }
+
+    &__link {
+      color: #039be5;
+      font-size: 1.4rem;
+    }
+
+    &__sozial-media-div {
+      margin: 1rem 0 0 5rem;
+      width: 10rem;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    &__sozial-media-link {
+    }
+
+    &__sozial-media-img {
+      width: 2.3rem;
+
+      &--github-icon {
+        width: 2.3rem;
+        background-color: white;
+        border: 0.3rem;
+      }
+    }
+  }
+
+  .footer-section {
+    @include column-flex-direction();
+    background-color: black;
+
+    &__impressum-copy-right-div {
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      column-gap: 1rem;
+    }
+
+    &__impressum-link {
+      color: white;
+    }
+
+    &__copy-right {
+      color: white;
+    }
+
+    &__to-top {
+      font-size: 1rem;
+      color: white;
+      margin: 1rem 0 2rem 0;
+    }
+  }
+
+  //  Impressum
+
+  .impressum-link {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 3rem 0 0 7rem;
+    font-size: 1.3rem;
+  }
+
+  .to-main-side-icon {
+    width: 2rem;
+    color: white;
+  }
+
+  .impressum-headline {
+    margin: 7rem 0 2rem 0;
+    text-align: center;
+    color: white;
+    font-size: 2.3rem;
+  }
+
+  .impressum-info-div {
+    margin: 1rem auto 0 auto;
+    text-align: center;
+    width: 20rem;
+    height: 10rem;
+  }
+
+  .impressum-legal-information {
+    color: white;
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .impressum-contact {
+    color: white;
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .impressum-name,
+  .impressum-adress,
+  .impressum-number,
+  .impressum-mail {
+    color: white;
+    font-size: 1.3rem;
+  }
+}
+
 @media screen and (max-width: 1700px) {
   .nav-bar {
     height: 3rem;
