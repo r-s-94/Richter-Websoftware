@@ -126,8 +126,8 @@ a:hover {
     max-width: 50rem;
   }
   .head-section__sozial-media-div {
-    width: 15rem;
-    margin-top: 1rem;
+    width: 12rem;
+    margin: 1rem 0 0 3%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -200,12 +200,6 @@ a:hover {
       display: grid;
       grid-template-columns: 1fr 1fr;
     }*/
-    /*.crm-img {
-      width: 900px;
-      height: auto;
-      object-fit: cover;
-      border-radius: 0.1rem;
-    }*/
     /* &__img {
       width: 100%;
       height: auto;
@@ -239,7 +233,7 @@ a:hover {
   .project-section__project-div {
     width: 95%;
     margin: 5rem auto;
-    padding: 0;
+    padding: 10rem 0 0 0;
     row-gap: 20rem;
   }
   .project-section__crm-program, .project-section__italiner {
@@ -273,7 +267,7 @@ a:hover {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 100%;
+    width: 50%;
     margin: 0 auto;
     row-gap: 2rem;
     box-sizing: border-box;
@@ -304,14 +298,14 @@ a:hover {
     color: white;
   }
   .project-section__img-div {
-    width: 100%;
+    width: 50%;
     margin: 0 auto;
     padding: 0.3rem 0;
     box-sizing: border-box;
   }
   .project-section__crm-carousel {
-    width: 100%;
-    margin: 0;
+    height: 25rem;
+    margin: 0 auto;
     overflow: hidden;
   }
   .project-section__shop-carousel, .project-section__website-carousel, .project-section__note-carousel {
@@ -323,7 +317,11 @@ a:hover {
     display: flex;
     transition: transform 0.5s ease-in-out;
   }
-  .project-section__crm-carousel-images img, .project-section__shop-carousel-images img, .project-section__website-carousel-images img, .project-section__note-carousel-images img {
+  .project-section img {
+    height: 100%;
+    width: auto;
+  }
+  .project-section__crm-carousel-images img {
     width: 100%;
     height: auto;
   }
@@ -339,16 +337,21 @@ a:hover {
     border-radius: 0.1rem;
   }
   .project-section__carousel-prev-button {
-    margin: 2.5rem 3rem 0 0;
+    margin: 1.5rem 1.5rem 0 0;
   }
   .project-section__carousel-next-button {
-    margin: 2.5rem 0 0 3rem;
+    margin: 1.5rem 0 0 1.5rem;
   }
   .project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__note-carousel-prev-button {
     margin-right: 3rem;
   }
   .project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__note-carousel-next-button {
     margin-left: 3rem;
+  }
+  .project-section .crm-img {
+    width: 900px;
+    height: 24rem;
+    object-fit: cover;
   }
   .project-section .mobile-img {
     height: 35rem;
@@ -357,7 +360,7 @@ a:hover {
   .project-section__button-div-left {
     display: flex;
     justify-content: left;
-    margin: -3rem 0 0 10%;
+    margin: -4rem 0 0 10%;
     padding-right: 3rem;
     column-gap: 10rem;
     width: 40rem;
@@ -398,7 +401,7 @@ a:hover {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
   }
   .technology-section__h2-headline {
-    margin: -3rem auto 3rem auto;
+    margin: 1rem auto 3rem auto;
     font-size: 2rem;
     color: white;
   }
@@ -411,8 +414,8 @@ a:hover {
     column-gap: 3rem;
   }
   .technology-section__top-div {
-    margin-bottom: 7rem;
-    padding-right: 7%;
+    margin-bottom: 10rem;
+    padding-right: 8%;
     box-sizing: border-box;
   }
   .technology-section__markup-language-div, .technology-section__programming-language-div, .technology-section__framework-div, .technology-section__version-control-div, .technology-section__database-technology-div {
@@ -466,22 +469,21 @@ a:hover {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 100%;
-    margin-top: 5rem;
-    padding: 0;
+    width: 65%;
+    margin: 3rem 0 0 0;
   }
   .contact-section__question-headline {
     font-size: 1.5rem;
-    margin: 1rem 0 0 5%;
+    margin: 1rem 0 0 0;
     color: white;
   }
   .contact-section__text {
-    margin: 1rem 0 0 5%;
+    margin: 1rem 0 0 0;
     font-size: 1.3rem;
     color: white;
   }
   .contact-section__mail-address {
-    margin: 1rem 0 1rem 5%;
+    margin: 1rem 0;
     font-size: 1.7rem;
     display: flex;
     align-items: center;
@@ -498,8 +500,8 @@ a:hover {
     font-size: 1.3rem;
   }
   .contact-section__sozial-media-div {
-    margin: 1rem 0 0 3%;
-    width: 13rem;
+    margin: 1rem 0 0 1%;
+    width: 11rem;
     display: flex;
     justify-content: space-evenly;
   }
@@ -643,8 +645,8 @@ a:hover {
     max-width: 50rem;
   }
   .head-section__sozial-media-div {
-    width: 15rem;
-    margin-top: 1.5rem;
+    width: 12rem;
+    margin: 1.5rem 0 0 3%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -675,13 +677,13 @@ a:hover {
   }
   .head-section__portrait-div {
     width: 10rem;
-    margin: 5rem auto 3rem auto;
+    margin: 3rem auto 5rem auto;
     padding: 0;
   }
   .head-section__img {
     /*@include gray-border-for-section();*/
     /*border-color: white;*/
-    width: 13rem;
+    width: 15rem;
     height: auto;
     border-width: 0.4rem;
   }
@@ -717,12 +719,6 @@ a:hover {
       display: grid;
       grid-template-columns: 1fr 1fr;
     }*/
-    /*.crm-img {
-      width: 900px;
-      height: auto;
-      object-fit: cover;
-      border-radius: 0.1rem;
-    }*/
     /* &__img {
       width: 100%;
       height: auto;
@@ -756,8 +752,8 @@ a:hover {
   .project-section__project-div {
     width: 95%;
     margin: 5rem auto;
-    padding: 0;
-    row-gap: 7rem;
+    padding: 1rem 0 0 0;
+    row-gap: 10rem;
   }
   .project-section__crm-program, .project-section__italiner {
     display: flex;
@@ -796,24 +792,23 @@ a:hover {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 100%;
+    width: 95%;
+    max-width: 1100px;
     margin: 0 auto;
     row-gap: 2rem;
     box-sizing: border-box;
   }
   .project-section__application-description-left, .project-section__application-description-right {
-    margin-top: 3rem;
-    padding: 0 5%;
+    margin: 3rem auto 0 auto;
+    padding: 0;
     font-size: 1.2rem;
     color: white;
     line-height: 1.7rem;
   }
   .project-section__application-technology-div-left, .project-section__application-technology-div-right {
     width: 100%;
-    max-width: 35rem;
     display: flex;
     margin: 0;
-    padding: 1rem 0 0 5%;
     column-gap: 0.5rem;
   }
   .project-section__application-technology {
@@ -830,12 +825,12 @@ a:hover {
     box-sizing: border-box;
   }
   .project-section__crm-carousel {
-    width: 75%;
+    width: 100%;
     margin: 0;
     overflow: hidden;
   }
   .project-section__shop-carousel, .project-section__website-carousel, .project-section__note-carousel {
-    width: 310px;
+    width: 311px;
     margin: 0;
     overflow: hidden;
   }
@@ -843,7 +838,11 @@ a:hover {
     display: flex;
     transition: transform 0.5s ease-in-out;
   }
-  .project-section__crm-carousel-images img, .project-section__shop-carousel-images img, .project-section__website-carousel-images img, .project-section__note-carousel-images img {
+  .project-section img {
+    width: auto;
+    height: 100%;
+  }
+  .project-section__crm-carousel-images img {
     width: 100%;
     height: auto;
   }
@@ -859,16 +858,21 @@ a:hover {
     border-radius: 0.1rem;
   }
   .project-section__carousel-prev-button {
-    margin: 2.5rem 3rem 0 0;
+    margin: 2.5rem 1.5rem 0 0;
   }
   .project-section__carousel-next-button {
-    margin: 2.5rem 0 0 3rem;
+    margin: 2.5rem 0 0 1.5rem;
   }
   .project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__note-carousel-prev-button {
     margin-right: 3rem;
   }
   .project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__note-carousel-next-button {
     margin-left: 3rem;
+  }
+  .project-section .crm-img {
+    width: 1095px;
+    height: 30rem;
+    object-fit: cover;
   }
   .project-section .mobile-img {
     height: 35rem;
@@ -912,12 +916,13 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    margin: 3rem 0;
+    padding: 7rem 0;
     /*border-radius: 0.2rem;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
   }
   .technology-section__h2-headline {
-    margin: -3rem auto 0 auto;
+    margin: 3rem auto 1rem auto;
     font-size: 2rem;
     color: white;
   }
@@ -951,7 +956,7 @@ a:hover {
     text-decoration: underline;
   }
   .technology-section__subdivision-div {
-    column-gap: 1rem;
+    row-gap: 1rem;
   }
   .technology-section__html-div, .technology-section__css-div, .technology-section__scss-div, .technology-section__javascript-div, .technology-section__typescript-div, .technology-section__react-div, .technology-section__github-div, .technology-section__supabase-div {
     display: flex;
@@ -975,7 +980,7 @@ a:hover {
     height: 6rem;
   }
   .technology-section__img--github-icon {
-    width: 6rem;
+    width: 5rem;
   }
   .contact-section {
     display: flex;
@@ -983,10 +988,10 @@ a:hover {
     align-items: center;
     justify-content: center;
     margin: 5rem 0 7rem 0;
-    padding: 0 3%;
+    padding: 3rem 3% 0 3%;
   }
   .contact-section__headline {
-    font-size: 1.7rem;
+    font-size: 2rem;
     margin-top: 0rem;
     color: white;
   }
@@ -995,22 +1000,21 @@ a:hover {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 100%;
-    margin-top: 3rem;
-    padding: 0;
+    width: 70%;
+    margin: 1rem 0 0 0;
   }
   .contact-section__question-headline {
-    font-size: 1.3rem;
-    margin: 1rem 0 0 5%;
+    font-size: 1.5rem;
+    margin: 1rem 0 0 0;
     color: white;
   }
   .contact-section__text {
-    margin: 1rem 0 0 5%;
-    font-size: 1.2rem;
+    margin: 1rem 0 0 0;
+    font-size: 1.3rem;
     color: white;
   }
   .contact-section__mail-address {
-    margin: 1rem 0 1rem 5%;
+    margin: 1rem 0;
     font-size: 1.7rem;
     display: flex;
     align-items: center;
@@ -1024,11 +1028,11 @@ a:hover {
   }
   .contact-section__link {
     color: #039be5;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .contact-section__sozial-media-div {
-    margin: 1rem 0 0 3%;
-    width: 13rem;
+    margin: 1rem 0 0 1%;
+    width: 11rem;
     display: flex;
     justify-content: space-evenly;
   }
@@ -1170,8 +1174,8 @@ a:hover {
     padding: 0 3%;
   }
   .head-section__sozial-media-div {
-    width: 13rem;
-    margin-top: 1rem;
+    width: 12rem;
+    margin: 1rem 0 0 3%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -1202,7 +1206,7 @@ a:hover {
   }
   .head-section__portrait-div {
     width: 10rem;
-    margin: 5rem auto 3rem auto;
+    margin: 3rem auto 5rem auto;
     padding: 0;
   }
   .head-section__img {
@@ -1221,6 +1225,16 @@ a:hover {
     /*background-color: black;*/
     /*background-color: white;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
+    /*&__crm-carousel-images img {
+      width: 100%;
+      height: auto;
+    }*/
+    /*&__shop-carousel-images img,
+    &__website-carousel-images img,
+    &__note-carousel-images img {
+      width: auto;
+      height: 100%;
+    }*/
     /*.carousel-button:hover {
       background-color: white;
       color: #039be5;
@@ -1243,12 +1257,6 @@ a:hover {
     .two-img {
       display: grid;
       grid-template-columns: 1fr 1fr;
-    }*/
-    /*.crm-img {
-      width: 55rem;
-      height: auto;
-      object-fit: cover;
-      border-radius: 0.1rem;
     }*/
     /* &__img {
       width: 100%;
@@ -1323,24 +1331,22 @@ a:hover {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 100%;
     margin: 0 auto;
+    max-width: 900px;
     row-gap: 2rem;
     box-sizing: border-box;
   }
   .project-section__application-description-left, .project-section__application-description-right {
-    margin-top: 3rem;
-    padding: 0 5%;
+    margin: 3rem auto 0 auto;
+    padding: 0;
     font-size: 1.2rem;
     color: white;
     line-height: 1.7rem;
   }
   .project-section__application-technology-div-left, .project-section__application-technology-div-right {
     width: 100%;
-    max-width: 35rem;
     display: flex;
     margin: 0;
-    padding: 1rem 0 0 5%;
     column-gap: 0.5rem;
   }
   .project-section__application-technology {
@@ -1357,8 +1363,8 @@ a:hover {
     box-sizing: border-box;
   }
   .project-section__crm-carousel {
-    width: 75%;
-    margin: 0;
+    width: 100%;
+    margin: 0 auto;
     overflow: hidden;
   }
   .project-section__shop-carousel, .project-section__website-carousel, .project-section__note-carousel {
@@ -1369,10 +1375,6 @@ a:hover {
   .project-section__crm-carousel-images, .project-section__shop-carousel-images, .project-section__website-carousel-images, .project-section__note-carousel-images {
     display: flex;
     transition: transform 0.5s ease-in-out;
-  }
-  .project-section__crm-carousel-images img, .project-section__shop-carousel-images img, .project-section__website-carousel-images img, .project-section__note-carousel-images img {
-    width: 100%;
-    height: auto;
   }
   .project-section .carousel-button {
     transform: translateY(-50%);
@@ -1386,16 +1388,21 @@ a:hover {
     border-radius: 0.1rem;
   }
   .project-section__carousel-prev-button {
-    margin: 2.5rem 2rem 0 0;
+    margin: 2.5rem 1.5rem 0 0;
   }
   .project-section__carousel-next-button {
-    margin: 2.5rem 0 0 2rem;
+    margin: 2.5rem 0 0 1.5rem;
   }
   .project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__note-carousel-prev-button {
     margin-right: 3rem;
   }
   .project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__note-carousel-next-button {
     margin-left: 3rem;
+  }
+  .project-section .crm-img {
+    width: 930px;
+    height: 25rem;
+    object-fit: cover;
   }
   .project-section .mobile-img {
     height: 35rem;
@@ -1440,11 +1447,12 @@ a:hover {
     align-items: center;
     justify-content: center;
     margin: 0;
+    padding: 7rem 0;
     /*border-radius: 0.2rem;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
   }
   .technology-section__h2-headline {
-    margin: -3rem auto 0 auto;
+    margin: 3rem auto 0 auto;
     font-size: 2rem;
     color: white;
   }
@@ -1470,7 +1478,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 0.5rem;
+    row-gap: 1.5rem;
   }
   .technology-section__headline {
     font-size: 1.7rem;
@@ -1502,18 +1510,18 @@ a:hover {
     height: 6rem;
   }
   .technology-section__img--github-icon {
-    width: 6rem;
+    width: 5rem;
   }
   .contact-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 7rem 0 7rem 0;
+    margin: 7rem 0;
     padding: 0 3%;
   }
   .contact-section__headline {
-    font-size: 1.7rem;
+    font-size: 2rem;
     margin-top: 0rem;
     color: white;
   }
@@ -1522,22 +1530,20 @@ a:hover {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 100%;
-    margin-top: 3rem;
-    padding: 0;
+    margin: 0 0 0 0;
   }
   .contact-section__question-headline {
-    font-size: 1.3rem;
-    margin: 1rem 0 0 5%;
+    font-size: 1.5rem;
+    margin: 1rem 0 0 0;
     color: white;
   }
   .contact-section__text {
-    margin: 1rem 0 0 5%;
-    font-size: 1.2rem;
+    margin: 1rem 0 0 0;
+    font-size: 1.3rem;
     color: white;
   }
   .contact-section__mail-address {
-    margin: 1rem 0 1rem 5%;
+    margin: 1rem 0;
     font-size: 1.7rem;
     display: flex;
     align-items: center;
@@ -1554,8 +1560,8 @@ a:hover {
     font-size: 1.3rem;
   }
   .contact-section__sozial-media-div {
-    margin: 1rem 0 0 3%;
-    width: 13rem;
+    margin: 1rem 0 0 1%;
+    width: 11rem;
     display: flex;
     justify-content: space-evenly;
   }
@@ -1702,8 +1708,8 @@ a:hover {
     padding: 0 3%;
   }
   .head-section__sozial-media-div {
-    width: 10rem;
-    margin-top: 1rem;
+    width: 11rem;
+    margin: 1rem 0 0 3%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -1753,6 +1759,16 @@ a:hover {
     /*background-color: black;*/
     /*background-color: white;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
+    /*&__crm-carousel-images img {
+      width: 100%;
+      height: auto;
+    }*/
+    /*&__shop-carousel-images img,
+    &__website-carousel-images img,
+    &__note-carousel-images img {
+      width: auto;
+      height: 100%;
+    }*/
     /*.carousel-button:hover {
       background-color: white;
       color: #039be5;
@@ -1775,12 +1791,6 @@ a:hover {
     .two-img {
       display: grid;
       grid-template-columns: 1fr 1fr;
-    }*/
-    /*.crm-img {
-      width: 55rem;
-      height: auto;
-      object-fit: cover;
-      border-radius: 0.1rem;
     }*/
     /* &__img {
       width: 100%;
@@ -1856,25 +1866,23 @@ a:hover {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 100%;
+    max-width: 600px;
     margin: 0 auto;
     row-gap: 2rem;
     box-sizing: border-box;
   }
   .project-section__application-description-left, .project-section__application-description-right {
-    margin-top: 1.5rem;
-    padding: 0 5%;
+    margin: 1.5rem auto 0 auto;
+    padding: 0;
     font-size: 1.1rem;
     color: white;
     line-height: 1.7rem;
   }
   .project-section__application-technology-div-left, .project-section__application-technology-div-right {
-    width: 95%;
-    max-width: 33rem;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0;
-    padding-left: 5%;
     gap: 0.3rem;
   }
   .project-section__application-technology {
@@ -1892,21 +1900,17 @@ a:hover {
   }
   .project-section__crm-carousel {
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     overflow: hidden;
   }
   .project-section__shop-carousel, .project-section__website-carousel, .project-section__note-carousel {
-    width: 260px;
+    width: 267px;
     margin: 0;
     overflow: hidden;
   }
   .project-section__crm-carousel-images, .project-section__shop-carousel-images, .project-section__website-carousel-images, .project-section__note-carousel-images {
     display: flex;
     transition: transform 0.5s ease-in-out;
-  }
-  .project-section__crm-carousel-images img, .project-section__shop-carousel-images img, .project-section__website-carousel-images img, .project-section__note-carousel-images img {
-    width: 100%;
-    height: auto;
   }
   .project-section .carousel-button {
     transform: translateY(-50%);
@@ -1931,6 +1935,11 @@ a:hover {
   .project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__note-carousel-next-button {
     margin-left: 2rem;
   }
+  .project-section .crm-img {
+    width: 560px;
+    height: 15rem;
+    object-fit: cover;
+  }
   .project-section .mobile-img {
     height: 30rem;
     border-radius: 0.1rem;
@@ -1939,7 +1948,7 @@ a:hover {
     display: flex;
     justify-content: center;
     margin: 4rem 0;
-    padding-right: 1rem;
+    padding-right: 2rem;
     column-gap: 5rem;
     width: 100%;
   }
@@ -1947,7 +1956,7 @@ a:hover {
     display: flex;
     justify-content: center;
     margin: 4rem 0;
-    padding-right: 1rem;
+    padding-right: 2rem;
     column-gap: 5rem;
     width: 100%;
   }
@@ -1973,12 +1982,13 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    margin: 3rem 0 5rem 0;
+    padding: 7rem 0 5rem 0;
     /*border-radius: 0.2rem;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
   }
   .technology-section__h2-headline {
-    margin: -3rem auto 0 auto;
+    margin: 3 auto 0 auto;
     font-size: 2rem;
     color: white;
   }
@@ -2004,7 +2014,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 0.5rem;
+    row-gap: 1rem;
   }
   .technology-section__headline {
     font-size: 1.7rem;
@@ -2012,7 +2022,7 @@ a:hover {
     text-decoration: underline;
   }
   .technology-section__subdivision-div {
-    column-gap: 1rem;
+    row-gap: 1rem;
   }
   .technology-section__html-div, .technology-section__css-div, .technology-section__scss-div, .technology-section__javascript-div, .technology-section__typescript-div, .technology-section__react-div, .technology-section__github-div, .technology-section__supabase-div {
     display: flex;
@@ -2036,14 +2046,14 @@ a:hover {
     height: 6rem;
   }
   .technology-section__img--github-icon {
-    width: 6rem;
+    width: 5rem;
   }
   .contact-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 3rem 0 5rem 0;
+    margin: 5rem 0;
     padding: 0 3%;
   }
   .contact-section__headline {
@@ -2056,22 +2066,20 @@ a:hover {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 100%;
-    margin-top: 1rem;
-    padding: 0;
+    margin: 0;
   }
   .contact-section__question-headline {
     font-size: 1.2rem;
-    margin: 1rem 0 0 5%;
+    margin: 1rem 0 0 0;
     color: white;
   }
   .contact-section__text {
-    margin: 1rem 0 0 5%;
+    margin: 1rem 0 0 0;
     font-size: 1.1rem;
     color: white;
   }
   .contact-section__mail-address {
-    margin: 1rem 0 1rem 5%;
+    margin: 1rem 0;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
@@ -2240,8 +2248,8 @@ a:hover {
     padding: 0 3%;
   }
   .head-section__sozial-media-div {
-    width: 7rem;
-    margin-top: 1rem;
+    width: 10rem;
+    margin: 1rem 0 0 5%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -2292,6 +2300,16 @@ a:hover {
     /*background-color: black;*/
     /*background-color: white;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
+    /*&__crm-carousel-images img {
+      width: 100%;
+      height: auto;
+    }*/
+    /*&__shop-carousel-images img,
+    &__website-carousel-images img,
+    &__note-carousel-images img {
+      width: auto;
+      height: 100%;
+    }*/
     /*.carousel-button:hover {
       background-color: white;
       color: #039be5;
@@ -2314,12 +2332,6 @@ a:hover {
     .two-img {
       display: grid;
       grid-template-columns: 1fr 1fr;
-    }*/
-    /*.crm-img {
-      width: 55rem;
-      height: auto;
-      object-fit: cover;
-      border-radius: 0.1rem;
     }*/
     /* &__img {
       width: 100%;
@@ -2395,24 +2407,22 @@ a:hover {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 100%;
+    max-width: 400px;
     margin: 0 auto;
     row-gap: 2rem;
-    box-sizing: border-box;
   }
   .project-section__application-description-left, .project-section__application-description-right {
-    margin-top: 1rem;
-    padding: 0 3%;
+    width: 100%;
+    margin: 1rem auto 0 auto;
+    padding: 0;
     font-size: 1rem;
     color: white;
     line-height: 1.5rem;
   }
   .project-section__application-technology-div-left, .project-section__application-technology-div-right {
-    width: 95%;
-    max-width: 20rem;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 3%;
     padding: 0;
     gap: 0.3rem;
   }
@@ -2431,21 +2441,17 @@ a:hover {
   }
   .project-section__crm-carousel {
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     overflow: hidden;
   }
   .project-section__shop-carousel, .project-section__website-carousel, .project-section__note-carousel {
-    width: 200px;
+    width: 222px;
     margin: 0;
     overflow: hidden;
   }
   .project-section__crm-carousel-images, .project-section__shop-carousel-images, .project-section__website-carousel-images, .project-section__note-carousel-images {
     display: flex;
     transition: transform 0.5s ease-in-out;
-  }
-  .project-section__crm-carousel-images img, .project-section__shop-carousel-images img, .project-section__website-carousel-images img, .project-section__note-carousel-images img {
-    width: 100%;
-    height: auto;
   }
   .project-section .carousel-button {
     transform: translateY(-50%);
@@ -2465,10 +2471,16 @@ a:hover {
     margin: 2.5rem 0 0 0.5rem;
   }
   .project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__note-carousel-prev-button {
-    margin-right: 1rem;
+    margin-right: 0.5rem;
   }
   .project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__note-carousel-next-button {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
+  }
+  .project-section .crm-img {
+    width: 295.5px;
+    height: 7.3rem;
+    object-fit: cover;
+    border-radius: 0.1rem;
   }
   .project-section .mobile-img {
     height: 25rem;
@@ -2513,12 +2525,12 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: -3rem 0 0 0;
+    padding: 5rem 0;
     /*border-radius: 0.2rem;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
   }
   .technology-section__h2-headline {
-    margin: -3rem auto 0 auto;
+    margin: 3rem auto 0 auto;
     font-size: 1.7rem;
     color: white;
   }
@@ -2581,7 +2593,7 @@ a:hover {
     height: 5rem;
   }
   .technology-section__img--github-icon {
-    width: 5rem;
+    width: 4rem;
   }
   .contact-section {
     display: flex;
@@ -2601,22 +2613,20 @@ a:hover {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    margin-top: -1rem;
   }
   .contact-section__question-headline {
     font-size: 1.1rem;
-    margin: 1rem 0 0 5%;
+    margin: 1rem 0 0 0;
     color: white;
   }
   .contact-section__text {
-    margin: 1rem 0 0 5%;
+    margin: 1rem 0 0 0;
     font-size: 1rem;
     color: white;
   }
   .contact-section__mail-address {
-    margin: 1rem 0 1rem 5%;
+    margin: 1rem 0;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
@@ -2634,7 +2644,7 @@ a:hover {
   }
   .contact-section__sozial-media-div {
     margin: 0.3rem 0 0 3%;
-    width: 7rem;
+    width: 8rem;
     display: flex;
     justify-content: space-evenly;
   }
@@ -2788,8 +2798,8 @@ a:hover {
     padding: 0 3%;
   }
   .head-section__sozial-media-div {
-    width: 5rem;
-    margin-top: 1rem;
+    width: 8rem;
+    margin: 1rem 0 0 7%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -2840,6 +2850,16 @@ a:hover {
     /*background-color: black;*/
     /*background-color: white;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
+    /*&__crm-carousel-images img {
+      width: 100%;
+      height: auto;
+    }*/
+    /*&__shop-carousel-images img,
+    &__website-carousel-images img,
+    &__note-carousel-images img {
+      width: auto;
+      height: 100%;
+    }*/
     /*.carousel-button:hover {
       background-color: white;
       color: #039be5;
@@ -2862,12 +2882,6 @@ a:hover {
     .two-img {
       display: grid;
       grid-template-columns: 1fr 1fr;
-    }*/
-    /*.crm-img {
-      width: 55rem;
-      height: auto;
-      object-fit: cover;
-      border-radius: 0.1rem;
     }*/
     /* &__img {
       width: 100%;
@@ -2943,14 +2957,13 @@ a:hover {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 100%;
     margin: 0 auto;
     row-gap: 2rem;
     box-sizing: border-box;
   }
   .project-section__application-description-left, .project-section__application-description-right {
-    margin-top: 1rem;
-    padding: 0 3%;
+    margin-top: 1rem auto 0 auto;
+    padding: 0;
     font-size: 1rem;
     color: white;
     line-height: 1.5rem;
@@ -2978,7 +2991,7 @@ a:hover {
   }
   .project-section__crm-carousel {
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     overflow: hidden;
   }
   .project-section__shop-carousel, .project-section__website-carousel, .project-section__note-carousel {
@@ -2989,10 +3002,6 @@ a:hover {
   .project-section__crm-carousel-images, .project-section__shop-carousel-images, .project-section__website-carousel-images, .project-section__note-carousel-images {
     display: flex;
     transition: transform 0.5s ease-in-out;
-  }
-  .project-section__crm-carousel-images img, .project-section__shop-carousel-images img, .project-section__website-carousel-images img, .project-section__note-carousel-images img {
-    width: 100%;
-    height: auto;
   }
   .project-section .carousel-button {
     transform: translateY(-50%);
@@ -3017,8 +3026,13 @@ a:hover {
   .project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__note-carousel-next-button {
     margin-left: 0.5rem;
   }
+  .project-section .crm-img {
+    width: 269px;
+    height: 6.5rem;
+    object-fit: cover;
+  }
   .project-section .mobile-img {
-    height: 25rem;
+    height: 23rem;
     border-radius: 0.1rem;
   }
   .project-section__button-div-left {
@@ -3060,12 +3074,12 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: -3rem 0 0 0;
+    padding: 3rem 0;
     /*border-radius: 0.2rem;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
   }
   .technology-section__h2-headline {
-    margin: -3rem auto 0 auto;
+    margin: 3rem auto 0 auto;
     font-size: 1.7rem;
     color: white;
   }
@@ -3128,7 +3142,7 @@ a:hover {
     height: 5rem;
   }
   .technology-section__img--github-icon {
-    width: 5rem;
+    width: 4rem;
   }
   .contact-section {
     display: flex;
@@ -3148,22 +3162,20 @@ a:hover {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    margin: -1rem 0 0 0;
   }
   .contact-section__question-headline {
     font-size: 1.1rem;
-    margin: 1rem 0 0 5%;
+    margin: 1rem 0 0 0;
     color: white;
   }
   .contact-section__text {
-    margin: 1rem 0 0 5%;
+    margin: 1rem 0 0 0;
     font-size: 1rem;
     color: white;
   }
   .contact-section__mail-address {
-    margin: 1rem 0 1rem 5%;
+    margin: 1rem 0;
     font-size: 1.3rem;
     display: flex;
     align-items: center;
@@ -3181,7 +3193,7 @@ a:hover {
   }
   .contact-section__sozial-media-div {
     margin: 0.3rem 0 0 3%;
-    width: 5rem;
+    width: 7rem;
     display: flex;
     justify-content: space-evenly;
   }

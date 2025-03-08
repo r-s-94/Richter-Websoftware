@@ -207,8 +207,8 @@ a:hover {
     }
 
     &__sozial-media-div {
-      width: 15rem;
-      margin-top: 1rem;
+      width: 12rem;
+      margin: 1rem 0 0 3%;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
@@ -291,7 +291,7 @@ a:hover {
     &__project-div {
       width: 95%;
       margin: 5rem auto;
-      padding: 0;
+      padding: 10rem 0 0 0;
       row-gap: 20rem;
     }
 
@@ -334,7 +334,7 @@ a:hover {
       flex-direction: column;
       align-items: start;
       justify-content: center;
-      width: 100%;
+      width: 50%;
       margin: 0 auto;
       row-gap: 2rem;
       box-sizing: border-box;
@@ -381,15 +381,15 @@ a:hover {
     }
 
     &__img-div {
-      width: 100%;
+      width: 50%;
       margin: 0 auto;
       padding: 0.3rem 0;
       box-sizing: border-box;
     }
 
     &__crm-carousel {
-      width: 100%;
-      margin: 0;
+      height: 25rem;
+      margin: 0 auto;
       overflow: hidden;
     }
 
@@ -409,10 +409,12 @@ a:hover {
       transition: transform 0.5s ease-in-out;
     }
 
-    &__crm-carousel-images img,
-    &__shop-carousel-images img,
-    &__website-carousel-images img,
-    &__note-carousel-images img {
+    img {
+      height: 100%;
+      width: auto;
+    }
+
+    &__crm-carousel-images img {
       width: 100%;
       height: auto;
     }
@@ -430,11 +432,11 @@ a:hover {
     }
 
     &__carousel-prev-button {
-      margin: 2.5rem 3rem 0 0;
+      margin: 1.5rem 1.5rem 0 0;
     }
 
     &__carousel-next-button {
-      margin: 2.5rem 0 0 3rem;
+      margin: 1.5rem 0 0 1.5rem;
     }
 
     &__shop-carousel-prev-button,
@@ -474,12 +476,11 @@ a:hover {
     grid-template-columns: 1fr 1fr;
   }*/
 
-    /*.crm-img {
+    .crm-img {
       width: 900px;
-      height: auto;
+      height: 24rem;
       object-fit: cover;
-      border-radius: 0.1rem;
-    }*/
+    }
 
     .mobile-img {
       height: 35rem;
@@ -499,7 +500,7 @@ a:hover {
     &__button-div-left {
       display: flex;
       justify-content: left;
-      margin: -3rem 0 0 10%;
+      margin: -4rem 0 0 10%;
       padding-right: 3rem;
       column-gap: 10rem;
       width: 40rem;
@@ -547,7 +548,7 @@ a:hover {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
 
     &__h2-headline {
-      margin: -3rem auto 3rem auto;
+      margin: 1rem auto 3rem auto;
       font-size: 2rem;
       color: white;
     }
@@ -564,8 +565,8 @@ a:hover {
     }
 
     &__top-div {
-      margin-bottom: 7rem;
-      padding-right: 7%;
+      margin-bottom: 10rem;
+      padding-right: 8%;
       box-sizing: border-box;
     }
 
@@ -632,25 +633,24 @@ a:hover {
 
     &__contact-div {
       @include column-flex-direction-left-side();
-      width: 100%;
-      margin-top: 5rem;
-      padding: 0;
+      width: 65%;
+      margin: 3rem 0 0 0;
     }
 
     &__question-headline {
       font-size: 1.5rem;
-      margin: 1rem 0 0 5%;
+      margin: 1rem 0 0 0;
       color: white;
     }
 
     &__text {
-      margin: 1rem 0 0 5%;
+      margin: 1rem 0 0 0;
       font-size: 1.3rem;
       color: white;
     }
 
     &__mail-address {
-      margin: 1rem 0 1rem 5%;
+      margin: 1rem 0;
       font-size: 1.7rem;
       display: flex;
       align-items: center;
@@ -670,8 +670,8 @@ a:hover {
     }
 
     &__sozial-media-div {
-      margin: 1rem 0 0 3%;
-      width: 13rem;
+      margin: 1rem 0 0 1%;
+      width: 11rem;
       display: flex;
       justify-content: space-evenly;
     }
@@ -830,8 +830,8 @@ a:hover {
     }
 
     &__sozial-media-div {
-      width: 15rem;
-      margin-top: 1.5rem;
+      width: 12rem;
+      margin: 1.5rem 0 0 3%;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
@@ -876,14 +876,14 @@ a:hover {
 
     &__portrait-div {
       width: 10rem;
-      margin: 5rem auto 3rem auto;
+      margin: 3rem auto 5rem auto;
       padding: 0;
     }
 
     &__img {
       /*@include gray-border-for-section();*/
       /*border-color: white;*/
-      width: 13rem;
+      width: 15rem;
       height: auto;
       border-width: 0.4rem;
     }
@@ -914,8 +914,8 @@ a:hover {
     &__project-div {
       width: 95%;
       margin: 5rem auto;
-      padding: 0;
-      row-gap: 7rem;
+      padding: 1rem 0 0 0;
+      row-gap: 10rem;
     }
 
     &__crm-program,
@@ -963,7 +963,8 @@ a:hover {
       flex-direction: column;
       align-items: start;
       justify-content: center;
-      width: 100%;
+      width: 95%;
+      max-width: 1100px;
       margin: 0 auto;
       row-gap: 2rem;
       box-sizing: border-box;
@@ -971,8 +972,8 @@ a:hover {
 
     &__application-description-left,
     &__application-description-right {
-      margin-top: 3rem;
-      padding: 0 5%;
+      margin: 3rem auto 0 auto;
+      padding: 0;
       font-size: 1.2rem;
       color: white;
       line-height: 1.7rem;
@@ -987,10 +988,9 @@ a:hover {
     &__application-technology-div-left,
     &__application-technology-div-right {
       width: 100%;
-      max-width: 35rem;
       display: flex;
       margin: 0;
-      padding: 1rem 0 0 5%;
+
       column-gap: 0.5rem;
     }
 
@@ -1016,7 +1016,7 @@ a:hover {
     }
 
     &__crm-carousel {
-      width: 75%;
+      width: 100%;
       margin: 0;
       overflow: hidden;
     }
@@ -1024,7 +1024,7 @@ a:hover {
     &__shop-carousel,
     &__website-carousel,
     &__note-carousel {
-      width: 310px;
+      width: 311px;
       margin: 0;
       overflow: hidden;
     }
@@ -1037,10 +1037,12 @@ a:hover {
       transition: transform 0.5s ease-in-out;
     }
 
-    &__crm-carousel-images img,
-    &__shop-carousel-images img,
-    &__website-carousel-images img,
-    &__note-carousel-images img {
+    img {
+      width: auto;
+      height: 100%;
+    }
+
+    &__crm-carousel-images img {
       width: 100%;
       height: auto;
     }
@@ -1058,11 +1060,11 @@ a:hover {
     }
 
     &__carousel-prev-button {
-      margin: 2.5rem 3rem 0 0;
+      margin: 2.5rem 1.5rem 0 0;
     }
 
     &__carousel-next-button {
-      margin: 2.5rem 0 0 3rem;
+      margin: 2.5rem 0 0 1.5rem;
     }
 
     &__shop-carousel-prev-button,
@@ -1102,12 +1104,11 @@ a:hover {
     grid-template-columns: 1fr 1fr;
   }*/
 
-    /*.crm-img {
-      width: 900px;
-      height: auto;
+    .crm-img {
+      width: 1095px;
+      height: 30rem;
       object-fit: cover;
-      border-radius: 0.1rem;
-    }*/
+    }
 
     .mobile-img {
       height: 35rem;
@@ -1168,13 +1169,14 @@ a:hover {
 
   .technology-section {
     @include column-flex-direction();
-    margin: 0;
+    margin: 3rem 0;
+    padding: 7rem 0;
 
     /*border-radius: 0.2rem;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
 
     &__h2-headline {
-      margin: -3rem auto 0 auto;
+      margin: 3rem auto 1rem auto;
       font-size: 2rem;
       color: white;
     }
@@ -1213,7 +1215,7 @@ a:hover {
     }
 
     &__subdivision-div {
-      column-gap: 1rem;
+      row-gap: 1rem;
     }
 
     &__html-div,
@@ -1243,7 +1245,7 @@ a:hover {
       height: 6rem;
 
       &--github-icon {
-        width: 6rem;
+        width: 5rem;
       }
     }
   }
@@ -1251,35 +1253,34 @@ a:hover {
   .contact-section {
     @include column-flex-direction();
     margin: 5rem 0 7rem 0;
-    padding: 0 3%;
+    padding: 3rem 3% 0 3%;
 
     &__headline {
-      font-size: 1.7rem;
+      font-size: 2rem;
       margin-top: 0rem;
       color: white;
     }
 
     &__contact-div {
       @include column-flex-direction-left-side();
-      width: 100%;
-      margin-top: 3rem;
-      padding: 0;
+      width: 70%;
+      margin: 1rem 0 0 0;
     }
 
     &__question-headline {
-      font-size: 1.3rem;
-      margin: 1rem 0 0 5%;
+      font-size: 1.5rem;
+      margin: 1rem 0 0 0;
       color: white;
     }
 
     &__text {
-      margin: 1rem 0 0 5%;
-      font-size: 1.2rem;
+      margin: 1rem 0 0 0;
+      font-size: 1.3rem;
       color: white;
     }
 
     &__mail-address {
-      margin: 1rem 0 1rem 5%;
+      margin: 1rem 0;
       font-size: 1.7rem;
       display: flex;
       align-items: center;
@@ -1295,12 +1296,12 @@ a:hover {
 
     &__link {
       color: #039be5;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
     }
 
     &__sozial-media-div {
-      margin: 1rem 0 0 3%;
-      width: 13rem;
+      margin: 1rem 0 0 1%;
+      width: 11rem;
       display: flex;
       justify-content: space-evenly;
     }
@@ -1457,8 +1458,8 @@ a:hover {
     }
 
     &__sozial-media-div {
-      width: 13rem;
-      margin-top: 1rem;
+      width: 12rem;
+      margin: 1rem 0 0 3%;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
@@ -1503,7 +1504,7 @@ a:hover {
 
     &__portrait-div {
       width: 10rem;
-      margin: 5rem auto 3rem auto;
+      margin: 3rem auto 5rem auto;
       padding: 0;
     }
 
@@ -1590,16 +1591,16 @@ a:hover {
       flex-direction: column;
       align-items: start;
       justify-content: center;
-      width: 100%;
       margin: 0 auto;
+      max-width: 900px;
       row-gap: 2rem;
       box-sizing: border-box;
     }
 
     &__application-description-left,
     &__application-description-right {
-      margin-top: 3rem;
-      padding: 0 5%;
+      margin: 3rem auto 0 auto;
+      padding: 0;
       font-size: 1.2rem;
       color: white;
       line-height: 1.7rem;
@@ -1614,10 +1615,10 @@ a:hover {
     &__application-technology-div-left,
     &__application-technology-div-right {
       width: 100%;
-      max-width: 35rem;
+
       display: flex;
       margin: 0;
-      padding: 1rem 0 0 5%;
+
       column-gap: 0.5rem;
     }
 
@@ -1643,8 +1644,8 @@ a:hover {
     }
 
     &__crm-carousel {
-      width: 75%;
-      margin: 0;
+      width: 100%;
+      margin: 0 auto;
       overflow: hidden;
     }
 
@@ -1664,13 +1665,17 @@ a:hover {
       transition: transform 0.5s ease-in-out;
     }
 
-    &__crm-carousel-images img,
-    &__shop-carousel-images img,
-    &__website-carousel-images img,
-    &__note-carousel-images img {
+    /*&__crm-carousel-images img {
       width: 100%;
       height: auto;
-    }
+    }*/
+
+    /*&__shop-carousel-images img,
+    &__website-carousel-images img,
+    &__note-carousel-images img {
+      width: auto;
+      height: 100%;
+    }*/
 
     .carousel-button {
       transform: translateY(-50%);
@@ -1685,11 +1690,11 @@ a:hover {
     }
 
     &__carousel-prev-button {
-      margin: 2.5rem 2rem 0 0;
+      margin: 2.5rem 1.5rem 0 0;
     }
 
     &__carousel-next-button {
-      margin: 2.5rem 0 0 2rem;
+      margin: 2.5rem 0 0 1.5rem;
     }
 
     &__shop-carousel-prev-button,
@@ -1729,12 +1734,11 @@ a:hover {
     grid-template-columns: 1fr 1fr;
   }*/
 
-    /*.crm-img {
-    width: 55rem;
-    height: auto;
-    object-fit: cover;
-    border-radius: 0.1rem;
-  }*/
+    .crm-img {
+      width: 930px;
+      height: 25rem;
+      object-fit: cover;
+    }
 
     .mobile-img {
       height: 35rem;
@@ -1796,12 +1800,13 @@ a:hover {
   .technology-section {
     @include column-flex-direction();
     margin: 0;
+    padding: 7rem 0;
 
     /*border-radius: 0.2rem;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
 
     &__h2-headline {
-      margin: -3rem auto 0 auto;
+      margin: 3rem auto 0 auto;
       font-size: 2rem;
       color: white;
     }
@@ -1830,7 +1835,7 @@ a:hover {
     &__version-control-div,
     &__database-technology-div {
       @include column-flex-direction();
-      row-gap: 0.5rem;
+      row-gap: 1.5rem;
     }
 
     &__headline {
@@ -1870,43 +1875,41 @@ a:hover {
       height: 6rem;
 
       &--github-icon {
-        width: 6rem;
+        width: 5rem;
       }
     }
   }
 
   .contact-section {
     @include column-flex-direction();
-    margin: 7rem 0 7rem 0;
+    margin: 7rem 0;
     padding: 0 3%;
 
     &__headline {
-      font-size: 1.7rem;
+      font-size: 2rem;
       margin-top: 0rem;
       color: white;
     }
 
     &__contact-div {
       @include column-flex-direction-left-side();
-      width: 100%;
-      margin-top: 3rem;
-      padding: 0;
+      margin: 0 0 0 0;
     }
 
     &__question-headline {
-      font-size: 1.3rem;
-      margin: 1rem 0 0 5%;
+      font-size: 1.5rem;
+      margin: 1rem 0 0 0;
       color: white;
     }
 
     &__text {
-      margin: 1rem 0 0 5%;
-      font-size: 1.2rem;
+      margin: 1rem 0 0 0;
+      font-size: 1.3rem;
       color: white;
     }
 
     &__mail-address {
-      margin: 1rem 0 1rem 5%;
+      margin: 1rem 0;
       font-size: 1.7rem;
       display: flex;
       align-items: center;
@@ -1926,8 +1929,8 @@ a:hover {
     }
 
     &__sozial-media-div {
-      margin: 1rem 0 0 3%;
-      width: 13rem;
+      margin: 1rem 0 0 1%;
+      width: 11rem;
       display: flex;
       justify-content: space-evenly;
     }
@@ -2086,8 +2089,8 @@ a:hover {
     }
 
     &__sozial-media-div {
-      width: 10rem;
-      margin-top: 1rem;
+      width: 11rem;
+      margin: 1rem 0 0 3%;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
@@ -2220,7 +2223,7 @@ a:hover {
       flex-direction: column;
       align-items: start;
       justify-content: center;
-      width: 100%;
+      max-width: 600px;
       margin: 0 auto;
       row-gap: 2rem;
       box-sizing: border-box;
@@ -2228,8 +2231,8 @@ a:hover {
 
     &__application-description-left,
     &__application-description-right {
-      margin-top: 1.5rem;
-      padding: 0 5%;
+      margin: 1.5rem auto 0 auto;
+      padding: 0;
       font-size: 1.1rem;
       color: white;
       line-height: 1.7rem;
@@ -2243,12 +2246,11 @@ a:hover {
 
     &__application-technology-div-left,
     &__application-technology-div-right {
-      width: 95%;
-      max-width: 33rem;
+      width: 100%;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       margin: 0;
-      padding-left: 5%;
+
       gap: 0.3rem;
     }
 
@@ -2268,7 +2270,6 @@ a:hover {
 
     &__img-div {
       width: 100%;
-
       margin: 0 auto;
       padding: 0.3rem 0;
       box-sizing: border-box;
@@ -2276,14 +2277,14 @@ a:hover {
 
     &__crm-carousel {
       width: 100%;
-      margin: auto;
+      margin: 0 auto;
       overflow: hidden;
     }
 
     &__shop-carousel,
     &__website-carousel,
     &__note-carousel {
-      width: 260px;
+      width: 267px;
       margin: 0;
       overflow: hidden;
     }
@@ -2296,13 +2297,17 @@ a:hover {
       transition: transform 0.5s ease-in-out;
     }
 
-    &__crm-carousel-images img,
-    &__shop-carousel-images img,
-    &__website-carousel-images img,
-    &__note-carousel-images img {
+    /*&__crm-carousel-images img {
       width: 100%;
       height: auto;
-    }
+    }*/
+
+    /*&__shop-carousel-images img,
+    &__website-carousel-images img,
+    &__note-carousel-images img {
+      width: auto;
+      height: 100%;
+    }*/
 
     .carousel-button {
       transform: translateY(-50%);
@@ -2361,12 +2366,11 @@ a:hover {
     grid-template-columns: 1fr 1fr;
   }*/
 
-    /*.crm-img {
-    width: 55rem;
-    height: auto;
-    object-fit: cover;
-    border-radius: 0.1rem;
-  }*/
+    .crm-img {
+      width: 560px;
+      height: 15rem;
+      object-fit: cover;
+    }
 
     .mobile-img {
       height: 30rem;
@@ -2387,7 +2391,7 @@ a:hover {
       display: flex;
       justify-content: center;
       margin: 4rem 0;
-      padding-right: 1rem;
+      padding-right: 2rem;
       column-gap: 5rem;
       width: 100%;
     }
@@ -2396,7 +2400,7 @@ a:hover {
       display: flex;
       justify-content: center;
       margin: 4rem 0;
-      padding-right: 1rem;
+      padding-right: 2rem;
       column-gap: 5rem;
       width: 100%;
     }
@@ -2427,13 +2431,14 @@ a:hover {
 
   .technology-section {
     @include column-flex-direction();
-    margin: 0;
+    margin: 3rem 0 5rem 0;
+    padding: 7rem 0 5rem 0;
 
     /*border-radius: 0.2rem;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
 
     &__h2-headline {
-      margin: -3rem auto 0 auto;
+      margin: 3 auto 0 auto;
       font-size: 2rem;
       color: white;
     }
@@ -2462,7 +2467,7 @@ a:hover {
     &__version-control-div,
     &__database-technology-div {
       @include column-flex-direction();
-      row-gap: 0.5rem;
+      row-gap: 1rem;
     }
 
     &__headline {
@@ -2472,7 +2477,7 @@ a:hover {
     }
 
     &__subdivision-div {
-      column-gap: 1rem;
+      row-gap: 1rem;
     }
 
     &__html-div,
@@ -2502,14 +2507,14 @@ a:hover {
       height: 6rem;
 
       &--github-icon {
-        width: 6rem;
+        width: 5rem;
       }
     }
   }
 
   .contact-section {
     @include column-flex-direction();
-    margin: 3rem 0 5rem 0;
+    margin: 5rem 0;
     padding: 0 3%;
 
     &__headline {
@@ -2520,25 +2525,23 @@ a:hover {
 
     &__contact-div {
       @include column-flex-direction-left-side();
-      width: 100%;
-      margin-top: 1rem;
-      padding: 0;
+      margin: 0;
     }
 
     &__question-headline {
       font-size: 1.2rem;
-      margin: 1rem 0 0 5%;
+      margin: 1rem 0 0 0;
       color: white;
     }
 
     &__text {
-      margin: 1rem 0 0 5%;
+      margin: 1rem 0 0 0;
       font-size: 1.1rem;
       color: white;
     }
 
     &__mail-address {
-      margin: 1rem 0 1rem 5%;
+      margin: 1rem 0;
       font-size: 1.5rem;
       display: flex;
       align-items: center;
@@ -2719,8 +2722,8 @@ a:hover {
     }
 
     &__sozial-media-div {
-      width: 7rem;
-      margin-top: 1rem;
+      width: 10rem;
+      margin: 1rem 0 0 5%;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
@@ -2854,16 +2857,16 @@ a:hover {
       flex-direction: column;
       align-items: start;
       justify-content: center;
-      width: 100%;
+      max-width: 400px;
       margin: 0 auto;
       row-gap: 2rem;
-      box-sizing: border-box;
     }
 
     &__application-description-left,
     &__application-description-right {
-      margin-top: 1rem;
-      padding: 0 3%;
+      width: 100%;
+      margin: 1rem auto 0 auto;
+      padding: 0;
       font-size: 1rem;
       color: white;
       line-height: 1.5rem;
@@ -2877,11 +2880,9 @@ a:hover {
 
     &__application-technology-div-left,
     &__application-technology-div-right {
-      width: 95%;
-      max-width: 20rem;
+      width: 100%;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      margin-left: 3%;
       padding: 0;
       gap: 0.3rem;
     }
@@ -2902,7 +2903,6 @@ a:hover {
 
     &__img-div {
       width: 100%;
-
       margin: 0 auto;
       padding: 0.3rem 0;
       box-sizing: border-box;
@@ -2910,14 +2910,14 @@ a:hover {
 
     &__crm-carousel {
       width: 100%;
-      margin: auto;
+      margin: 0 auto;
       overflow: hidden;
     }
 
     &__shop-carousel,
     &__website-carousel,
     &__note-carousel {
-      width: 200px;
+      width: 222px;
       margin: 0;
       overflow: hidden;
     }
@@ -2930,13 +2930,17 @@ a:hover {
       transition: transform 0.5s ease-in-out;
     }
 
-    &__crm-carousel-images img,
-    &__shop-carousel-images img,
-    &__website-carousel-images img,
-    &__note-carousel-images img {
+    /*&__crm-carousel-images img {
       width: 100%;
       height: auto;
-    }
+    }*/
+
+    /*&__shop-carousel-images img,
+    &__website-carousel-images img,
+    &__note-carousel-images img {
+      width: auto;
+      height: 100%;
+    }*/
 
     .carousel-button {
       transform: translateY(-50%);
@@ -2961,13 +2965,13 @@ a:hover {
     &__shop-carousel-prev-button,
     &__website-carousel-prev-button,
     &__note-carousel-prev-button {
-      margin-right: 1rem;
+      margin-right: 0.5rem;
     }
 
     &__shop-carousel-next-button,
     &__website-carousel-next-button,
     &__note-carousel-next-button {
-      margin-left: 1rem;
+      margin-left: 0.5rem;
     }
 
     /*.carousel-button:hover {
@@ -2995,12 +2999,12 @@ a:hover {
     grid-template-columns: 1fr 1fr;
   }*/
 
-    /*.crm-img {
-    width: 55rem;
-    height: auto;
-    object-fit: cover;
-    border-radius: 0.1rem;
-  }*/
+    .crm-img {
+      width: 295.5px;
+      height: 7.3rem;
+      object-fit: cover;
+      border-radius: 0.1rem;
+    }
 
     .mobile-img {
       height: 25rem;
@@ -3059,13 +3063,12 @@ a:hover {
 
   .technology-section {
     @include column-flex-direction();
-    margin: -3rem 0 0 0;
-
+    padding: 5rem 0;
     /*border-radius: 0.2rem;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
 
     &__h2-headline {
-      margin: -3rem auto 0 auto;
+      margin: 3rem auto 0 auto;
       font-size: 1.7rem;
       color: white;
     }
@@ -3135,7 +3138,7 @@ a:hover {
       height: 5rem;
 
       &--github-icon {
-        width: 5rem;
+        width: 4rem;
       }
     }
   }
@@ -3153,25 +3156,23 @@ a:hover {
 
     &__contact-div {
       @include column-flex-direction-left-side();
-      width: 100%;
-      margin: 0;
-      padding: 0;
+      margin-top: -1rem;
     }
 
     &__question-headline {
       font-size: 1.1rem;
-      margin: 1rem 0 0 5%;
+      margin: 1rem 0 0 0;
       color: white;
     }
 
     &__text {
-      margin: 1rem 0 0 5%;
+      margin: 1rem 0 0 0;
       font-size: 1rem;
       color: white;
     }
 
     &__mail-address {
-      margin: 1rem 0 1rem 5%;
+      margin: 1rem 0;
       font-size: 1.5rem;
       display: flex;
       align-items: center;
@@ -3192,7 +3193,7 @@ a:hover {
 
     &__sozial-media-div {
       margin: 0.3rem 0 0 3%;
-      width: 7rem;
+      width: 8rem;
       display: flex;
       justify-content: space-evenly;
     }
@@ -3355,8 +3356,8 @@ a:hover {
     }
 
     &__sozial-media-div {
-      width: 5rem;
-      margin-top: 1rem;
+      width: 8rem;
+      margin: 1rem 0 0 7%;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
@@ -3490,7 +3491,6 @@ a:hover {
       flex-direction: column;
       align-items: start;
       justify-content: center;
-      width: 100%;
       margin: 0 auto;
       row-gap: 2rem;
       box-sizing: border-box;
@@ -3498,8 +3498,8 @@ a:hover {
 
     &__application-description-left,
     &__application-description-right {
-      margin-top: 1rem;
-      padding: 0 3%;
+      margin-top: 1rem auto 0 auto;
+      padding: 0;
       font-size: 1rem;
       color: white;
       line-height: 1.5rem;
@@ -3537,7 +3537,6 @@ a:hover {
 
     &__img-div {
       width: 100%;
-
       margin: 0 auto;
       padding: 0.3rem 0;
       box-sizing: border-box;
@@ -3545,7 +3544,7 @@ a:hover {
 
     &__crm-carousel {
       width: 100%;
-      margin: auto;
+      margin: 0 auto;
       overflow: hidden;
     }
 
@@ -3565,13 +3564,17 @@ a:hover {
       transition: transform 0.5s ease-in-out;
     }
 
-    &__crm-carousel-images img,
-    &__shop-carousel-images img,
-    &__website-carousel-images img,
-    &__note-carousel-images img {
+    /*&__crm-carousel-images img {
       width: 100%;
       height: auto;
-    }
+    }*/
+
+    /*&__shop-carousel-images img,
+    &__website-carousel-images img,
+    &__note-carousel-images img {
+      width: auto;
+      height: 100%;
+    }*/
 
     .carousel-button {
       transform: translateY(-50%);
@@ -3630,15 +3633,14 @@ a:hover {
     grid-template-columns: 1fr 1fr;
   }*/
 
-    /*.crm-img {
-    width: 55rem;
-    height: auto;
-    object-fit: cover;
-    border-radius: 0.1rem;
-  }*/
+    .crm-img {
+      width: 269px;
+      height: 6.5rem;
+      object-fit: cover;
+    }
 
     .mobile-img {
-      height: 25rem;
+      height: 23rem;
       border-radius: 0.1rem;
     }
 
@@ -3694,13 +3696,13 @@ a:hover {
 
   .technology-section {
     @include column-flex-direction();
-    margin: -3rem 0 0 0;
+    padding: 3rem 0;
 
     /*border-radius: 0.2rem;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
 
     &__h2-headline {
-      margin: -3rem auto 0 auto;
+      margin: 3rem auto 0 auto;
       font-size: 1.7rem;
       color: white;
     }
@@ -3770,7 +3772,7 @@ a:hover {
       height: 5rem;
 
       &--github-icon {
-        width: 5rem;
+        width: 4rem;
       }
     }
   }
@@ -3788,25 +3790,23 @@ a:hover {
 
     &__contact-div {
       @include column-flex-direction-left-side();
-      width: 100%;
-      margin: 0;
-      padding: 0;
+      margin: -1rem 0 0 0;
     }
 
     &__question-headline {
       font-size: 1.1rem;
-      margin: 1rem 0 0 5%;
+      margin: 1rem 0 0 0;
       color: white;
     }
 
     &__text {
-      margin: 1rem 0 0 5%;
+      margin: 1rem 0 0 0;
       font-size: 1rem;
       color: white;
     }
 
     &__mail-address {
-      margin: 1rem 0 1rem 5%;
+      margin: 1rem 0;
       font-size: 1.3rem;
       display: flex;
       align-items: center;
@@ -3827,7 +3827,7 @@ a:hover {
 
     &__sozial-media-div {
       margin: 0.3rem 0 0 3%;
-      width: 5rem;
+      width: 7rem;
       display: flex;
       justify-content: space-evenly;
     }
