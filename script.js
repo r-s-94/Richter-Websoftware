@@ -13,7 +13,7 @@ function crmMoveSlide(step) {
   }
 
   if (currentCRMIndex >= totalImages) {
-    currentIndex = 0;
+    currentCRMIndex = 0;
   }
 
   const offset = -currentCRMIndex * 100;
