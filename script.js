@@ -1,4 +1,4 @@
-let currentIndex = 0;
+let currentCRMIndex = 0;
 
 function crmMoveSlide(step) {
   const images = document.querySelectorAll(
@@ -6,22 +6,24 @@ function crmMoveSlide(step) {
   );
   const totalImages = images.length;
 
-  currentIndex += step;
+  currentCRMIndex += step;
 
-  if (currentIndex < 0) {
-    currentIndex = totalImages - 1;
+  if (currentCRMIndex < 0) {
+    currentCRMIndex = totalImages - 1;
   }
 
-  if (currentIndex >= totalImages) {
+  if (currentCRMIndex >= totalImages) {
     currentIndex = 0;
   }
 
-  const offset = -currentIndex * 100;
+  const offset = -currentCRMIndex * 100;
 
   document.querySelector(
     ".project-section__crm-carousel-images"
   ).style.transform = `translateX(${offset}%)`;
 }
+
+let currentShopIndex = 0;
 
 function shopMoveSlide(step) {
   const images = document.querySelectorAll(
@@ -29,22 +31,24 @@ function shopMoveSlide(step) {
   );
   const totalImages = images.length;
 
-  currentIndex += step;
+  currentShopIndex += step;
 
-  if (currentIndex < 0) {
-    currentIndex = totalImages - 1;
+  if (currentShopIndex < 0) {
+    currentShopIndex = totalImages - 1;
   }
 
-  if (currentIndex >= totalImages) {
-    currentIndex = 0;
+  if (currentShopIndex >= totalImages) {
+    currentShopIndex = 0;
   }
 
-  const offset = -currentIndex * 100;
+  const offset = -currentShopIndex * 100;
 
   document.querySelector(
     ".project-section__shop-carousel-images"
   ).style.transform = `translateX(${offset}%)`;
 }
+
+let currentWebsiteIndex = 0;
 
 function websiteMoveSlide(step) {
   const images = document.querySelectorAll(
@@ -52,22 +56,24 @@ function websiteMoveSlide(step) {
   );
   const totalImages = images.length;
 
-  currentIndex += step;
+  currentWebsiteIndex += step;
 
-  if (currentIndex < 0) {
-    currentIndex = totalImages - 1;
+  if (currentWebsiteIndex < 0) {
+    currentWebsiteIndex = totalImages - 1;
   }
 
-  if (currentIndex >= totalImages) {
-    currentIndex = 0;
+  if (currentWebsiteIndex >= totalImages) {
+    currentWebsiteIndex = 0;
   }
 
-  const offset = -currentIndex * 100;
+  const offset = -currentWebsiteIndex * 100;
 
   document.querySelector(
     ".project-section__website-carousel-images"
   ).style.transform = `translateX(${offset}%)`;
 }
+
+let currentNoteIndex = 0;
 
 function noteAppMoveSlide(step) {
   const images = document.querySelectorAll(
@@ -75,17 +81,17 @@ function noteAppMoveSlide(step) {
   );
   const totalImages = images.length;
 
-  currentIndex += step;
+  currentNoteIndex += step;
 
-  if (currentIndex < 0) {
-    currentIndex = totalImages - 1;
+  if (currentNoteIndex < 0) {
+    currentNoteIndex = totalImages - 1;
   }
 
-  if (currentIndex >= totalImages) {
-    currentIndex = 0;
+  if (currentNoteIndex >= totalImages) {
+    currentNoteIndex = 0;
   }
 
-  const offset = -currentIndex * 100;
+  const offset = -currentNoteIndex * 100;
 
   document.querySelector(
     ".project-section__note-carousel-images"
