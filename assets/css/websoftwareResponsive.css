@@ -2281,7 +2281,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 95%;
   }
   .head-section__description-div {
     display: flex;
@@ -2290,7 +2290,7 @@ a:hover {
     justify-content: center;
     width: 100%;
     margin-left: 0rem;
-    padding: 0.5rem 1% 0.5rem 3%;
+    padding: 0.7rem 1% 0.5rem 5%;
     row-gap: 0.3rem;
   }
   .head-section__h2-headline {

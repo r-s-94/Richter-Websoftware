@@ -2757,14 +2757,14 @@ a:hover {
       margin-top: 0;
       padding: 1rem 0;
       @include column-flex-direction();
-      width: 90%;
+      width: 95%;
     }
 
     &__description-div {
       @include column-flex-direction-left-side();
       width: 100%;
       margin-left: 0rem;
-      padding: 0.5rem 1% 0.5rem 3%;
+      padding: 0.7rem 3% 0.5rem 5%;
       row-gap: 0.3rem;
     }
 
