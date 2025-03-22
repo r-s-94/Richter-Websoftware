@@ -60,12 +60,16 @@ a:hover {
   text-decoration: underline;
 }*/
 @media screen and (min-width: 1700px) {
-  .nav-bar {
-    height: 3rem;
+  .nav-section__nav-bar {
+    position: static;
+    height: 4rem;
   }
-  .control-link {
+  .nav-section__link {
     color: white;
     font-size: 1.3rem;
+  }
+  .nav-section__hamburger-menu {
+    display: none;
   }
   .head-section {
     display: flex;
@@ -78,7 +82,7 @@ a:hover {
     }*/
   }
   .head-section__decoration-div {
-    margin: 5rem 1% 0 1%;
+    margin: 7rem 1% 0 1%;
     padding: 0;
     column-gap: 3rem;
   }
@@ -102,12 +106,12 @@ a:hover {
     align-items: start;
     justify-content: center;
     width: 50%;
-    margin-left: 0rem;
-    padding: 3rem 1% 3rem 7%;
+    margin-left: 0;
+    padding: 3rem 1% 3rem 10%;
     row-gap: 0.3rem;
   }
   .head-section__h2-headline {
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: white;
     margin: 0;
     padding: 0 3%;
@@ -132,13 +136,12 @@ a:hover {
     justify-content: space-evenly;
     align-items: center;
   }
-  .head-section__sozial-media-img {
-    width: 2.3rem;
+  .head-section__github-img {
+    width: 2.7rem;
   }
-  .head-section__sozial-media-img--github-icon {
-    width: 2.3rem;
-    background-color: white;
-    border: 0.3rem;
+  .head-section__linkedin-img {
+    width: 2.9rem;
+    margin-top: 0.3rem;
   }
   .head-section__link {
     margin: -0.5rem 0 0 3%;
@@ -146,20 +149,21 @@ a:hover {
   }
   .head-section__button {
     font-size: 1.1rem;
-    width: 12rem;
-    height: 2rem;
+    width: 13rem;
+    height: 2.3rem;
     column-gap: 0.3rem;
     transition: ease-in-out;
     border-radius: 0.1rem;
   }
   .head-section__icon {
-    width: 1.5rem;
+    width: 1.6rem;
     height: auto;
   }
   .head-section__portrait-div {
     width: 50%;
     margin: 0;
-    padding-left: 7%;
+    display: flex;
+    justify-content: center;
   }
   .head-section__img {
     /*@include gray-border-for-section();*/
@@ -227,20 +231,22 @@ a:hover {
   }
   .project-section__text {
     font-size: 1.5rem;
-    margin: 1.5rem 5%;
+    margin: 3rem 5% 0 5%;
     color: white;
   }
   .project-section__project-div {
     width: 95%;
-    margin: 5rem auto;
-    padding: 10rem 0 0 0;
-    row-gap: 20rem;
+    margin: 5rem auto 3rem auto;
+    padding: 3rem 0 0 0;
   }
-  .project-section__crm-program, .project-section__italiner {
-    display: flex;
+  .project-section__crm-program {
+    height: 45rem;
+  }
+  .project-section__italiner {
+    height: 53rem;
   }
   .project-section__online-shop, .project-section__note-app {
-    display: flex;
+    height: 53rem;
   }
   .project-section__headline-left {
     font-size: 1.8rem;
@@ -274,27 +280,32 @@ a:hover {
   }
   .project-section__application-description-left, .project-section__application-description-right {
     margin-top: -1rem;
-    padding: 0 5%;
     font-size: 1.3rem;
     color: white;
     line-height: 1.7rem;
   }
+  .project-section__application-description-left {
+    padding: 0 5% 0 7%;
+  }
+  .project-section__application-description-right {
+    padding: 0 5%;
+  }
   .project-section__application-technology-div-left, .project-section__application-technology-div-right {
     width: 100%;
-    max-width: 35rem;
+    max-width: 40rem;
     display: flex;
     margin: 0;
     padding: 1rem 0 0 5%;
-    column-gap: 0.5rem;
+    column-gap: 0.7rem;
   }
   .project-section__application-technology-div-left {
-    padding: 0 0 0 4.3%;
+    padding-left: 7%;
   }
   .project-section__application-technology {
     background-color: #0086d0;
     border-radius: 0.5rem;
     padding: 1.5px 4px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: white;
   }
   .project-section__img-div {
@@ -337,10 +348,10 @@ a:hover {
     border-radius: 0.1rem;
   }
   .project-section__carousel-prev-button {
-    margin: 1.5rem 1.5rem 0 0;
+    margin: 1.5rem 1rem 0 0.7rem;
   }
   .project-section__carousel-next-button {
-    margin: 1.5rem 0 0 1.5rem;
+    margin: 1.5rem 0.7rem 0 1rem;
   }
   .project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__note-carousel-prev-button {
     margin-right: 3rem;
@@ -383,8 +394,8 @@ a:hover {
     background-color: #006db5;
     color: white;
     font-size: 1.3rem;
-    width: 14rem;
-    height: 2.1rem;
+    width: 15rem;
+    height: 2.3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -396,27 +407,19 @@ a:hover {
     align-items: center;
     justify-content: center;
     margin: 10rem 0;
-    padding: 10rem 0;
+    padding: 7rem 0;
     /*border-radius: 0.2rem;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
   }
   .technology-section__h2-headline {
-    margin: 1rem auto 3rem auto;
+    margin: 1rem auto 5rem auto;
     font-size: 2rem;
     color: white;
   }
   .technology-section__technology-div {
     width: 95%;
     padding: 3rem 0;
-  }
-  .technology-section__top-div, .technology-section__bottom-div {
-    width: 100%;
-    column-gap: 3rem;
-  }
-  .technology-section__top-div {
-    margin-bottom: 10rem;
-    padding-right: 8%;
-    box-sizing: border-box;
+    column-gap: 4rem;
   }
   .technology-section__markup-language-div, .technology-section__programming-language-div, .technology-section__framework-div, .technology-section__version-control-div, .technology-section__database-technology-div {
     display: flex;
@@ -436,7 +439,7 @@ a:hover {
   .technology-section__text {
     color: white;
     font-size: 1.5rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
   }
   .technology-section__img-div {
     display: flex;
@@ -447,9 +450,6 @@ a:hover {
   .technology-section__img {
     width: 8rem;
     height: 8rem;
-  }
-  .technology-section__img--github-icon {
-    width: 7rem;
   }
   .contact-section {
     display: flex;
@@ -500,18 +500,18 @@ a:hover {
     font-size: 1.3rem;
   }
   .contact-section__sozial-media-div {
-    margin: 1rem 0 0 1%;
+    margin: 0.5rem 0 0 1%;
     width: 11rem;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
   }
-  .contact-section__sozial-media-img {
-    width: 2rem;
+  .contact-section__github-img {
+    width: 2.5rem;
   }
-  .contact-section__sozial-media-img--github-icon {
-    width: 2rem;
-    background-color: white;
-    border: 0.3rem;
+  .contact-section__linkedin-img {
+    width: 2.8rem;
+    margin-top: 0.2rem;
   }
   .footer-section {
     display: flex;
@@ -578,12 +578,18 @@ a:hover {
   }
 }
 @media screen and (max-width: 1700px) {
-  .nav-bar {
-    height: 3rem;
+  .nav-section {
+    height: 5rem;
   }
-  .control-link {
+  .nav-section__nav-bar {
+    position: static;
+  }
+  .nav-section__link {
     color: white;
     font-size: 1.3rem;
+  }
+  .nav-section__hamburger-menu {
+    display: none;
   }
   .head-section {
     display: flex;
@@ -596,7 +602,7 @@ a:hover {
     }*/
   }
   .head-section__decoration-div {
-    margin: 5rem 1% 0 1%;
+    margin: 7rem 1% 1rem 1%;
     padding: 0;
     column-gap: 3rem;
   }
@@ -626,7 +632,7 @@ a:hover {
     row-gap: 0.3rem;
   }
   .head-section__h2-headline {
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: white;
     margin: 0;
     padding: 0 3%;
@@ -646,18 +652,17 @@ a:hover {
   }
   .head-section__sozial-media-div {
     width: 12rem;
-    margin: 1.5rem 0 0 3%;
+    margin: 1rem 0 0 3%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   }
-  .head-section__sozial-media-img {
-    width: 2.3rem;
+  .head-section__github-img {
+    width: 2.7rem;
   }
-  .head-section__sozial-media-img--github-icon {
-    width: 2.3rem;
-    background-color: white;
-    border: 0.3rem;
+  .head-section__linkedin-img {
+    width: 3rem;
+    margin-top: 0.2rem;
   }
   .head-section__link {
     margin-left: 3%;
@@ -665,14 +670,14 @@ a:hover {
   }
   .head-section__button {
     font-size: 1.1rem;
-    width: 12rem;
-    height: 2rem;
+    width: 13rem;
+    height: 2.3rem;
     column-gap: 0.3rem;
     transition: ease-in-out;
     border-radius: 0.1rem;
   }
   .head-section__icon {
-    width: 1.5rem;
+    width: 1.6rem;
     height: auto;
   }
   .head-section__portrait-div {
@@ -692,7 +697,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+    margin: 0;
     /*background-color: black;*/
     /*background-color: white;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
@@ -741,26 +746,34 @@ a:hover {
     flex-direction: column;
     align-items: center;
     font-size: 2rem;
-    margin: 3rem auto 2rem auto;
+    margin: 7rem auto 2rem auto;
     color: white;
   }
   .project-section__text {
     font-size: 1.3rem;
-    margin: 1.5rem 5%;
+    margin: 3rem 5% 0 5%;
     color: white;
   }
   .project-section__project-div {
     width: 95%;
     margin: 5rem auto;
     padding: 1rem 0 0 0;
-    row-gap: 10rem;
   }
-  .project-section__crm-program, .project-section__italiner {
+  .project-section__crm-program {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 70rem;
+  }
+  .project-section__italiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 75rem;
   }
   .project-section__online-shop, .project-section__note-app {
     display: flex;
@@ -768,6 +781,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 73rem;
   }
   .project-section__headline-left {
     font-size: 1.8rem;
@@ -809,13 +823,13 @@ a:hover {
     width: 100%;
     display: flex;
     margin: 0;
-    column-gap: 0.5rem;
+    column-gap: 0.7rem;
   }
   .project-section__application-technology {
     background-color: #0086d0;
     border-radius: 0.5rem;
     padding: 1.5px 4px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: white;
   }
   .project-section__img-div {
@@ -904,8 +918,8 @@ a:hover {
     background-color: #006db5;
     color: white;
     font-size: 1.3rem;
-    width: 14rem;
-    height: 2.1rem;
+    width: 15rem;
+    height: 2.3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -929,19 +943,11 @@ a:hover {
   .technology-section__technology-div {
     width: 95%;
     padding: 3rem 0;
-  }
-  .technology-section__top-div, .technology-section__bottom-div {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 3rem;
-  }
-  .technology-section__top-div {
-    margin-bottom: 5rem;
-    padding-right: 0;
-    box-sizing: border-box;
+    row-gap: 5rem;
   }
   .technology-section__markup-language-div, .technology-section__programming-language-div, .technology-section__framework-div, .technology-section__version-control-div, .technology-section__database-technology-div {
     display: flex;
@@ -967,7 +973,7 @@ a:hover {
   .technology-section__text {
     color: white;
     font-size: 1.5rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
   }
   .technology-section__img-div {
     display: flex;
@@ -979,9 +985,6 @@ a:hover {
     width: 6rem;
     height: 6rem;
   }
-  .technology-section__img--github-icon {
-    width: 5rem;
-  }
   .contact-section {
     display: flex;
     flex-direction: column;
@@ -992,7 +995,7 @@ a:hover {
   }
   .contact-section__headline {
     font-size: 2rem;
-    margin-top: 0rem;
+    margin-top: 1rem;
     color: white;
   }
   .contact-section__contact-div {
@@ -1031,18 +1034,17 @@ a:hover {
     font-size: 1.5rem;
   }
   .contact-section__sozial-media-div {
-    margin: 1rem 0 0 1%;
+    margin: 0.7rem 0 0 1%;
     width: 11rem;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
   }
-  .contact-section__sozial-media-img {
-    width: 2rem;
+  .contact-section__github-img {
+    width: 2.5rem;
   }
-  .contact-section__sozial-media-img--github-icon {
-    width: 2rem;
-    background-color: white;
-    border: 0.3rem;
+  .contact-section__linkedin-img {
+    width: 2.7rem;
   }
   .footer-section {
     display: flex;
@@ -1109,10 +1111,7 @@ a:hover {
   }
 }
 @media screen and (max-width: 1400px) {
-  .nav-bar {
-    height: 3rem;
-  }
-  .control-link {
+  .nav-section__link {
     color: white;
     font-size: 1.3rem;
   }
@@ -1127,7 +1126,7 @@ a:hover {
     }*/
   }
   .head-section__decoration-div {
-    margin: 5rem 1% 0 1%;
+    margin: 7rem 1% 0 1%;
     padding: 0;
     column-gap: 3rem;
   }
@@ -1157,7 +1156,7 @@ a:hover {
     row-gap: 0.3rem;
   }
   .head-section__h2-headline {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: white;
     margin: 0;
     padding: 0 3%;
@@ -1176,17 +1175,13 @@ a:hover {
   .head-section__sozial-media-div {
     width: 12rem;
     margin: 1rem 0 0 3%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
   }
-  .head-section__sozial-media-img {
-    width: 2.3rem;
+  .head-section__github-img {
+    width: 2.7rem;
   }
-  .head-section__sozial-media-img--github-icon {
-    width: 2.3rem;
-    background-color: white;
-    border: 0.3rem;
+  .head-section__linkedin-img {
+    width: 2.9rem;
+    margin-top: 0.2rem;
   }
   .head-section__link {
     margin-left: 3%;
@@ -1195,18 +1190,18 @@ a:hover {
   .head-section__button {
     font-size: 1.1rem;
     width: 12rem;
-    height: 2rem;
+    height: 2.3rem;
     column-gap: 0.3rem;
     transition: ease-in-out;
     border-radius: 0.1rem;
   }
   .head-section__icon {
-    width: 1.5rem;
+    width: 1.6rem;
     height: auto;
   }
   .head-section__portrait-div {
     width: 10rem;
-    margin: 3rem auto 5rem auto;
+    margin: 4rem auto;
     padding: 0;
   }
   .head-section__img {
@@ -1285,21 +1280,29 @@ a:hover {
   }
   .project-section__text {
     font-size: 1.3rem;
-    margin: 1.5rem 5%;
+    margin: 2rem 5% 0 5%;
     color: white;
   }
   .project-section__project-div {
     width: 95%;
     margin: 5rem auto;
     padding: 0;
-    row-gap: 7rem;
   }
-  .project-section__crm-program, .project-section__italiner {
+  .project-section__crm-program {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 63rem;
+  }
+  .project-section__italiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 73rem;
   }
   .project-section__online-shop, .project-section__note-app {
     display: flex;
@@ -1307,6 +1310,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 70rem;
   }
   .project-section__headline-left {
     font-size: 1.8rem;
@@ -1347,7 +1351,7 @@ a:hover {
     width: 100%;
     display: flex;
     margin: 0;
-    column-gap: 0.5rem;
+    column-gap: 0.7rem;
   }
   .project-section__application-technology {
     background-color: #0086d0;
@@ -1435,7 +1439,7 @@ a:hover {
     color: white;
     font-size: 1.1rem;
     width: 13rem;
-    height: 2.1rem;
+    height: 2.3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1452,26 +1456,13 @@ a:hover {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
   }
   .technology-section__h2-headline {
-    margin: 3rem auto 0 auto;
+    margin: 2rem auto 0 auto;
     font-size: 2rem;
     color: white;
   }
   .technology-section__technology-div {
     width: 95%;
     padding: 3rem 0;
-  }
-  .technology-section__top-div, .technology-section__bottom-div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 3rem;
-  }
-  .technology-section__top-div {
-    margin-bottom: 5rem;
-    padding-right: 0;
-    box-sizing: border-box;
   }
   .technology-section__markup-language-div, .technology-section__programming-language-div, .technology-section__framework-div, .technology-section__version-control-div, .technology-section__database-technology-div {
     display: flex;
@@ -1497,7 +1488,6 @@ a:hover {
   .technology-section__text {
     color: white;
     font-size: 1.5rem;
-    margin: 1rem 0;
   }
   .technology-section__img-div {
     display: flex;
@@ -1509,9 +1499,6 @@ a:hover {
     width: 6rem;
     height: 6rem;
   }
-  .technology-section__img--github-icon {
-    width: 5rem;
-  }
   .contact-section {
     display: flex;
     flex-direction: column;
@@ -1522,7 +1509,7 @@ a:hover {
   }
   .contact-section__headline {
     font-size: 2rem;
-    margin-top: 0rem;
+    margin-top: 1rem;
     color: white;
   }
   .contact-section__contact-div {
@@ -1560,18 +1547,17 @@ a:hover {
     font-size: 1.3rem;
   }
   .contact-section__sozial-media-div {
-    margin: 1rem 0 0 1%;
+    margin: 0.5rem 0 0 1%;
     width: 11rem;
     display: flex;
     justify-content: space-evenly;
   }
-  .contact-section__sozial-media-img {
-    width: 2rem;
+  .contact-section__github-img {
+    width: 2.5rem;
   }
-  .contact-section__sozial-media-img--github-icon {
-    width: 2rem;
-    background-color: white;
-    border: 0.3rem;
+  .contact-section__linkedin-img {
+    width: 2.8rem;
+    margin-top: 0.2rem;
   }
   .footer-section {
     display: flex;
@@ -1638,30 +1624,86 @@ a:hover {
   }
 }
 @media screen and (max-width: 1000px) {
-  .nav-bar {
+  /*.nav-section {
+    &__nav-bar {
+      @include column-flex-direction();
+      height: 9rem;
+      row-gap: 0.3rem;
+    }
+
+    &__link {
+      color: white;
+      font-size: 1.2rem;
+    }
+  }*/
+  .nav-section {
+    height: 5rem;
+  }
+  .nav-section__nav-bar {
+    position: absolute;
+    top: -12rem;
+    left: 0;
+    right: 0;
+    bottom: 12rem;
+    height: 14rem;
+    row-gap: 1rem;
+    background-color: black;
+    transition: all 0.7s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 9rem;
-    row-gap: 0.3rem;
   }
-  .control-link {
+  .nav-section__link {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+  .nav-section__hamburger-menu {
+    display: block;
+    top: 1.5rem;
+    right: 7%;
+    width: 1.7rem;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 6px;
+  }
+  .nav-section__bar1, .nav-section__bar2, .nav-section__bar3 {
+    width: 1.8rem;
+    height: 3px;
+    transition: all 0.7s ease-in-out;
+  }
+  .bar1 {
+    transform: rotate(37deg);
+    transform-origin: left bottom;
+  }
+  .bar2 {
+    opacity: 0;
+  }
+  .bar3 {
+    transform: rotate(-37deg);
+    transform-origin: left top;
+  }
+  .hamburger-interaction {
+    top: 0;
+    bottom: 7rem;
   }
   .head-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    padding: 0;
     /*&__button:hover {
       @include blue-button-hover-style();
       text-decoration: none;
     }*/
   }
   .head-section__decoration-div {
-    margin: 5rem 1% 0 1%;
+    margin: 5rem 1% -1rem 1%;
     padding: 0;
     column-gap: 1rem;
   }
@@ -1691,7 +1733,7 @@ a:hover {
     row-gap: 0.3rem;
   }
   .head-section__h2-headline {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: white;
     margin: 0;
     padding: 0 3%;
@@ -1710,17 +1752,13 @@ a:hover {
   .head-section__sozial-media-div {
     width: 11rem;
     margin: 1rem 0 0 3%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
   }
-  .head-section__sozial-media-img {
-    width: 2rem;
+  .head-section__github-img {
+    width: 2.3rem;
   }
-  .head-section__sozial-media-img--github-icon {
-    width: 2rem;
-    background-color: white;
-    border: 0.3rem;
+  .head-section__linkedin-img {
+    width: 2.6rem;
+    margin-top: 0.2rem;
   }
   .head-section__link {
     margin: 0 0 0 3%;
@@ -1729,7 +1767,7 @@ a:hover {
   .head-section__button {
     font-size: 1.1rem;
     width: 12rem;
-    height: 2rem;
+    height: 2.2rem;
     column-gap: 0.3rem;
     transition: ease-in-out;
     border-radius: 0.1rem;
@@ -1740,7 +1778,7 @@ a:hover {
   }
   .head-section__portrait-div {
     width: 10rem;
-    margin: 3rem auto 1.5rem auto;
+    margin: 4rem auto 2rem auto;
     padding: 0;
   }
   .head-section__img {
@@ -1755,7 +1793,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 3rem;
+    margin: 0;
     /*background-color: black;*/
     /*background-color: white;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
@@ -1814,7 +1852,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     font-size: 1.8rem;
-    margin: 3rem auto 2rem auto;
+    margin: 5rem auto 2rem auto;
     color: white;
   }
   .project-section__text {
@@ -1826,14 +1864,22 @@ a:hover {
     width: 95%;
     margin: 3rem auto;
     padding: 0;
-    row-gap: 5rem;
   }
-  .project-section__crm-program, .project-section__italiner {
+  .project-section__crm-program {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 53rem;
+  }
+  .project-section__italiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 67rem;
   }
   .project-section__online-shop, .project-section__note-app {
     display: flex;
@@ -1841,6 +1887,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 65rem;
   }
   .project-section__headline-left {
     font-size: 1.6rem;
@@ -1883,13 +1930,13 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0;
-    gap: 0.3rem;
+    gap: 0.5rem;
   }
   .project-section__application-technology {
     background-color: #0086d0;
     border-radius: 0.5rem;
     padding: 1.5px 3px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: white;
   }
   .project-section__img-div {
@@ -1969,9 +2016,9 @@ a:hover {
     border: none;
     background-color: #006db5;
     color: white;
-    font-size: 1rem;
+    font-size: 1.05rem;
     width: 12rem;
-    height: 2.1rem;
+    height: 2.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1988,26 +2035,14 @@ a:hover {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
   }
   .technology-section__h2-headline {
-    margin: 3 auto 0 auto;
+    margin: 1rem auto 0 auto;
     font-size: 2rem;
     color: white;
   }
   .technology-section__technology-div {
     width: 95%;
     padding: 3rem 0;
-  }
-  .technology-section__top-div, .technology-section__bottom-div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     row-gap: 3rem;
-  }
-  .technology-section__top-div {
-    margin-bottom: 5rem;
-    padding-right: 0;
-    box-sizing: border-box;
   }
   .technology-section__markup-language-div, .technology-section__programming-language-div, .technology-section__framework-div, .technology-section__version-control-div, .technology-section__database-technology-div {
     display: flex;
@@ -2045,9 +2080,6 @@ a:hover {
     width: 6rem;
     height: 6rem;
   }
-  .technology-section__img--github-icon {
-    width: 5rem;
-  }
   .contact-section {
     display: flex;
     flex-direction: column;
@@ -2058,7 +2090,7 @@ a:hover {
   }
   .contact-section__headline {
     font-size: 1.7rem;
-    margin-top: 0rem;
+    margin-top: 1rem;
     color: white;
   }
   .contact-section__contact-div {
@@ -2098,16 +2130,12 @@ a:hover {
   .contact-section__sozial-media-div {
     margin: 1rem 0 0 3%;
     width: 10rem;
-    display: flex;
-    justify-content: space-evenly;
   }
-  .contact-section__sozial-media-img {
-    width: 2rem;
+  .contact-section__github-img {
+    width: 2.3rem;
   }
-  .contact-section__sozial-media-img--github-icon {
-    width: 2rem;
-    background-color: white;
-    border: 0.3rem;
+  .contact-section__linkedin-img {
+    width: 2.3rem;
   }
   .footer-section {
     display: flex;
@@ -2178,17 +2206,50 @@ a:hover {
   }
 }
 @media screen and (max-width: 600px) {
-  .nav-bar {
+  .nav-section {
+    height: 4rem;
+  }
+  .nav-section__nav-bar {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 8rem;
-    row-gap: 0.3rem;
+    height: 11rem;
+    row-gap: 0.7rem;
   }
-  .control-link {
+  .nav-section__link {
     color: white;
     font-size: 1.1rem;
+  }
+  .nav-section__hamburger-menu {
+    display: block;
+    top: 1rem;
+    right: 7%;
+    height: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+  }
+  .nav-section__bar1, .nav-section__bar2, .nav-section__bar3 {
+    width: 1.5rem;
+    transition: all 0.7s ease-in-out;
+  }
+  .bar1 {
+    transform: rotate(40deg);
+    transform-origin: left bottom;
+  }
+  .bar2 {
+    opacity: 0;
+  }
+  .bar3 {
+    transform: rotate(-40deg);
+    transform-origin: left top;
+  }
+  .hamburger-interaction {
+    top: 0;
+    bottom: 0;
   }
   .head-section {
     display: flex;
@@ -2202,7 +2263,7 @@ a:hover {
     }*/
   }
   .head-section__decoration-div {
-    margin: 5rem 1% 0 1%;
+    margin: 4rem 1% 3rem 1%;
     padding: 0 0 0 3%;
     column-gap: 0.5rem;
   }
@@ -2214,7 +2275,7 @@ a:hover {
     font-size: 1.6rem;
   }
   .head-section__developer-div {
-    margin-top: 3rem;
+    margin-top: 0;
     padding: 1rem 0;
     display: flex;
     flex-direction: column;
@@ -2233,7 +2294,7 @@ a:hover {
     row-gap: 0.3rem;
   }
   .head-section__h2-headline {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: white;
     padding: 0 3%;
   }
@@ -2249,18 +2310,14 @@ a:hover {
   }
   .head-section__sozial-media-div {
     width: 10rem;
-    margin: 1rem 0 0 5%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    margin: 0.5rem 0 0 5%;
   }
-  .head-section__sozial-media-img {
-    width: 1.7rem;
+  .head-section__github-img {
+    width: 2.2rem;
   }
-  .head-section__sozial-media-img--github-icon {
-    width: 1.7rem;
-    background-color: white;
-    border: 0.3rem;
+  .head-section__linkedin-img {
+    width: 2.4rem;
+    margin-top: 0.2rem;
   }
   .head-section__link {
     margin: -0.5rem 0 0 3%;
@@ -2269,7 +2326,7 @@ a:hover {
   .head-section__button {
     font-size: 1rem;
     width: 11rem;
-    height: 2rem;
+    height: 2.1rem;
     column-gap: 0.3rem;
     transition: ease-in-out;
     border-radius: 0.1rem;
@@ -2355,26 +2412,34 @@ a:hover {
     flex-direction: column;
     align-items: center;
     font-size: 1.7rem;
-    margin: 3rem auto 2rem auto;
+    margin: 1rem auto 2rem auto;
     color: white;
   }
   .project-section__text {
     font-size: 1.1rem;
-    margin: 1.5rem 5%;
+    margin: 1rem 5% 1.5rem 5%;
     color: white;
   }
   .project-section__project-div {
     width: 95%;
-    margin: 3rem auto;
+    margin: 2rem auto 1rem auto;
     padding: 0;
-    row-gap: 5rem;
   }
-  .project-section__crm-program, .project-section__italiner {
+  .project-section__crm-program {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 45rem;
+  }
+  .project-section__italiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70rem;
   }
   .project-section__online-shop, .project-section__note-app {
     display: flex;
@@ -2382,6 +2447,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 60rem;
   }
   .project-section__headline-left {
     font-size: 1.4rem;
@@ -2425,13 +2491,13 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
-    gap: 0.3rem;
+    gap: 0.4rem;
   }
   .project-section__application-technology {
     background-color: #0086d0;
     border-radius: 0.5rem;
     padding: 1.5px 3px;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     color: white;
   }
   .project-section__img-div {
@@ -2492,7 +2558,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     margin: 3rem auto;
-    row-gap: 1rem;
+    row-gap: 1.3rem;
     width: 15rem;
   }
   .project-section__button-div-right {
@@ -2501,7 +2567,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     margin: 3rem auto;
-    row-gap: 1rem;
+    row-gap: 1.3rem;
     width: 15rem;
   }
   .project-section__link {
@@ -2513,9 +2579,9 @@ a:hover {
     border: none;
     background-color: #006db5;
     color: white;
-    font-size: 0.9rem;
-    width: 11rem;
-    height: 2rem;
+    font-size: 0.97rem;
+    width: 11.5rem;
+    height: 2.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2531,26 +2597,13 @@ a:hover {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
   }
   .technology-section__h2-headline {
-    margin: 3rem auto 0 auto;
+    margin: 1rem auto 0 auto;
     font-size: 1.7rem;
     color: white;
   }
   .technology-section__technology-div {
     width: 95%;
     padding: 3rem 0;
-  }
-  .technology-section__top-div, .technology-section__bottom-div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 3rem;
-  }
-  .technology-section__top-div {
-    margin-bottom: 3rem;
-    padding-right: 0;
-    box-sizing: border-box;
   }
   .technology-section__markup-language-div, .technology-section__programming-language-div, .technology-section__framework-div, .technology-section__version-control-div, .technology-section__database-technology-div {
     display: flex;
@@ -2592,9 +2645,6 @@ a:hover {
   .technology-section__img {
     width: 5rem;
     height: 5rem;
-  }
-  .technology-section__img--github-icon {
-    width: 4rem;
   }
   .contact-section {
     display: flex;
@@ -2646,16 +2696,13 @@ a:hover {
   .contact-section__sozial-media-div {
     margin: 0.3rem 0 0 3%;
     width: 8rem;
-    display: flex;
-    justify-content: space-evenly;
   }
-  .contact-section__sozial-media-img {
-    width: 1.7rem;
+  .contact-section__github-img {
+    width: 2.1rem;
   }
-  .contact-section__sozial-media-img--github-icon {
-    width: 1.7rem;
-    background-color: white;
-    border: 0.3rem;
+  .contact-section__linkedin-img {
+    width: 2.3rem;
+    margin-top: 0.2rem;
   }
   .footer-section {
     display: flex;
@@ -2726,16 +2773,58 @@ a:hover {
   }
 }
 @media screen and (max-width: 300px) {
-  .nav-bar {
+  .nav-section {
+    height: 3.5rem;
+  }
+  .nav-section__nav-bar {
+    position: absolute;
+    top: -9rem;
+    left: 0;
+    right: 0;
+    bottom: 9rem;
+    height: 10rem;
+    row-gap: 0.7rem;
+    background-color: black;
+    transition: all 0.7s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 7rem;
   }
-  .control-link {
+  .nav-section__link {
     color: white;
     font-size: 1rem;
+  }
+  .nav-section__hamburger-menu {
+    display: block;
+    top: 1rem;
+    right: 7%;
+    width: 1.3rem;
+    height: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5.5px;
+  }
+  .nav-section__bar1, .nav-section__bar2, .nav-section__bar3 {
+    width: 1.5rem;
+    transition: all 0.7s ease-in-out;
+  }
+  .bar1 {
+    transform: rotate(38deg);
+    transform-origin: left bottom;
+  }
+  .bar2 {
+    opacity: 0;
+  }
+  .bar3 {
+    transform: rotate(-38deg);
+    transform-origin: left top;
+  }
+  .hamburger-interaction {
+    top: 0;
+    bottom: 0;
   }
   .head-section {
     display: flex;
@@ -2781,7 +2870,7 @@ a:hover {
     row-gap: 0.3rem;
   }
   .head-section__h2-headline {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: white;
     margin: 0;
     padding: 0 3%;
@@ -2800,27 +2889,22 @@ a:hover {
   }
   .head-section__sozial-media-div {
     width: 8rem;
-    margin: 1rem 0 0 7%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    margin: 0.5rem 0 0 7%;
   }
-  .head-section__sozial-media-img {
-    width: 1.5rem;
+  .head-section__github-img {
+    width: 2.1rem;
   }
-  .head-section__sozial-media-img--github-icon {
-    width: 1.5rem;
-    background-color: white;
-    border: 0.3rem;
+  .head-section__linkedin-img {
+    width: 2.3rem;
   }
   .head-section__link {
     margin: -1rem 0 0 3%;
     width: 7rem;
   }
   .head-section__button {
-    font-size: 0.9rem;
-    width: 10rem;
-    height: 2rem;
+    font-size: 0.95rem;
+    width: 10.5rem;
+    height: 2.1rem;
     column-gap: 0.3rem;
     transition: ease-in-out;
     border-radius: 0.1rem;
@@ -2916,16 +3000,24 @@ a:hover {
   }
   .project-section__project-div {
     width: 95%;
-    margin: 3rem auto;
+    margin: 1rem auto -1rem auto;
     padding: 0;
-    row-gap: 5rem;
   }
-  .project-section__crm-program, .project-section__italiner {
+  .project-section__crm-program {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 47rem;
+  }
+  .project-section__italiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 65rem;
   }
   .project-section__online-shop, .project-section__note-app {
     display: flex;
@@ -2933,6 +3025,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 60rem;
   }
   .project-section__headline-left {
     font-size: 1.4rem;
@@ -2975,13 +3068,13 @@ a:hover {
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 3% 0 1%;
     padding: 0;
-    gap: 0.3rem;
+    gap: 0.4rem;
   }
   .project-section__application-technology {
     background-color: #0086d0;
     border-radius: 0.5rem;
     padding: 1.5px 3px;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     color: white;
   }
   .project-section__img-div {
@@ -3064,7 +3157,7 @@ a:hover {
     color: white;
     font-size: 0.9rem;
     width: 11rem;
-    height: 2rem;
+    height: 2.1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3087,19 +3180,6 @@ a:hover {
   .technology-section__technology-div {
     width: 95%;
     padding: 3rem 0;
-  }
-  .technology-section__top-div, .technology-section__bottom-div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 3rem;
-  }
-  .technology-section__top-div {
-    margin-bottom: 3rem;
-    padding-right: 0;
-    box-sizing: border-box;
   }
   .technology-section__markup-language-div, .technology-section__programming-language-div, .technology-section__framework-div, .technology-section__version-control-div, .technology-section__database-technology-div {
     display: flex;
@@ -3141,9 +3221,6 @@ a:hover {
   .technology-section__img {
     width: 5rem;
     height: 5rem;
-  }
-  .technology-section__img--github-icon {
-    width: 4rem;
   }
   .contact-section {
     display: flex;
@@ -3195,16 +3272,12 @@ a:hover {
   .contact-section__sozial-media-div {
     margin: 0.3rem 0 0 3%;
     width: 7rem;
-    display: flex;
-    justify-content: space-evenly;
   }
-  .contact-section__sozial-media-img {
-    width: 1.5rem;
+  .contact-section__github-img {
+    width: 2rem;
   }
-  .contact-section__sozial-media-img--github-icon {
-    width: 1.5rem;
-    background-color: white;
-    border: 0.3rem;
+  .contact-section__linkedin-img {
+    width: 2.2rem;
   }
   .footer-section {
     display: flex;

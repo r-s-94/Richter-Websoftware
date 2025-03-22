@@ -141,20 +141,27 @@ a:hover {
 }*/
 
 @media screen and (min-width: 1700px) {
-  .nav-bar {
-    height: 3rem;
-  }
+  .nav-section {
+    &__nav-bar {
+      position: static;
+      height: 4rem;
+    }
 
-  .control-link {
-    color: white;
-    font-size: 1.3rem;
+    &__link {
+      color: white;
+      font-size: 1.3rem;
+    }
+
+    &__hamburger-menu {
+      display: none;
+    }
   }
 
   .head-section {
     @include column-flex-direction();
 
     &__decoration-div {
-      margin: 5rem 1% 0 1%;
+      margin: 7rem 1% 0 1%;
       padding: 0;
       column-gap: 3rem;
     }
@@ -179,13 +186,13 @@ a:hover {
     &__description-div {
       @include column-flex-direction-left-side();
       width: 50%;
-      margin-left: 0rem;
-      padding: 3rem 1% 3rem 7%;
+      margin-left: 0;
+      padding: 3rem 1% 3rem 10%;
       row-gap: 0.3rem;
     }
 
     &__h2-headline {
-      font-size: 2rem;
+      font-size: 2.3rem;
       color: white;
       margin: 0;
       padding: 0 3%;
@@ -217,14 +224,13 @@ a:hover {
     &__sozial-media-link {
     }
 
-    &__sozial-media-img {
-      width: 2.3rem;
+    &__github-img {
+      width: 2.7rem;
+    }
 
-      &--github-icon {
-        width: 2.3rem;
-        background-color: white;
-        border: 0.3rem;
-      }
+    &__linkedin-img {
+      width: 2.9rem;
+      margin-top: 0.3rem;
     }
 
     &__link {
@@ -234,15 +240,15 @@ a:hover {
 
     &__button {
       font-size: 1.1rem;
-      width: 12rem;
-      height: 2rem;
+      width: 13rem;
+      height: 2.3rem;
       column-gap: 0.3rem;
       transition: ease-in-out;
       border-radius: 0.1rem;
     }
 
     &__icon {
-      width: 1.5rem;
+      width: 1.6rem;
       height: auto;
     }
 
@@ -254,7 +260,8 @@ a:hover {
     &__portrait-div {
       width: 50%;
       margin: 0;
-      padding-left: 7%;
+      display: flex;
+      justify-content: center;
     }
 
     &__img {
@@ -271,7 +278,7 @@ a:hover {
     margin: 5rem 0;
     /*background-color: black;*/
     /*background-color: white;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
 
     &__h2-headline {
       display: flex;
@@ -284,25 +291,27 @@ a:hover {
 
     &__text {
       font-size: 1.5rem;
-      margin: 1.5rem 5%;
+      margin: 3rem 5% 0 5%;
       color: white;
     }
 
     &__project-div {
       width: 95%;
-      margin: 5rem auto;
-      padding: 10rem 0 0 0;
-      row-gap: 20rem;
+      margin: 5rem auto 3rem auto;
+      padding: 3rem 0 0 0;
     }
 
-    &__crm-program,
+    &__crm-program {
+      height: 45rem;
+    }
+
     &__italiner {
-      display: flex;
+      height: 53rem;
     }
 
     &__online-shop,
     &__note-app {
-      display: flex;
+      height: 53rem;
     }
 
     &__headline-left {
@@ -343,30 +352,31 @@ a:hover {
     &__application-description-left,
     &__application-description-right {
       margin-top: -1rem;
-      padding: 0 5%;
       font-size: 1.3rem;
       color: white;
       line-height: 1.7rem;
     }
 
     &__application-description-left {
+      padding: 0 5% 0 7%;
     }
 
     &__application-description-right {
+      padding: 0 5%;
     }
 
     &__application-technology-div-left,
     &__application-technology-div-right {
       width: 100%;
-      max-width: 35rem;
+      max-width: 40rem;
       display: flex;
       margin: 0;
       padding: 1rem 0 0 5%;
-      column-gap: 0.5rem;
+      column-gap: 0.7rem;
     }
 
     &__application-technology-div-left {
-      padding: 0 0 0 4.3%;
+      padding-left: 7%;
     }
 
     &__application-technology-div-right {
@@ -376,7 +386,7 @@ a:hover {
       background-color: #0086d0;
       border-radius: 0.5rem;
       padding: 1.5px 4px;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       color: white;
     }
 
@@ -432,11 +442,11 @@ a:hover {
     }
 
     &__carousel-prev-button {
-      margin: 1.5rem 1.5rem 0 0;
+      margin: 1.5rem 1rem 0 0.7rem;
     }
 
     &__carousel-next-button {
-      margin: 1.5rem 0 0 1.5rem;
+      margin: 1.5rem 0.7rem 0 1rem;
     }
 
     &__shop-carousel-prev-button,
@@ -524,8 +534,8 @@ a:hover {
     &__button {
       @include blue-button-style();
       font-size: 1.3rem;
-      width: 14rem;
-      height: 2.1rem;
+      width: 15rem;
+      height: 2.3rem;
       @include center-content();
       border-radius: 0.1rem;
     }
@@ -542,13 +552,13 @@ a:hover {
   .technology-section {
     @include column-flex-direction();
     margin: 10rem 0;
-    padding: 10rem 0;
+    padding: 7rem 0;
 
     /*border-radius: 0.2rem;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
 
     &__h2-headline {
-      margin: 1rem auto 3rem auto;
+      margin: 1rem auto 5rem auto;
       font-size: 2rem;
       color: white;
     }
@@ -556,18 +566,7 @@ a:hover {
     &__technology-div {
       width: 95%;
       padding: 3rem 0;
-    }
-
-    &__top-div,
-    &__bottom-div {
-      width: 100%;
-      column-gap: 3rem;
-    }
-
-    &__top-div {
-      margin-bottom: 10rem;
-      padding-right: 8%;
-      box-sizing: border-box;
+      column-gap: 4rem;
     }
 
     &__markup-language-div,
@@ -602,7 +601,7 @@ a:hover {
     &__text {
       color: white;
       font-size: 1.5rem;
-      margin: 1rem 0;
+      margin: 2rem 0;
     }
 
     &__img-div {
@@ -613,10 +612,6 @@ a:hover {
     &__img {
       width: 8rem;
       height: 8rem;
-
-      &--github-icon {
-        width: 7rem;
-      }
     }
   }
 
@@ -670,23 +665,23 @@ a:hover {
     }
 
     &__sozial-media-div {
-      margin: 1rem 0 0 1%;
+      margin: 0.5rem 0 0 1%;
       width: 11rem;
       display: flex;
       justify-content: space-evenly;
+      align-items: center;
     }
 
     &__sozial-media-link {
     }
 
-    &__sozial-media-img {
-      width: 2rem;
+    &__github-img {
+      width: 2.5rem;
+    }
 
-      &--github-icon {
-        width: 2rem;
-        background-color: white;
-        border: 0.3rem;
-      }
+    &__linkedin-img {
+      width: 2.8rem;
+      margin-top: 0.2rem;
     }
   }
 
@@ -766,20 +761,28 @@ a:hover {
 }
 
 @media screen and (max-width: 1700px) {
-  .nav-bar {
-    height: 3rem;
-  }
+  .nav-section {
+    height: 5rem;
 
-  .control-link {
-    color: white;
-    font-size: 1.3rem;
+    &__nav-bar {
+      position: static;
+    }
+
+    &__link {
+      color: white;
+      font-size: 1.3rem;
+    }
+
+    &__hamburger-menu {
+      display: none;
+    }
   }
 
   .head-section {
     @include column-flex-direction();
 
     &__decoration-div {
-      margin: 5rem 1% 0 1%;
+      margin: 7rem 1% 1rem 1%;
       padding: 0;
       column-gap: 3rem;
     }
@@ -808,7 +811,7 @@ a:hover {
     }
 
     &__h2-headline {
-      font-size: 2rem;
+      font-size: 2.3rem;
       color: white;
       margin: 0;
       padding: 0 3%;
@@ -831,7 +834,7 @@ a:hover {
 
     &__sozial-media-div {
       width: 12rem;
-      margin: 1.5rem 0 0 3%;
+      margin: 1rem 0 0 3%;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
@@ -840,14 +843,13 @@ a:hover {
     &__sozial-media-link {
     }
 
-    &__sozial-media-img {
-      width: 2.3rem;
+    &__github-img {
+      width: 2.7rem;
+    }
 
-      &--github-icon {
-        width: 2.3rem;
-        background-color: white;
-        border: 0.3rem;
-      }
+    &__linkedin-img {
+      width: 3rem;
+      margin-top: 0.2rem;
     }
 
     &__link {
@@ -857,15 +859,15 @@ a:hover {
 
     &__button {
       font-size: 1.1rem;
-      width: 12rem;
-      height: 2rem;
+      width: 13rem;
+      height: 2.3rem;
       column-gap: 0.3rem;
       transition: ease-in-out;
       border-radius: 0.1rem;
     }
 
     &__icon {
-      width: 1.5rem;
+      width: 1.6rem;
       height: auto;
     }
 
@@ -891,7 +893,7 @@ a:hover {
 
   .project-section {
     @include column-flex-direction();
-    margin-top: 5rem;
+    margin: 0;
     /*background-color: black;*/
     /*background-color: white;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
@@ -901,13 +903,13 @@ a:hover {
       flex-direction: column;
       align-items: center;
       font-size: 2rem;
-      margin: 3rem auto 2rem auto;
+      margin: 7rem auto 2rem auto;
       color: white;
     }
 
     &__text {
       font-size: 1.3rem;
-      margin: 1.5rem 5%;
+      margin: 3rem 5% 0 5%;
       color: white;
     }
 
@@ -915,16 +917,24 @@ a:hover {
       width: 95%;
       margin: 5rem auto;
       padding: 1rem 0 0 0;
-      row-gap: 10rem;
     }
 
-    &__crm-program,
+    &__crm-program {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 70rem;
+    }
+
     &__italiner {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 100%;
+      height: 75rem;
     }
 
     &__online-shop,
@@ -934,6 +944,7 @@ a:hover {
       align-items: center;
       justify-content: center;
       width: 100%;
+      height: 73rem;
     }
 
     &__headline-left {
@@ -990,8 +1001,7 @@ a:hover {
       width: 100%;
       display: flex;
       margin: 0;
-
-      column-gap: 0.5rem;
+      column-gap: 0.7rem;
     }
 
     &__application-technology-div-left {
@@ -1004,7 +1014,7 @@ a:hover {
       background-color: #0086d0;
       border-radius: 0.5rem;
       padding: 1.5px 4px;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       color: white;
     }
 
@@ -1152,8 +1162,8 @@ a:hover {
     &__button {
       @include blue-button-style();
       font-size: 1.3rem;
-      width: 14rem;
-      height: 2.1rem;
+      width: 15rem;
+      height: 2.3rem;
       @include center-content();
       border-radius: 0.1rem;
     }
@@ -1184,19 +1194,8 @@ a:hover {
     &__technology-div {
       width: 95%;
       padding: 3rem 0;
-    }
-
-    &__top-div,
-    &__bottom-div {
-      width: 100%;
       @include column-flex-direction();
-      row-gap: 3rem;
-    }
-
-    &__top-div {
-      margin-bottom: 5rem;
-      padding-right: 0;
-      box-sizing: border-box;
+      row-gap: 5rem;
     }
 
     &__markup-language-div,
@@ -1232,7 +1231,7 @@ a:hover {
     &__text {
       color: white;
       font-size: 1.5rem;
-      margin: 1rem 0;
+      margin: 2rem 0;
     }
 
     &__img-div {
@@ -1243,10 +1242,6 @@ a:hover {
     &__img {
       width: 6rem;
       height: 6rem;
-
-      &--github-icon {
-        width: 5rem;
-      }
     }
   }
 
@@ -1257,7 +1252,7 @@ a:hover {
 
     &__headline {
       font-size: 2rem;
-      margin-top: 0rem;
+      margin-top: 1rem;
       color: white;
     }
 
@@ -1300,23 +1295,22 @@ a:hover {
     }
 
     &__sozial-media-div {
-      margin: 1rem 0 0 1%;
+      margin: 0.7rem 0 0 1%;
       width: 11rem;
       display: flex;
       justify-content: space-evenly;
+      align-items: center;
     }
 
     &__sozial-media-link {
     }
 
-    &__sozial-media-img {
-      width: 2rem;
+    &__github-img {
+      width: 2.5rem;
+    }
 
-      &--github-icon {
-        width: 2rem;
-        background-color: white;
-        border: 0.3rem;
-      }
+    &__linkedin-img {
+      width: 2.7rem;
     }
   }
 
@@ -1396,20 +1390,21 @@ a:hover {
 }
 
 @media screen and (max-width: 1400px) {
-  .nav-bar {
-    height: 3rem;
-  }
+  .nav-section {
+    &__nav-bar {
+    }
 
-  .control-link {
-    color: white;
-    font-size: 1.3rem;
+    &__link {
+      color: white;
+      font-size: 1.3rem;
+    }
   }
 
   .head-section {
     @include column-flex-direction();
 
     &__decoration-div {
-      margin: 5rem 1% 0 1%;
+      margin: 7rem 1% 0 1%;
       padding: 0;
       column-gap: 3rem;
     }
@@ -1438,7 +1433,7 @@ a:hover {
     }
 
     &__h2-headline {
-      font-size: 1.7rem;
+      font-size: 2rem;
       color: white;
       margin: 0;
       padding: 0 3%;
@@ -1460,22 +1455,18 @@ a:hover {
     &__sozial-media-div {
       width: 12rem;
       margin: 1rem 0 0 3%;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
     }
 
     &__sozial-media-link {
     }
 
-    &__sozial-media-img {
-      width: 2.3rem;
+    &__github-img {
+      width: 2.7rem;
+    }
 
-      &--github-icon {
-        width: 2.3rem;
-        background-color: white;
-        border: 0.3rem;
-      }
+    &__linkedin-img {
+      width: 2.9rem;
+      margin-top: 0.2rem;
     }
 
     &__link {
@@ -1486,14 +1477,14 @@ a:hover {
     &__button {
       font-size: 1.1rem;
       width: 12rem;
-      height: 2rem;
+      height: 2.3rem;
       column-gap: 0.3rem;
       transition: ease-in-out;
       border-radius: 0.1rem;
     }
 
     &__icon {
-      width: 1.5rem;
+      width: 1.6rem;
       height: auto;
     }
 
@@ -1504,7 +1495,7 @@ a:hover {
 
     &__portrait-div {
       width: 10rem;
-      margin: 3rem auto 5rem auto;
+      margin: 4rem auto;
       padding: 0;
     }
 
@@ -1535,7 +1526,7 @@ a:hover {
 
     &__text {
       font-size: 1.3rem;
-      margin: 1.5rem 5%;
+      margin: 2rem 5% 0 5%;
       color: white;
     }
 
@@ -1543,16 +1534,24 @@ a:hover {
       width: 95%;
       margin: 5rem auto;
       padding: 0;
-      row-gap: 7rem;
     }
 
-    &__crm-program,
+    &__crm-program {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 63rem;
+    }
+
     &__italiner {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 100%;
+      height: 73rem;
     }
 
     &__online-shop,
@@ -1562,6 +1561,7 @@ a:hover {
       align-items: center;
       justify-content: center;
       width: 100%;
+      height: 70rem;
     }
 
     &__headline-left {
@@ -1615,11 +1615,9 @@ a:hover {
     &__application-technology-div-left,
     &__application-technology-div-right {
       width: 100%;
-
       display: flex;
       margin: 0;
-
-      column-gap: 0.5rem;
+      column-gap: 0.7rem;
     }
 
     &__application-technology-div-left {
@@ -1783,7 +1781,7 @@ a:hover {
       @include blue-button-style();
       font-size: 1.1rem;
       width: 13rem;
-      height: 2.1rem;
+      height: 2.3rem;
       @include center-content();
       border-radius: 0.1rem;
     }
@@ -1806,7 +1804,7 @@ a:hover {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
 
     &__h2-headline {
-      margin: 3rem auto 0 auto;
+      margin: 2rem auto 0 auto;
       font-size: 2rem;
       color: white;
     }
@@ -1814,19 +1812,6 @@ a:hover {
     &__technology-div {
       width: 95%;
       padding: 3rem 0;
-    }
-
-    &__top-div,
-    &__bottom-div {
-      width: 100%;
-      @include column-flex-direction();
-      row-gap: 3rem;
-    }
-
-    &__top-div {
-      margin-bottom: 5rem;
-      padding-right: 0;
-      box-sizing: border-box;
     }
 
     &__markup-language-div,
@@ -1862,7 +1847,6 @@ a:hover {
     &__text {
       color: white;
       font-size: 1.5rem;
-      margin: 1rem 0;
     }
 
     &__img-div {
@@ -1873,10 +1857,6 @@ a:hover {
     &__img {
       width: 6rem;
       height: 6rem;
-
-      &--github-icon {
-        width: 5rem;
-      }
     }
   }
 
@@ -1887,7 +1867,7 @@ a:hover {
 
     &__headline {
       font-size: 2rem;
-      margin-top: 0rem;
+      margin-top: 1rem;
       color: white;
     }
 
@@ -1929,7 +1909,7 @@ a:hover {
     }
 
     &__sozial-media-div {
-      margin: 1rem 0 0 1%;
+      margin: 0.5rem 0 0 1%;
       width: 11rem;
       display: flex;
       justify-content: space-evenly;
@@ -1938,14 +1918,13 @@ a:hover {
     &__sozial-media-link {
     }
 
-    &__sozial-media-img {
-      width: 2rem;
+    &__github-img {
+      width: 2.5rem;
+    }
 
-      &--github-icon {
-        width: 2rem;
-        background-color: white;
-        border: 0.3rem;
-      }
+    &__linkedin-img {
+      width: 2.8rem;
+      margin-top: 0.2rem;
     }
   }
 
@@ -2025,22 +2004,85 @@ a:hover {
 }
 
 @media screen and (max-width: 1000px) {
-  .nav-bar {
-    @include column-flex-direction();
-    height: 9rem;
-    row-gap: 0.3rem;
+  /*.nav-section {
+    &__nav-bar {
+      @include column-flex-direction();
+      height: 9rem;
+      row-gap: 0.3rem;
+    }
+
+    &__link {
+      color: white;
+      font-size: 1.2rem;
+    }
+  }*/
+
+  .nav-section {
+    height: 5rem;
+
+    &__nav-bar {
+      position: absolute;
+      top: -12rem;
+      left: 0;
+      right: 0;
+      bottom: 12rem;
+      height: 14rem;
+      row-gap: 1rem;
+      background-color: black;
+      transition: all 0.7s ease-in-out;
+      @include column-flex-direction();
+    }
+
+    &__link {
+      color: white;
+      font-size: 1.3rem;
+    }
+
+    &__hamburger-menu {
+      display: block;
+      top: 1.5rem;
+      right: 7%;
+      width: 1.7rem;
+      height: 25px;
+      @include column-flex-direction();
+      row-gap: 6px;
+    }
+
+    &__bar1,
+    &__bar2,
+    &__bar3 {
+      width: 1.8rem;
+      height: 3px;
+      transition: all 0.7s ease-in-out;
+    }
   }
 
-  .control-link {
-    color: white;
-    font-size: 1.2rem;
+  .bar1 {
+    transform: rotate(37deg);
+    transform-origin: left bottom;
+  }
+
+  .bar2 {
+    opacity: 0;
+  }
+
+  .bar3 {
+    transform: rotate(-37deg);
+    transform-origin: left top;
+  }
+
+  .hamburger-interaction {
+    top: 0;
+    bottom: 7rem;
   }
 
   .head-section {
     @include column-flex-direction();
+    margin: 0;
+    padding: 0;
 
     &__decoration-div {
-      margin: 5rem 1% 0 1%;
+      margin: 5rem 1% -1rem 1%;
       padding: 0;
       column-gap: 1rem;
     }
@@ -2069,7 +2111,7 @@ a:hover {
     }
 
     &__h2-headline {
-      font-size: 1.7rem;
+      font-size: 2rem;
       color: white;
       margin: 0;
       padding: 0 3%;
@@ -2091,22 +2133,18 @@ a:hover {
     &__sozial-media-div {
       width: 11rem;
       margin: 1rem 0 0 3%;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
     }
 
     &__sozial-media-link {
     }
 
-    &__sozial-media-img {
-      width: 2rem;
+    &__github-img {
+      width: 2.3rem;
+    }
 
-      &--github-icon {
-        width: 2rem;
-        background-color: white;
-        border: 0.3rem;
-      }
+    &__linkedin-img {
+      width: 2.6rem;
+      margin-top: 0.2rem;
     }
 
     &__link {
@@ -2117,7 +2155,7 @@ a:hover {
     &__button {
       font-size: 1.1rem;
       width: 12rem;
-      height: 2rem;
+      height: 2.2rem;
       column-gap: 0.3rem;
       transition: ease-in-out;
       border-radius: 0.1rem;
@@ -2135,7 +2173,7 @@ a:hover {
 
     &__portrait-div {
       width: 10rem;
-      margin: 3rem auto 1.5rem auto;
+      margin: 4rem auto 2rem auto;
       padding: 0;
     }
 
@@ -2150,7 +2188,7 @@ a:hover {
 
   .project-section {
     @include column-flex-direction();
-    margin-top: 3rem;
+    margin: 0;
     /*background-color: black;*/
     /*background-color: white;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
@@ -2160,7 +2198,7 @@ a:hover {
       flex-direction: column;
       align-items: center;
       font-size: 1.8rem;
-      margin: 3rem auto 2rem auto;
+      margin: 5rem auto 2rem auto;
       color: white;
     }
 
@@ -2174,16 +2212,24 @@ a:hover {
       width: 95%;
       margin: 3rem auto;
       padding: 0;
-      row-gap: 5rem;
     }
 
-    &__crm-program,
+    &__crm-program {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 53rem;
+    }
+
     &__italiner {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 100%;
+      height: 67rem;
     }
 
     &__online-shop,
@@ -2193,6 +2239,7 @@ a:hover {
       align-items: center;
       justify-content: center;
       width: 100%;
+      height: 65rem;
     }
 
     &__headline-left {
@@ -2250,8 +2297,7 @@ a:hover {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       margin: 0;
-
-      gap: 0.3rem;
+      gap: 0.5rem;
     }
 
     &__application-technology-div-left {
@@ -2264,7 +2310,7 @@ a:hover {
       background-color: #0086d0;
       border-radius: 0.5rem;
       padding: 1.5px 3px;
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       color: white;
     }
 
@@ -2413,9 +2459,9 @@ a:hover {
 
     &__button {
       @include blue-button-style();
-      font-size: 1rem;
+      font-size: 1.05rem;
       width: 12rem;
-      height: 2.1rem;
+      height: 2.2rem;
       @include center-content();
       border-radius: 0.1rem;
     }
@@ -2438,7 +2484,7 @@ a:hover {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
 
     &__h2-headline {
-      margin: 3 auto 0 auto;
+      margin: 1rem auto 0 auto;
       font-size: 2rem;
       color: white;
     }
@@ -2446,19 +2492,7 @@ a:hover {
     &__technology-div {
       width: 95%;
       padding: 3rem 0;
-    }
-
-    &__top-div,
-    &__bottom-div {
-      width: 100%;
-      @include column-flex-direction();
       row-gap: 3rem;
-    }
-
-    &__top-div {
-      margin-bottom: 5rem;
-      padding-right: 0;
-      box-sizing: border-box;
     }
 
     &__markup-language-div,
@@ -2505,10 +2539,6 @@ a:hover {
     &__img {
       width: 6rem;
       height: 6rem;
-
-      &--github-icon {
-        width: 5rem;
-      }
     }
   }
 
@@ -2519,7 +2549,7 @@ a:hover {
 
     &__headline {
       font-size: 1.7rem;
-      margin-top: 0rem;
+      margin-top: 1rem;
       color: white;
     }
 
@@ -2563,21 +2593,17 @@ a:hover {
     &__sozial-media-div {
       margin: 1rem 0 0 3%;
       width: 10rem;
-      display: flex;
-      justify-content: space-evenly;
     }
 
     &__sozial-media-link {
     }
 
-    &__sozial-media-img {
-      width: 2rem;
+    &__github-img {
+      width: 2.3rem;
+    }
 
-      &--github-icon {
-        width: 2rem;
-        background-color: white;
-        border: 0.3rem;
-      }
+    &__linkedin-img {
+      width: 2.3rem;
     }
   }
 
@@ -2658,15 +2684,54 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .nav-bar {
-    @include column-flex-direction();
-    height: 8rem;
-    row-gap: 0.3rem;
+  .nav-section {
+    height: 4rem;
+
+    &__nav-bar {
+      @include column-flex-direction();
+      height: 11rem;
+      row-gap: 0.7rem;
+    }
+
+    &__link {
+      color: white;
+      font-size: 1.1rem;
+    }
+
+    &__hamburger-menu {
+      display: block;
+      top: 1rem;
+      right: 7%;
+      height: 19px;
+      @include column-flex-direction();
+      row-gap: 5px;
+    }
+
+    &__bar1,
+    &__bar2,
+    &__bar3 {
+      width: 1.5rem;
+      transition: all 0.7s ease-in-out;
+    }
   }
 
-  .control-link {
-    color: white;
-    font-size: 1.1rem;
+  .bar1 {
+    transform: rotate(40deg);
+    transform-origin: left bottom;
+  }
+
+  .bar2 {
+    opacity: 0;
+  }
+
+  .bar3 {
+    transform: rotate(-40deg);
+    transform-origin: left top;
+  }
+
+  .hamburger-interaction {
+    top: 0;
+    bottom: 0;
   }
 
   .head-section {
@@ -2674,7 +2739,7 @@ a:hover {
     padding: 0;
 
     &__decoration-div {
-      margin: 5rem 1% 0 1%;
+      margin: 4rem 1% 3rem 1%;
       padding: 0 0 0 3%;
       column-gap: 0.5rem;
     }
@@ -2689,7 +2754,7 @@ a:hover {
     }
 
     &__developer-div {
-      margin-top: 3rem;
+      margin-top: 0;
       padding: 1rem 0;
       @include column-flex-direction();
       width: 90%;
@@ -2704,7 +2769,7 @@ a:hover {
     }
 
     &__h2-headline {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       color: white;
       padding: 0 3%;
     }
@@ -2723,23 +2788,19 @@ a:hover {
 
     &__sozial-media-div {
       width: 10rem;
-      margin: 1rem 0 0 5%;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
+      margin: 0.5rem 0 0 5%;
     }
 
     &__sozial-media-link {
     }
 
-    &__sozial-media-img {
-      width: 1.7rem;
+    &__github-img {
+      width: 2.2rem;
+    }
 
-      &--github-icon {
-        width: 1.7rem;
-        background-color: white;
-        border: 0.3rem;
-      }
+    &__linkedin-img {
+      width: 2.4rem;
+      margin-top: 0.2rem;
     }
 
     &__link {
@@ -2750,7 +2811,7 @@ a:hover {
     &__button {
       font-size: 1rem;
       width: 11rem;
-      height: 2rem;
+      height: 2.1rem;
       column-gap: 0.3rem;
       transition: ease-in-out;
       border-radius: 0.1rem;
@@ -2794,30 +2855,38 @@ a:hover {
       flex-direction: column;
       align-items: center;
       font-size: 1.7rem;
-      margin: 3rem auto 2rem auto;
+      margin: 1rem auto 2rem auto;
       color: white;
     }
 
     &__text {
       font-size: 1.1rem;
-      margin: 1.5rem 5%;
+      margin: 1rem 5% 1.5rem 5%;
       color: white;
     }
 
     &__project-div {
       width: 95%;
-      margin: 3rem auto;
+      margin: 2rem auto 1rem auto;
       padding: 0;
-      row-gap: 5rem;
     }
 
-    &__crm-program,
+    &__crm-program {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 45rem;
+    }
+
     &__italiner {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 100%;
+      height: 70rem;
     }
 
     &__online-shop,
@@ -2827,6 +2896,7 @@ a:hover {
       align-items: center;
       justify-content: center;
       width: 100%;
+      height: 60rem;
     }
 
     &__headline-left {
@@ -2885,7 +2955,7 @@ a:hover {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       padding: 0;
-      gap: 0.3rem;
+      gap: 0.4rem;
     }
 
     &__application-technology-div-left {
@@ -2898,7 +2968,7 @@ a:hover {
       background-color: #0086d0;
       border-radius: 0.5rem;
       padding: 1.5px 3px;
-      font-size: 0.6rem;
+      font-size: 0.7rem;
       color: white;
     }
 
@@ -3027,14 +3097,14 @@ a:hover {
       flex-direction: column;
       align-items: center;
       margin: 3rem auto;
-      row-gap: 1rem;
+      row-gap: 1.3rem;
       width: 15rem;
     }
 
     &__button-div-right {
       @include column-flex-direction();
       margin: 3rem auto;
-      row-gap: 1rem;
+      row-gap: 1.3rem;
       width: 15rem;
     }
 
@@ -3046,9 +3116,9 @@ a:hover {
 
     &__button {
       @include blue-button-style();
-      font-size: 0.9rem;
-      width: 11rem;
-      height: 2rem;
+      font-size: 0.97rem;
+      width: 11.5rem;
+      height: 2.2rem;
       @include center-content();
       border-radius: 0.1rem;
     }
@@ -3069,7 +3139,7 @@ a:hover {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
 
     &__h2-headline {
-      margin: 3rem auto 0 auto;
+      margin: 1rem auto 0 auto;
       font-size: 1.7rem;
       color: white;
     }
@@ -3077,19 +3147,6 @@ a:hover {
     &__technology-div {
       width: 95%;
       padding: 3rem 0;
-    }
-
-    &__top-div,
-    &__bottom-div {
-      width: 100%;
-      @include column-flex-direction();
-      row-gap: 3rem;
-    }
-
-    &__top-div {
-      margin-bottom: 3rem;
-      padding-right: 0;
-      box-sizing: border-box;
     }
 
     &__markup-language-div,
@@ -3137,10 +3194,6 @@ a:hover {
     &__img {
       width: 5rem;
       height: 5rem;
-
-      &--github-icon {
-        width: 4rem;
-      }
     }
   }
 
@@ -3195,21 +3248,18 @@ a:hover {
     &__sozial-media-div {
       margin: 0.3rem 0 0 3%;
       width: 8rem;
-      display: flex;
-      justify-content: space-evenly;
     }
 
     &__sozial-media-link {
     }
 
-    &__sozial-media-img {
-      width: 1.7rem;
+    &__github-img {
+      width: 2.1rem;
+    }
 
-      &--github-icon {
-        width: 1.7rem;
-        background-color: white;
-        border: 0.3rem;
-      }
+    &__linkedin-img {
+      width: 2.3rem;
+      margin-top: 0.2rem;
     }
   }
 
@@ -3290,14 +3340,62 @@ a:hover {
 }
 
 @media screen and (max-width: 300px) {
-  .nav-bar {
-    @include column-flex-direction();
-    height: 7rem;
+  .nav-section {
+    height: 3.5rem;
+
+    &__nav-bar {
+      position: absolute;
+      top: -9rem;
+      left: 0;
+      right: 0;
+      bottom: 9rem;
+      height: 10rem;
+      row-gap: 0.7rem;
+      background-color: black;
+      transition: all 0.7s ease-in-out;
+      @include column-flex-direction();
+    }
+
+    &__link {
+      color: white;
+      font-size: 1rem;
+    }
+
+    &__hamburger-menu {
+      display: block;
+      top: 1rem;
+      right: 7%;
+      width: 1.3rem;
+      height: 17px;
+      @include column-flex-direction();
+      row-gap: 5.5px;
+    }
+
+    &__bar1,
+    &__bar2,
+    &__bar3 {
+      width: 1.5rem;
+      transition: all 0.7s ease-in-out;
+    }
   }
 
-  .control-link {
-    color: white;
-    font-size: 1rem;
+  .bar1 {
+    transform: rotate(38deg);
+    transform-origin: left bottom;
+  }
+
+  .bar2 {
+    opacity: 0;
+  }
+
+  .bar3 {
+    transform: rotate(-38deg);
+    transform-origin: left top;
+  }
+
+  .hamburger-interaction {
+    top: 0;
+    bottom: 0;
   }
 
   .head-section {
@@ -3336,7 +3434,7 @@ a:hover {
     }
 
     &__h2-headline {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       color: white;
       margin: 0;
       padding: 0 3%;
@@ -3358,23 +3456,18 @@ a:hover {
 
     &__sozial-media-div {
       width: 8rem;
-      margin: 1rem 0 0 7%;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
+      margin: 0.5rem 0 0 7%;
     }
 
     &__sozial-media-link {
     }
 
-    &__sozial-media-img {
-      width: 1.5rem;
+    &__github-img {
+      width: 2.1rem;
+    }
 
-      &--github-icon {
-        width: 1.5rem;
-        background-color: white;
-        border: 0.3rem;
-      }
+    &__linkedin-img {
+      width: 2.3rem;
     }
 
     &__link {
@@ -3383,9 +3476,9 @@ a:hover {
     }
 
     &__button {
-      font-size: 0.9rem;
-      width: 10rem;
-      height: 2rem;
+      font-size: 0.95rem;
+      width: 10.5rem;
+      height: 2.1rem;
       column-gap: 0.3rem;
       transition: ease-in-out;
       border-radius: 0.1rem;
@@ -3441,18 +3534,26 @@ a:hover {
 
     &__project-div {
       width: 95%;
-      margin: 3rem auto;
+      margin: 1rem auto -1rem auto;
       padding: 0;
-      row-gap: 5rem;
     }
 
-    &__crm-program,
+    &__crm-program {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 47rem;
+    }
+
     &__italiner {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 100%;
+      height: 65rem;
     }
 
     &__online-shop,
@@ -3462,6 +3563,7 @@ a:hover {
       align-items: center;
       justify-content: center;
       width: 100%;
+      height: 60rem;
     }
 
     &__headline-left {
@@ -3519,7 +3621,7 @@ a:hover {
       grid-template-columns: 1fr 1fr 1fr;
       margin: 0 3% 0 1%;
       padding: 0;
-      gap: 0.3rem;
+      gap: 0.4rem;
     }
 
     &__application-technology-div-left {
@@ -3532,7 +3634,7 @@ a:hover {
       background-color: #0086d0;
       border-radius: 0.5rem;
       padding: 1.5px 3px;
-      font-size: 0.6rem;
+      font-size: 0.7rem;
       color: white;
     }
 
@@ -3681,7 +3783,7 @@ a:hover {
       @include blue-button-style();
       font-size: 0.9rem;
       width: 11rem;
-      height: 2rem;
+      height: 2.1rem;
       @include center-content();
       border-radius: 0.1rem;
     }
@@ -3711,19 +3813,6 @@ a:hover {
     &__technology-div {
       width: 95%;
       padding: 3rem 0;
-    }
-
-    &__top-div,
-    &__bottom-div {
-      width: 100%;
-      @include column-flex-direction();
-      row-gap: 3rem;
-    }
-
-    &__top-div {
-      margin-bottom: 3rem;
-      padding-right: 0;
-      box-sizing: border-box;
     }
 
     &__markup-language-div,
@@ -3771,10 +3860,6 @@ a:hover {
     &__img {
       width: 5rem;
       height: 5rem;
-
-      &--github-icon {
-        width: 4rem;
-      }
     }
   }
 
@@ -3829,21 +3914,17 @@ a:hover {
     &__sozial-media-div {
       margin: 0.3rem 0 0 3%;
       width: 7rem;
-      display: flex;
-      justify-content: space-evenly;
     }
 
     &__sozial-media-link {
     }
 
-    &__sozial-media-img {
-      width: 1.5rem;
+    &__github-img {
+      width: 2rem;
+    }
 
-      &--github-icon {
-        width: 1.5rem;
-        background-color: white;
-        border: 0.3rem;
-      }
+    &__linkedin-img {
+      width: 2.2rem;
     }
   }
 

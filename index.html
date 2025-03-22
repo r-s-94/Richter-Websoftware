@@ -6,19 +6,51 @@
     <title>Portfolio-Webseite</title>
     <link rel="stylesheet" href="assets/css/websoftware.css" />
     <link rel="stylesheet" href="assets/css/websoftwareResponsive.css" />
+
     <style>
-      /*
+      /*  <link rel="icon" href="">
        
       */
     </style>
   </head>
   <body id="top">
-    <nav class="nav-bar">
-      <a href="#projects" class="control-link link">PROJEKTE</a>
-      <a href="#technologies" class="control-link link">TECHNOLOGIEN</a>
-      <a href="#contact" class="control-link link">KONTAKTE</a>
-      <a href="impressum.html" class="control-link link">IMPRESSUM</a>
-    </nav>
+    <div class="nav-section">
+      <nav class="nav-section__nav-bar">
+        <a
+          href="#projects"
+          onclick="interactionLink()"
+          class="nav-section__link link"
+          >PROJEKTE</a
+        >
+        <a
+          href="#technologies"
+          onclick="interactionLink()"
+          class="nav-section__link link"
+          >TECHNOLOGIEN</a
+        >
+        <a
+          href="#contact"
+          onclick="interactionLink()"
+          class="nav-section__link link"
+          >KONTAKTE</a
+        >
+        <a
+          href="impressum.html"
+          onclick="interactionLink()"
+          class="nav-section__link link"
+          >IMPRESSUM</a
+        >
+      </nav>
+
+      <div
+        onclick="interactionHamburgerMenu()"
+        class="nav-section__hamburger-menu"
+      >
+        <div class="nav-section__bar1"></div>
+        <div class="nav-section__bar2"></div>
+        <div class="nav-section__bar3"></div>
+      </div>
+    </div>
 
     <section class="head-section">
       <div class="head-section__decoration-div">
@@ -33,7 +65,7 @@
       <div class="head-section__developer-div">
         <div class="head-section__description-div">
           <h2 class="head-section__h2-headline">
-            Erstellt von Sven Richter
+            Sven Richter
             <br />
             <span class="head-section__focus-text"
               >Junior Frontend-Webdeveloper</span
@@ -53,20 +85,20 @@
               class="head-section__sozial-media-link link"
             >
               <img
-                src="./assets/img/github(6).png"
-                class="head-section__sozial-media-img--github-icon"
+                src="./assets/img/icons8-github-188.png"
+                class="head-section__github-img"
                 alt=""
               />
             </a>
 
             <a
-              href="https://www.linkedin.com/feed/"
+              href="https://www.linkedin.com/in/sven-richter-77914b284/"
               target="_blank"
               class="head-section__sozial-media-link link"
             >
               <img
-                src="./assets/img/linkedin(1).png"
-                class="head-section__sozial-media-img"
+                src="./assets/img/icons8-linkedin-188.png"
+                class="head-section__linkedin-img"
                 alt=""
               />
             </a>
@@ -107,7 +139,7 @@
       <h2 class="project-section__h2-headline">Projekte</h2>
 
       <p class="project-section__text">
-        Hier eine Übersicht von ein Paar Projekten, mit denen Sie sich ein Bild
+        Hier eine Übersicht von ein paar Projekten, mit denen Sie sich ein Bild
         von meinen Fähigkeiten und Erfahrungen machen können.
       </p>
 
@@ -427,9 +459,10 @@
 
             <div class="project-section__application-description-div">
               <p class="project-section__application-description-right">
-                Eine für sich selbst sprechende Notiz-App. Übersichtlich,
-                funktional und mit modernen Technologien entwickelt im schicken
-                Design. Damit vergisst du nie wieder deine Ideen und Gedanken.
+                Eine klassische Notiz-App, zur Erstellung und Bearbeitung von
+                Notizen. Übersichtlich, funktional und mit modernen Technologien
+                entwickelt im schicken Design. Damit vergisst du nie wieder
+                deine Ideen und Gedanken.
               </p>
 
               <div class="project-section__application-technology-div-right">
@@ -483,120 +516,114 @@
       <h2 class="technology-section__h2-headline">Technologien</h2>
 
       <div class="technology-section__technology-div">
-        <div class="technology-section__top-div">
-          <div class="technology-section__markup-language-div">
-            <h3 class="technology-section__headline">Markup-<wbr />Sprachen</h3>
-            <div class="technology-section__subdivision-div">
-              <div class="technology-section__html-div">
-                <span class="technology-section__text">HTML</span>
-                <img
-                  src="./assets/img/html-Logo.png"
-                  class="technology-section__img"
-                  alt=""
-                />
-              </div>
-
-              <div class="technology-section__css-div">
-                <span class="technology-section__text">CSS</span>
-                <img
-                  src="./assets/img/css-Logo.png"
-                  class="technology-section__img"
-                  alt=""
-                />
-              </div>
-
-              <div class="technology-section__scss-div">
-                <span class="technology-section__text">SCSS</span>
-                <img
-                  src="./assets/img/scss-Logo sass-Logo.png"
-                  class="technology-section__img"
-                  alt=""
-                />
-              </div>
+        <div class="technology-section__markup-language-div">
+          <h3 class="technology-section__headline">Markup-<wbr />Sprachen</h3>
+          <div class="technology-section__subdivision-div">
+            <div class="technology-section__html-div">
+              <span class="technology-section__text">HTML</span>
+              <img
+                src="./assets/img/html-Logo.png"
+                class="technology-section__img"
+                alt=""
+              />
             </div>
-          </div>
 
-          <div class="technology-section__programming-language-div">
-            <h3 class="technology-section__headline">
-              Programmier<wbr />sprache
-            </h3>
-            <div class="technology-section__subdivision-div">
-              <div class="technology-section__javascript-div">
-                <span class="technology-section__text">Javascript</span>
-                <img
-                  src="./assets/img/javascript-Logo.png"
-                  class="technology-section__img"
-                  alt=""
-                />
-              </div>
-              <div class="technology-section__typescript-div">
-                <span class="technology-section__text">Typescript</span>
-                <img
-                  src="./assets/img/typescript-Logo.png"
-                  class="technology-section__img"
-                  alt=""
-                />
-              </div>
+            <div class="technology-section__css-div">
+              <span class="technology-section__text">CSS</span>
+              <img
+                src="./assets/img/css-Logo.png"
+                class="technology-section__img"
+                alt=""
+              />
             </div>
-          </div>
 
-          <div class="technology-section__framework-div">
-            <h3 class="technology-section__headline">Framework</h3>
-            <div class="technology-section__react-div">
-              <span class="technology-section__text">React + Vite</span>
-              <div class="technology-section__img-div">
-                <img
-                  src="./assets/img/react-Logo.png"
-                  class="technology-section__img"
-                  alt=""
-                />
-
-                <img
-                  src="./assets/img/vite-Logo.svg"
-                  class="technology-section__img"
-                  alt=""
-                />
-              </div>
+            <div class="technology-section__scss-div">
+              <span class="technology-section__text">SCSS</span>
+              <img
+                src="./assets/img/scss-Logo sass-Logo.png"
+                class="technology-section__img"
+                alt=""
+              />
             </div>
           </div>
         </div>
 
-        <div class="technology-section__bottom-div">
-          <div class="technology-section__version-control-div">
-            <h3 class="technology-section__headline">
-              Versions<wbr />kontrolle
-            </h3>
-            <div class="technology-section__github-div">
-              <span class="technology-section__text">Git & Github</span>
-              <div class="technology-section__img-div">
-                <img
-                  src="./assets/img/git-Logo.svg"
-                  class="technology-section__img"
-                  alt=""
-                />
-
-                <img
-                  src="./assets/img/github(6).png"
-                  class="technology-section__img--github-icon"
-                  alt=""
-                />
-              </div>
+        <div class="technology-section__programming-language-div">
+          <h3 class="technology-section__headline">
+            Programmier<wbr />sprache
+          </h3>
+          <div class="technology-section__subdivision-div">
+            <div class="technology-section__javascript-div">
+              <span class="technology-section__text">Javascript</span>
+              <img
+                src="./assets/img/javascript-Logo.png"
+                class="technology-section__img"
+                alt=""
+              />
+            </div>
+            <div class="technology-section__typescript-div">
+              <span class="technology-section__text">Typescript</span>
+              <img
+                src="./assets/img/typescript-Logo.png"
+                class="technology-section__img"
+                alt=""
+              />
             </div>
           </div>
+        </div>
 
-          <div class="technology-section__database-technology-div">
-            <h3 class="technology-section__headline">
-              Backend-<wbr />Technologie
-            </h3>
-            <div class="technology-section__supabase-div">
-              <span class="technology-section__text">SupaBase</span>
-              <div class="technology-section__img-div">
-                <img
-                  src="./assets/img/supabase-logo.png"
-                  class="technology-section__img"
-                  alt=""
-                />
-              </div>
+        <div class="technology-section__framework-div">
+          <h3 class="technology-section__headline">Framework</h3>
+          <div class="technology-section__react-div">
+            <span class="technology-section__text">React + Vite</span>
+            <div class="technology-section__img-div">
+              <img
+                src="./assets/img/react-Logo.png"
+                class="technology-section__img"
+                alt=""
+              />
+
+              <img
+                src="./assets/img/vite-Logo.svg"
+                class="technology-section__img"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="technology-section__version-control-div">
+          <h3 class="technology-section__headline">Versions<wbr />kontrolle</h3>
+          <div class="technology-section__github-div">
+            <span class="technology-section__text">Git & Github</span>
+            <div class="technology-section__img-div">
+              <img
+                src="./assets/img/git-Logo.svg"
+                class="technology-section__img"
+                alt=""
+              />
+
+              <img
+                src="./assets/img/icons8-github-188.png"
+                class="technology-section__img"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="technology-section__database-technology-div">
+          <h3 class="technology-section__headline">
+            Backend-<wbr />Technologie
+          </h3>
+          <div class="technology-section__supabase-div">
+            <span class="technology-section__text">SupaBase</span>
+            <div class="technology-section__img-div">
+              <img
+                src="./assets/img/supabase-logo.png"
+                class="technology-section__img"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -641,20 +668,20 @@
             class="contact-section__sozial-media-link link"
           >
             <img
-              src="./assets/img/github(6).png"
-              class="contact-section__sozial-media-img--github-icon"
+              src="./assets/img/icons8-github-188.png"
+              class="contact-section__github-img"
               alt=""
             />
           </a>
 
           <a
-            href="https://www.linkedin.com/feed/"
+            href="https://www.linkedin.com/in/sven-richter-77914b284/"
             target="_blank"
             class="contact-section__sozial-media-link link"
           >
             <img
-              src="./assets/img/linkedin(1).png"
-              class="contact-section__sozial-media-img"
+              src="./assets/img/icons8-linkedin-188.png"
+              class="contact-section__linkedin-img"
               alt=""
             />
           </a>
@@ -680,9 +707,41 @@
    
     <a href="https://github.com/r-s-94tab=repositories">zu Github</a>
     
-  
+
     
       */
+
+      function interactionLink() {
+        document
+          .getElementsByClassName("nav-section__nav-bar")[0]
+          .classList.remove("hamburger-interaction");
+
+        document
+          .getElementsByClassName("nav-section__bar1")[0]
+          .classList.remove("bar1");
+        document
+          .getElementsByClassName("nav-section__bar2")[0]
+          .classList.remove("bar2");
+        document
+          .getElementsByClassName("nav-section__bar3")[0]
+          .classList.remove("bar3");
+      }
+
+      function interactionHamburgerMenu() {
+        document
+          .getElementsByClassName("nav-section__nav-bar")[0]
+          .classList.toggle("hamburger-interaction");
+
+        document
+          .getElementsByClassName("nav-section__bar1")[0]
+          .classList.toggle("bar1");
+        document
+          .getElementsByClassName("nav-section__bar2")[0]
+          .classList.toggle("bar2");
+        document
+          .getElementsByClassName("nav-section__bar3")[0]
+          .classList.toggle("bar3");
+      }
     </script>
   </body>
 </html>

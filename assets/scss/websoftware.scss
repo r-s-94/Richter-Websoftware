@@ -108,22 +108,58 @@ body {
   background-color: #00021f;
 }
 
-.nav-bar {
+.nav-section {
+  width: 100%;
+  height: 5rem;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  height: 3rem;
-}
 
-.control-link {
-  color: white;
-  font-size: 1.5rem;
+  &__nav-bar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__link {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  &__hamburger-menu {
+    position: absolute;
+    top: 5rem;
+    right: 5%;
+    width: 2.3rem;
+    height: 1.8rem;
+    padding: 0.3rem 0;
+    @include column-flex-direction();
+    background-color: #00021f;
+    row-gap: 0.3rem;
+  }
+
+  &__bar1,
+  &__bar2,
+  &__bar3 {
+    width: 1.3rem;
+    height: 0.2rem;
+    background-color: white;
+    border-radius: 0.2rem;
+  }
+
+  &__hamburger-menu:hover {
+    cursor: pointer;
+  }
 }
 
 .head-section {
   @include column-flex-direction();
   background-image: url(../img/conny-schneider-pREq0ns_p_E-unsplash.jpg);
   /*box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   &__decoration-div {
     margin: 4rem auto 2rem auto;
@@ -189,14 +225,13 @@ body {
   &__sozial-media-link {
   }
 
-  &__sozial-media-img {
+  &__github-img {
     width: 2.5rem;
+  }
 
-    &--github-icon {
-      width: 2.5rem;
-      background-color: white;
-      border: 0.3rem;
-    }
+  &__linkedin-img {
+    width: 2.5rem;
+    margin-top: 0.1rem;
   }
 
   &__link {
@@ -228,7 +263,6 @@ body {
   &__portrait-div {
     width: 50%;
     height: 100%;
-    padding-left: 7rem;
   }
 
   &__img {
@@ -267,15 +301,24 @@ body {
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    row-gap: 15rem;
   }
 
-  &__crm-program,
+  &__crm-program {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 37rem;
+    background-color: #00172d;
+  }
+
   &__italiner {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
+    height: 50rem;
+    background-color: #00172d;
   }
 
   &__online-shop,
@@ -284,6 +327,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 47rem;
+    background-color: #00172d;
   }
 
   &__headline-left {
@@ -522,7 +567,7 @@ body {
 .technology-section {
   @include column-flex-direction();
   margin: 10rem 0 5rem 0;
-  padding: 3rem 0;
+  padding: 5rem 0;
   background-color: #00154d;
 
   /*border-radius: 0.2rem;
@@ -535,28 +580,16 @@ body {
   */
 
   &__h2-headline {
-    margin: 1rem auto 2rem auto;
+    margin: 2rem auto;
     font-size: 2.3rem;
     color: white;
   }
 
   &__technology-div {
-    width: 90%;
-    padding: 5rem 0;
-  }
-
-  &__top-div,
-  &__bottom-div {
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  &__top-div {
-    margin-bottom: 7rem;
-    padding-right: 10rem;
-    box-sizing: border-box;
+    padding: 5rem 0;
+    @include center-content();
+    column-gap: 3.5rem;
   }
 
   &__markup-language-div,
@@ -594,7 +627,7 @@ body {
   &__text {
     color: white;
     font-size: 1.5rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
   }
 
   &__img-div {
@@ -603,13 +636,8 @@ body {
   }
 
   &__img {
-    width: 9rem;
-    height: 9rem;
-
-    &--github-icon {
-      background-color: white;
-      border-radius: 0.2rem;
-    }
+    width: 8rem;
+    height: 8rem;
   }
 }
 
@@ -673,14 +701,13 @@ body {
   &__sozial-media-link {
   }
 
-  &__sozial-media-img {
+  &__github-img {
     width: 2.3rem;
+  }
 
-    &--github-icon {
-      width: 2.3rem;
-      background-color: white;
-      border: 0.3rem;
-    }
+  &__linkedin-img {
+    width: 2.3rem;
+    margin-top: 0.1rem;
   }
 }
 
