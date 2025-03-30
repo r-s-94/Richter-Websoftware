@@ -140,7 +140,7 @@ a:hover {
   text-decoration: underline;
 }*/
 
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1886px) {
   .nav-section {
     &__nav-bar {
       position: static;
@@ -176,7 +176,7 @@ a:hover {
     }
 
     &__developer-div {
-      padding: 1.5rem 0;
+      padding: 2rem 0;
       display: flex;
       justify-content: space-between;
       width: 95%;
@@ -205,8 +205,7 @@ a:hover {
     }
 
     &__text {
-      font-size: 1.5rem;
-      color: white;
+      font-size: 1.3rem;
       margin: -1rem 0 0 0;
       padding: 0 3%;
       width: 90%;
@@ -215,7 +214,7 @@ a:hover {
 
     &__sozial-media-div {
       width: 12rem;
-      margin: 1rem 0 0 3%;
+      margin: 0.5rem 0 0 3%;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
@@ -241,7 +240,7 @@ a:hover {
     &__button {
       font-size: 1.1rem;
       width: 13rem;
-      height: 2.3rem;
+      height: 2.5rem;
       column-gap: 0.3rem;
       transition: ease-in-out;
       border-radius: 0.1rem;
@@ -302,7 +301,7 @@ a:hover {
     }
 
     &__crm-program {
-      height: 45rem;
+      height: 43rem;
     }
 
     &__italiner {
@@ -316,14 +315,34 @@ a:hover {
 
     &__headline-left {
       font-size: 1.8rem;
-      margin: 0 0 -3rem 13%;
+      margin-bottom: -1.3rem;
       color: white;
       width: 30rem;
     }
 
+    .crm-headline {
+      margin-left: 19%;
+    }
+
+    .shop-headline {
+      margin-bottom: -5rem;
+      margin-right: 4%;
+    }
+
+    .italiener-headline {
+      margin-bottom: -4rem;
+      margin-left: 18%;
+    }
+
+    .note-headline {
+      margin-bottom: -4rem;
+      margin-right: 3%;
+    }
+
     &__headline-right {
       font-size: 1.8rem;
-      margin: 0 0 -3rem 55%;
+      margin-bottom: -3rem;
+      text-align: center;
       width: 30rem;
       color: white;
     }
@@ -351,41 +370,42 @@ a:hover {
 
     &__application-description-left,
     &__application-description-right {
-      margin-top: -1rem;
+      margin-top: -3rem;
       font-size: 1.3rem;
       color: white;
       line-height: 1.7rem;
     }
 
     &__application-description-left {
-      padding: 0 5% 0 7%;
+      padding: 0 10% 0 15%;
     }
 
     &__application-description-right {
-      padding: 0 5%;
+      padding: 0 7%;
     }
 
     &__application-technology-div-left,
     &__application-technology-div-right {
       width: 100%;
-      max-width: 40rem;
+      max-width: 43rem;
       display: flex;
       margin: 0;
-      padding: 1rem 0 0 5%;
+      padding: 0.5rem 0 0 5%;
       column-gap: 0.7rem;
     }
 
     &__application-technology-div-left {
-      padding-left: 7%;
+      padding-left: 14.5%;
     }
 
     &__application-technology-div-right {
+      padding-left: 6.7%;
     }
 
     &__application-technology {
       background-color: #0086d0;
       border-radius: 0.5rem;
-      padding: 1.5px 4px;
+      padding: 3px 8px;
       font-size: 0.9rem;
       color: white;
     }
@@ -393,13 +413,13 @@ a:hover {
     &__img-div {
       width: 50%;
       margin: 0 auto;
-      padding: 0.3rem 0;
+      padding: 0;
       box-sizing: border-box;
     }
 
     &__crm-carousel {
       height: 25rem;
-      margin: 0 auto;
+      margin: 0;
       overflow: hidden;
     }
 
@@ -442,11 +462,11 @@ a:hover {
     }
 
     &__carousel-prev-button {
-      margin: 1.5rem 1rem 0 0.7rem;
+      margin: 0 1rem 0 0.7rem;
     }
 
     &__carousel-next-button {
-      margin: 1.5rem 0.7rem 0 1rem;
+      margin: 0 0.7rem 0 1rem;
     }
 
     &__shop-carousel-prev-button,
@@ -487,8 +507,8 @@ a:hover {
   }*/
 
     .crm-img {
-      width: 900px;
-      height: 24rem;
+      width: 850px;
+      height: 22.5rem;
       object-fit: cover;
     }
 
@@ -525,6 +545,18 @@ a:hover {
       width: 100%;
     }
 
+    .crm-button-div {
+    }
+
+    .shop-button-div {
+    }
+
+    .italiener-button-div {
+    }
+
+    .note-button-div {
+    }
+
     &__link {
       margin: 0;
       width: 10rem;
@@ -534,8 +566,8 @@ a:hover {
     &__button {
       @include blue-button-style();
       font-size: 1.3rem;
-      width: 15rem;
-      height: 2.3rem;
+      width: 16rem;
+      height: 2.5rem;
       @include center-content();
       border-radius: 0.1rem;
     }
@@ -581,7 +613,6 @@ a:hover {
     &__headline {
       font-size: 1.7rem;
       color: white;
-      text-decoration: underline;
     }
 
     &__subdivision-div {
@@ -596,6 +627,498 @@ a:hover {
     &__react-div,
     &__github-div,
     &__supabase-div {
+      margin-top: 1rem;
+    }
+
+    &__text {
+      color: white;
+      font-size: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    &__img-div {
+      @include row-flex-direction();
+      row-gap: 1rem;
+    }
+
+    &__img {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1886px) {
+  .nav-section {
+    &__nav-bar {
+      position: static;
+      height: 4rem;
+    }
+
+    &__link {
+      color: white;
+      font-size: 1.3rem;
+    }
+
+    &__hamburger-menu {
+      display: none;
+    }
+  }
+
+  .head-section {
+    @include column-flex-direction();
+
+    &__decoration-div {
+      margin: 7rem 1% 0 1%;
+      padding: 0;
+      column-gap: 3rem;
+    }
+
+    &__logo {
+      width: 8rem;
+      height: auto;
+    }
+
+    &__headline {
+      font-size: 2.7rem;
+    }
+
+    &__developer-div {
+      padding: 2rem 0;
+      display: flex;
+      justify-content: space-between;
+      width: 95%;
+      max-width: 110rem;
+    }
+
+    &__description-div {
+      @include column-flex-direction-left-side();
+      width: 50%;
+      margin-left: 0;
+      padding: 3rem 1% 3rem 10%;
+      row-gap: 0.3rem;
+    }
+
+    &__h2-headline {
+      font-size: 2.3rem;
+      color: white;
+      margin: 0;
+      padding: 0 3%;
+    }
+
+    &__focus-text {
+      font-size: 2.3rem;
+      color: white;
+      margin: 0;
+    }
+
+    &__text {
+      font-size: 1.3rem;
+      margin: -1rem 0 0 0;
+      padding: 0 3%;
+      width: 90%;
+      max-width: 50rem;
+    }
+
+    &__sozial-media-div {
+      width: 12rem;
+      margin: 0.5rem 0 0 3%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    &__sozial-media-link {
+    }
+
+    &__github-img {
+      width: 2.7rem;
+    }
+
+    &__linkedin-img {
+      width: 2.9rem;
+      margin-top: 0.3rem;
+    }
+
+    &__link {
+      margin: -0.5rem 0 0 3%;
+      width: 7rem;
+    }
+
+    &__button {
+      font-size: 1.1rem;
+      width: 13rem;
+      height: 2.5rem;
+      column-gap: 0.3rem;
+      transition: ease-in-out;
+      border-radius: 0.1rem;
+    }
+
+    &__icon {
+      width: 1.6rem;
+      height: auto;
+    }
+
+    /*&__button:hover {
+      @include blue-button-hover-style();
+      text-decoration: none;
+    }*/
+
+    &__portrait-div {
+      width: 50%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__img {
+      /*@include gray-border-for-section();*/
+      /*border-color: white;*/
+      width: 15rem;
+      height: auto;
+      border-width: 0.4rem;
+    }
+  }
+
+  .project-section {
+    @include column-flex-direction();
+    margin: 5rem 0;
+    /*background-color: black;*/
+    /*background-color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
+
+    &__h2-headline {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 2rem;
+      margin: 3rem auto 2rem auto;
+      color: white;
+    }
+
+    &__text {
+      font-size: 1.5rem;
+      margin: 3rem 5% 0 5%;
+      color: white;
+    }
+
+    &__project-div {
+      width: 95%;
+      margin: 5rem auto 3rem auto;
+      padding: 3rem 0 0 0;
+    }
+
+    &__crm-program {
+      height: 47rem;
+    }
+
+    &__italiner {
+      height: 55rem;
+    }
+
+    &__online-shop,
+    &__note-app {
+      height: 55rem;
+    }
+
+    &__headline-left {
+      font-size: 1.8rem;
+      margin: 0 0 -1.3rem 17%;
+      color: white;
+      width: 30rem;
+    }
+
+    .crm-headline {
+      margin-left: 17%;
+    }
+
+    .shop-headline {
+      margin-bottom: -5rem;
+      margin-right: -5%;
+    }
+
+    .italiener-headline {
+      margin: 0 0 -4rem 15%;
+    }
+
+    .note-headline {
+      margin-bottom: -4rem;
+      margin-right: -8%;
+    }
+
+    &__headline-right {
+      font-size: 1.8rem;
+      margin: 0 0 -3rem 53%;
+      width: 30rem;
+      color: white;
+    }
+
+    &__application-img-description-div-reverse {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    &__application-img-description-div {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__application-description-div {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      width: 50%;
+      margin: 0 auto;
+      row-gap: 2rem;
+      box-sizing: border-box;
+    }
+
+    &__application-description-left,
+    &__application-description-right {
+      margin-top: -3rem;
+      font-size: 1.3rem;
+      color: white;
+      line-height: 1.7rem;
+    }
+
+    &__application-description-left {
+      padding: 0 10% 0 10%;
+    }
+
+    &__application-description-right {
+      padding: 0 7%;
+    }
+
+    &__application-technology-div-left,
+    &__application-technology-div-right {
+      width: 100%;
+      max-width: 43rem;
+      display: flex;
+      margin: 0;
+      padding: 0.5rem 0 0 5%;
+      column-gap: 0.7rem;
+    }
+
+    &__application-technology-div-left {
+      padding-left: 9.7%;
+    }
+
+    &__application-technology-div-right {
+      padding-left: 6.7%;
+    }
+
+    &__application-technology {
+      background-color: #0086d0;
+      border-radius: 0.5rem;
+      padding: 3px 8px;
+      font-size: 0.9rem;
+      color: white;
+    }
+
+    &__img-div {
+      width: 50%;
+      margin: 0 auto;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    &__crm-carousel {
+      height: 25rem;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    &__shop-carousel,
+    &__website-carousel,
+    &__note-carousel {
+      width: 310px;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    &__crm-carousel-images,
+    &__shop-carousel-images,
+    &__website-carousel-images,
+    &__note-carousel-images {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+
+    &__crm-carousel-images img {
+      width: 100%;
+      height: auto;
+    }
+
+    .carousel-button {
+      transform: translateY(-50%);
+      background-color: #006db5;
+      color: white;
+      border: none;
+      font-size: 24px;
+      /*padding: 10px;*/
+      width: 2rem;
+      height: 3.3rem;
+      border-radius: 0.1rem;
+    }
+
+    &__carousel-prev-button {
+      margin: 0 1rem 0 0.7rem;
+    }
+
+    &__carousel-next-button {
+      margin: 0 0.7rem 0 1rem;
+    }
+
+    &__shop-carousel-prev-button,
+    &__website-carousel-prev-button,
+    &__note-carousel-prev-button {
+      margin-right: 3rem;
+    }
+
+    &__shop-carousel-next-button,
+    &__website-carousel-next-button,
+    &__note-carousel-next-button {
+      margin-left: 3rem;
+    }
+
+    /*.carousel-button:hover {
+      background-color: white;
+      color: #039be5;
+    }*/
+
+    /*.crm-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .four-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .three-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .two-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }*/
+
+    .crm-img {
+      width: 850px;
+      height: 22.5rem;
+      object-fit: cover;
+    }
+
+    .mobile-img {
+      height: 35rem;
+      border-radius: 0.1rem;
+    }
+
+    /* &__img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.1rem;
+
+    &--note-img {
+      height: 30rem;
+    }
+  }*/
+
+    &__button-div-left {
+      display: flex;
+      justify-content: left;
+      margin: -4rem 0 0 7%;
+      padding-right: 3rem;
+      column-gap: 10rem;
+      width: 40rem;
+    }
+
+    &__button-div-right {
+      display: flex;
+      justify-content: right;
+      margin: -5rem 27% 0 0;
+      padding-right: 3rem;
+      column-gap: 10rem;
+      width: 100%;
+    }
+
+    &__link {
+      margin: 0;
+      width: 10rem;
+      height: 2rem;
+    }
+
+    &__button {
+      @include blue-button-style();
+      font-size: 1.3rem;
+      width: 16rem;
+      height: 2.5rem;
+      @include center-content();
+      border-radius: 0.1rem;
+    }
+
+    /*&__button:hover {
+      @include blue-button-hover-style();
+    }
+
+    &__link:hover {
+      text-decoration: none;
+    }*/
+  }
+
+  .technology-section {
+    @include column-flex-direction();
+    margin: 10rem 0;
+    padding: 7rem 0;
+
+    /*border-radius: 0.2rem;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
+
+    &__h2-headline {
+      margin: 1rem auto 5rem auto;
+      font-size: 2rem;
+      color: white;
+    }
+
+    &__technology-div {
+      width: 95%;
+      padding: 3rem 0;
+      column-gap: 4rem;
+    }
+
+    &__markup-language-div,
+    &__programming-language-div,
+    &__framework-div,
+    &__version-control-div,
+    &__database-technology-div {
+      @include column-flex-direction();
+      row-gap: 0.5rem;
+    }
+
+    &__headline {
+      font-size: 1.7rem;
+      color: white;
+    }
+
+    &__subdivision-div {
+      column-gap: 1rem;
+    }
+
+    &__html-div,
+    &__css-div,
+    &__scss-div,
+    &__react-div,
+    &__github-div {
+      margin-top: 2.3rem;
     }
 
     &__text {
@@ -824,8 +1347,7 @@ a:hover {
     }
 
     &__text {
-      font-size: 1.5rem;
-      color: white;
+      font-size: 1.3rem;
       margin: 0;
       padding: 0 3%;
       width: 90%;
@@ -860,7 +1382,7 @@ a:hover {
     &__button {
       font-size: 1.1rem;
       width: 13rem;
-      height: 2.3rem;
+      height: 2.5rem;
       column-gap: 0.3rem;
       transition: ease-in-out;
       border-radius: 0.1rem;
@@ -925,7 +1447,7 @@ a:hover {
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 70rem;
+      height: 72rem;
     }
 
     &__italiner {
@@ -934,29 +1456,53 @@ a:hover {
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 75rem;
+      height: 80rem;
     }
 
-    &__online-shop,
+    &__online-shop {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 77rem;
+    }
+
     &__note-app {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 73rem;
+      height: 77rem;
     }
 
     &__headline-left {
       font-size: 1.8rem;
-      margin: 3rem auto;
-      color: white;
     }
 
     &__headline-right {
       font-size: 1.8rem;
-      margin: 3rem auto;
-      color: white;
+    }
+
+    .crm-headline {
+      margin: 5rem 0 3rem 0;
+      text-align: center;
+    }
+
+    .italiener-headline {
+      margin: 5rem 0 2rem 0;
+      text-align: center;
+    }
+
+    .shop-headline {
+      margin: 5rem 0 2rem 0;
+      text-align: center;
+    }
+
+    .note-headline {
+      margin: 5rem 0 2rem 0;
+      text-align: center;
     }
 
     &__application-img-description-div-reverse {
@@ -1005,15 +1551,17 @@ a:hover {
     }
 
     &__application-technology-div-left {
+      padding: 0;
     }
 
     &__application-technology-div-right {
+      padding: 0;
     }
 
     &__application-technology {
       background-color: #0086d0;
       border-radius: 0.5rem;
-      padding: 1.5px 4px;
+      padding: 3px 6px;
       font-size: 0.9rem;
       color: white;
     }
@@ -1026,8 +1574,8 @@ a:hover {
     }
 
     &__crm-carousel {
-      width: 100%;
-      margin: 0;
+      height: 30rem;
+      margin: 0 auto;
       overflow: hidden;
     }
 
@@ -1162,8 +1710,8 @@ a:hover {
     &__button {
       @include blue-button-style();
       font-size: 1.3rem;
-      width: 15rem;
-      height: 2.3rem;
+      width: 16rem;
+      height: 2.5rem;
       @include center-content();
       border-radius: 0.1rem;
     }
@@ -1210,7 +1758,6 @@ a:hover {
     &__headline {
       font-size: 1.7rem;
       color: white;
-      text-decoration: underline;
     }
 
     &__subdivision-div {
@@ -1247,19 +1794,23 @@ a:hover {
 
   .contact-section {
     @include column-flex-direction();
-    margin: 5rem 0 7rem 0;
-    padding: 3rem 3% 0 3%;
+    margin: 7rem 0;
+    padding: 0 3%;
 
     &__headline {
       font-size: 2rem;
-      margin-top: 1rem;
       color: white;
+    }
+
+    &__contact-info-div {
+      display: flex;
+      flex-direction: row;
+      margin-top: 10rem;
     }
 
     &__contact-div {
       @include column-flex-direction-left-side();
-      width: 70%;
-      margin: 1rem 0 0 0;
+      width: 50%;
     }
 
     &__question-headline {
@@ -1311,6 +1862,10 @@ a:hover {
 
     &__linkedin-img {
       width: 2.7rem;
+    }
+
+    &__img-div {
+      width: 50%;
     }
   }
 
@@ -1446,8 +2001,7 @@ a:hover {
     }
 
     &__text {
-      font-size: 1.3rem;
-      color: white;
+      font-size: 1rem;
       margin: 0;
       padding: 0 3%;
     }
@@ -1542,7 +2096,7 @@ a:hover {
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 63rem;
+      height: 65rem;
     }
 
     &__italiner {
@@ -1551,29 +2105,49 @@ a:hover {
       align-items: center;
       justify-content: center;
       width: 100%;
+      height: 75rem;
+    }
+
+    &__online-shop {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
       height: 73rem;
     }
 
-    &__online-shop,
     &__note-app {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 70rem;
+      height: 73rem;
     }
 
     &__headline-left {
       font-size: 1.8rem;
-      margin: 3rem auto;
-      color: white;
     }
 
     &__headline-right {
       font-size: 1.8rem;
-      margin: 3rem auto;
-      color: white;
+    }
+
+    .crm-headline {
+      margin: 5rem 0 3rem 0;
+    }
+
+    .shop-headline {
+      margin: 3rem 0 2rem 0;
+    }
+
+    .italiener-headline {
+      margin: 4rem 0 2rem 0;
+    }
+
+    .note-headline {
+      margin: 4rem 0 2rem 0;
     }
 
     &__application-img-description-div-reverse {
@@ -1629,7 +2203,7 @@ a:hover {
     &__application-technology {
       background-color: #0086d0;
       border-radius: 0.5rem;
-      padding: 1.5px 4px;
+      padding: 3px 6px;
       font-size: 0.8rem;
       color: white;
     }
@@ -1642,7 +2216,7 @@ a:hover {
     }
 
     &__crm-carousel {
-      width: 100%;
+      height: auto;
       margin: 0 auto;
       overflow: hidden;
     }
@@ -1734,7 +2308,7 @@ a:hover {
 
     .crm-img {
       width: 930px;
-      height: 25rem;
+      height: 25.1rem;
       object-fit: cover;
     }
 
@@ -1780,7 +2354,7 @@ a:hover {
     &__button {
       @include blue-button-style();
       font-size: 1.1rem;
-      width: 13rem;
+      width: 14rem;
       height: 2.3rem;
       @include center-content();
       border-radius: 0.1rem;
@@ -1826,7 +2400,6 @@ a:hover {
     &__headline {
       font-size: 1.7rem;
       color: white;
-      text-decoration: underline;
     }
 
     &__subdivision-div {
@@ -1871,9 +2444,14 @@ a:hover {
       color: white;
     }
 
+    &__contact-info-div {
+      @include column-flex-direction();
+      margin: 2rem 0 1rem 0;
+      row-gap: 3rem;
+    }
+
     &__contact-div {
       @include column-flex-direction-left-side();
-      margin: 0 0 0 0;
     }
 
     &__question-headline {
@@ -2124,8 +2702,7 @@ a:hover {
     }
 
     &__text {
-      font-size: 1.3rem;
-      color: white;
+      font-size: 1rem;
       margin: 0;
       padding: 0 3%;
     }
@@ -2155,7 +2732,7 @@ a:hover {
     &__button {
       font-size: 1.1rem;
       width: 12rem;
-      height: 2.2rem;
+      height: 2.3rem;
       column-gap: 0.3rem;
       transition: ease-in-out;
       border-radius: 0.1rem;
@@ -2220,7 +2797,7 @@ a:hover {
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 53rem;
+      height: 55rem;
     }
 
     &__italiner {
@@ -2229,30 +2806,49 @@ a:hover {
       align-items: center;
       justify-content: center;
       width: 100%;
+      height: 73rem;
+    }
+
+    &__online-shop {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
       height: 67rem;
     }
 
-    &__online-shop,
     &__note-app {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 65rem;
+      height: 67rem;
     }
 
     &__headline-left {
       font-size: 1.6rem;
-      margin: 2rem auto;
-      text-align: center;
-      color: white;
     }
 
     &__headline-right {
       font-size: 1.6rem;
-      margin: 2rem auto;
-      color: white;
+    }
+
+    .crm-headline {
+      margin: 3.5rem 0 2rem 0;
+    }
+
+    .shop-headline {
+      margin: 4rem 0 2rem 0;
+    }
+
+    .italiener-headline {
+      margin: 3rem 0 2rem 0;
+    }
+
+    .note-headline {
+      margin: 4.5rem 0 2rem 0;
     }
 
     &__application-img-description-div-reverse {
@@ -2309,7 +2905,7 @@ a:hover {
     &__application-technology {
       background-color: #0086d0;
       border-radius: 0.5rem;
-      padding: 1.5px 3px;
+      padding: 3px;
       font-size: 0.8rem;
       color: white;
     }
@@ -2322,7 +2918,6 @@ a:hover {
     }
 
     &__crm-carousel {
-      width: 100%;
       margin: 0 auto;
       overflow: hidden;
     }
@@ -2414,7 +3009,7 @@ a:hover {
 
     .crm-img {
       width: 560px;
-      height: 15rem;
+      height: 15.1rem;
       object-fit: cover;
     }
 
@@ -2460,8 +3055,8 @@ a:hover {
     &__button {
       @include blue-button-style();
       font-size: 1.05rem;
-      width: 12rem;
-      height: 2.2rem;
+      width: 13rem;
+      height: 2.3rem;
       @include center-content();
       border-radius: 0.1rem;
     }
@@ -2507,7 +3102,6 @@ a:hover {
     &__headline {
       font-size: 1.7rem;
       color: white;
-      text-decoration: underline;
     }
 
     &__subdivision-div {
@@ -2551,6 +3145,11 @@ a:hover {
       font-size: 1.7rem;
       margin-top: 1rem;
       color: white;
+    }
+
+    &__contact-info-div {
+      margin-top: 2rem;
+      gap: 1.7rem;
     }
 
     &__contact-div {
@@ -2604,6 +3203,11 @@ a:hover {
 
     &__linkedin-img {
       width: 2.3rem;
+    }
+
+    &__img {
+      width: 12rem;
+      border-width: 0.3rem;
     }
   }
 
@@ -2764,7 +3368,7 @@ a:hover {
       @include column-flex-direction-left-side();
       width: 100%;
       margin-left: 0rem;
-      padding: 0.7rem 3% 0.5rem 5%;
+      padding: 1rem 3% 0.5rem 5%;
       row-gap: 0.3rem;
     }
 
@@ -2782,7 +3386,7 @@ a:hover {
 
     &__text {
       font-size: 1rem;
-      color: white;
+      margin-top: -1rem;
       padding: 0 3%;
     }
 
@@ -2811,7 +3415,7 @@ a:hover {
     &__button {
       font-size: 1rem;
       width: 11rem;
-      height: 2.1rem;
+      height: 2.2rem;
       column-gap: 0.3rem;
       transition: ease-in-out;
       border-radius: 0.1rem;
@@ -2877,7 +3481,7 @@ a:hover {
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 45rem;
+      height: 43rem;
     }
 
     &__italiner {
@@ -2886,11 +3490,10 @@ a:hover {
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 70rem;
+      height: 65rem;
     }
 
-    &__online-shop,
-    &__note-app {
+    &__online-shop {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -2899,18 +3502,39 @@ a:hover {
       height: 60rem;
     }
 
+    &__note-app {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 63rem;
+    }
+
     &__headline-left {
       font-size: 1.4rem;
-      margin: 1.5rem auto;
-      text-align: center;
-      padding: 0 3%;
-      color: white;
+      width: 100%;
     }
 
     &__headline-right {
       font-size: 1.4rem;
-      margin: 1.5rem auto;
-      color: white;
+      width: 100%;
+    }
+
+    .crm-headline {
+      margin: 2rem 0 1rem 0;
+    }
+
+    .shop-headline {
+      margin: 3rem 0 1rem 0;
+    }
+
+    .italiener-headline {
+      margin: 3rem 0 1rem 0;
+    }
+
+    .note-headline {
+      margin: 2rem 0 1rem 0;
     }
 
     &__application-img-description-div-reverse {
@@ -2967,7 +3591,7 @@ a:hover {
     &__application-technology {
       background-color: #0086d0;
       border-radius: 0.5rem;
-      padding: 1.5px 3px;
+      padding: 3px;
       font-size: 0.7rem;
       color: white;
     }
@@ -2980,7 +3604,6 @@ a:hover {
     }
 
     &__crm-carousel {
-      width: 100%;
       margin: 0 auto;
       overflow: hidden;
     }
@@ -3071,8 +3694,8 @@ a:hover {
   }*/
 
     .crm-img {
-      width: 295.5px;
-      height: 7.3rem;
+      width: 280px;
+      height: 6.85rem;
       object-fit: cover;
       border-radius: 0.1rem;
     }
@@ -3161,7 +3784,6 @@ a:hover {
     &__headline {
       font-size: 1.5rem;
       color: white;
-      text-decoration: underline;
     }
 
     &__subdivision-div {
@@ -3199,13 +3821,18 @@ a:hover {
 
   .contact-section {
     @include column-flex-direction();
-    margin: 3rem 0 5rem 0;
+    margin: 3rem 0;
     padding: 0 3%;
 
     &__headline {
       font-size: 1.5rem;
       margin-top: 0rem;
       color: white;
+    }
+
+    &__contact-info-div {
+      margin-top: 1rem;
+      gap: 1.5rem;
     }
 
     &__contact-div {
@@ -3260,6 +3887,10 @@ a:hover {
     &__linkedin-img {
       width: 2.3rem;
       margin-top: 0.2rem;
+    }
+
+    &__img {
+      width: 11rem;
     }
   }
 
@@ -3448,9 +4079,8 @@ a:hover {
     }
 
     &__text {
-      font-size: 0.9rem;
-      color: white;
-      margin: 0;
+      font-size: 0.8rem;
+      margin-top: -1rem;
       padding: 0 3%;
     }
 
@@ -3544,7 +4174,7 @@ a:hover {
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 47rem;
+      height: 45rem;
     }
 
     &__italiner {
@@ -3553,11 +4183,10 @@ a:hover {
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 65rem;
+      height: 67rem;
     }
 
-    &__online-shop,
-    &__note-app {
+    &__online-shop {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -3566,17 +4195,37 @@ a:hover {
       height: 60rem;
     }
 
+    &__note-app {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 63rem;
+    }
+
     &__headline-left {
       font-size: 1.4rem;
-      margin: 1rem auto;
-      text-align: center;
-      color: white;
     }
 
     &__headline-right {
       font-size: 1.4rem;
-      margin: 1rem auto;
-      color: white;
+    }
+
+    .crm-headline {
+      margin: 2.5rem 0 1rem 0;
+    }
+
+    .shop-headline {
+      margin: 2rem 0 1rem 0;
+    }
+
+    .italiener-headline {
+      margin: 3rem 0 1rem 0;
+    }
+
+    .note-headline {
+      margin: 2.5rem 0 1rem 0;
     }
 
     &__application-img-description-div-reverse {
@@ -3625,15 +4274,17 @@ a:hover {
     }
 
     &__application-technology-div-left {
+      padding: 0;
     }
 
     &__application-technology-div-right {
+      padding: 0;
     }
 
     &__application-technology {
       background-color: #0086d0;
       border-radius: 0.5rem;
-      padding: 1.5px 3px;
+      padding: 3px;
       font-size: 0.7rem;
       color: white;
     }
@@ -3646,7 +4297,6 @@ a:hover {
     }
 
     &__crm-carousel {
-      width: 100%;
       margin: 0 auto;
       overflow: hidden;
     }
@@ -3827,7 +4477,6 @@ a:hover {
     &__headline {
       font-size: 1.5rem;
       color: white;
-      text-decoration: underline;
     }
 
     &__subdivision-div {
@@ -3872,6 +4521,11 @@ a:hover {
       font-size: 1.5rem;
       margin-top: 0rem;
       color: white;
+    }
+
+    &__contact-info-div {
+      margin-top: 1rem;
+      gap: 1rem;
     }
 
     &__contact-div {
@@ -3925,6 +4579,11 @@ a:hover {
 
     &__linkedin-img {
       width: 2.2rem;
+    }
+
+    &__img {
+      width: 10rem;
+      border-width: 0.2rem;
     }
   }
 

@@ -78,7 +78,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(../img/conny-schneider-pREq0ns_p_E-unsplash.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/conny-schneider-pREq0ns_p_E-unsplash.jpg);
   /*box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
   background-repeat: no-repeat;
   background-position: center;
@@ -131,7 +131,7 @@ body {
 }
 .head-section__text {
   font-size: 1.3rem;
-  color: white;
+  color: #ddd;
   margin-top: -0.5rem;
 }
 .head-section__sozial-media-div {
@@ -258,7 +258,7 @@ body {
   align-items: start;
   justify-content: center;
   height: 37rem;
-  background-color: #00172d;
+  background-color: #073b5a;
 }
 .project-section__italiner {
   display: flex;
@@ -266,7 +266,7 @@ body {
   align-items: start;
   justify-content: center;
   height: 50rem;
-  background-color: #00172d;
+  background-color: #073b5a;
 }
 .project-section__online-shop, .project-section__note-app {
   display: flex;
@@ -274,7 +274,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 47rem;
-  background-color: #00172d;
+  background-color: #094971;
 }
 .project-section__headline-left {
   font-size: 1.8rem;
@@ -421,7 +421,7 @@ body {
   color: white;
   font-size: 1.2rem;
   width: 14rem;
-  height: 2.3rem;
+  height: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -474,7 +474,6 @@ body {
 .technology-section__headline {
   font-size: 1.7rem;
   color: white;
-  text-decoration: underline;
   text-align: center;
 }
 .technology-section__subdivision-div {
@@ -509,7 +508,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 5rem 0;
+  margin: 7rem 0 5rem 0;
   padding: 0 5%;
 }
 .contact-section__headline {
@@ -517,14 +516,20 @@ body {
   margin-top: 3rem;
   color: white;
 }
+.contact-section__contact-info-div {
+  width: 100%;
+  margin: 10rem 0 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .contact-section__contact-div {
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  width: 100%;
-  margin: 3rem 0;
-  padding: 3rem 0;
+  width: 50%;
+  padding: 3rem 0 3rem 7%;
 }
 .contact-section__question-headline {
   font-size: 1.5rem;
@@ -532,7 +537,7 @@ body {
   color: white;
 }
 .contact-section__text {
-  margin: 3rem 0 0 5%;
+  margin: 2rem 0 0 5%;
   font-size: 1.3rem;
   color: white;
 }
@@ -565,6 +570,16 @@ body {
 .contact-section__linkedin-img {
   width: 2.3rem;
   margin-top: 0.1rem;
+}
+.contact-section__img-div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.contact-section__img {
+  width: 15rem;
+  border: 0.4rem solid white;
+  border-radius: 0.2rem;
 }
 
 .footer-section {

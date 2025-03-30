@@ -155,7 +155,8 @@ body {
 
 .head-section {
   @include column-flex-direction();
-  background-image: url(../img/conny-schneider-pREq0ns_p_E-unsplash.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/conny-schneider-pREq0ns_p_E-unsplash.jpg);
   /*box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
   background-repeat: no-repeat;
   background-position: center;
@@ -210,7 +211,7 @@ body {
 
   &__text {
     font-size: 1.3rem;
-    color: white;
+    color: #ddd;
     margin-top: -0.5rem;
   }
 
@@ -309,7 +310,7 @@ body {
     align-items: start;
     justify-content: center;
     height: 37rem;
-    background-color: #00172d;
+    background-color: #073b5a;
   }
 
   &__italiner {
@@ -318,7 +319,7 @@ body {
     align-items: start;
     justify-content: center;
     height: 50rem;
-    background-color: #00172d;
+    background-color: #073b5a;
   }
 
   &__online-shop,
@@ -328,7 +329,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 47rem;
-    background-color: #00172d;
+    background-color: #094971;
   }
 
   &__headline-left {
@@ -397,7 +398,6 @@ body {
     @include center-content();
     background-color: #0086d0;
     border-radius: 0.5rem;
-
     padding: 2.5px 5px;
     font-size: 0.8rem;
     color: white;
@@ -549,9 +549,8 @@ body {
     @include blue-button-style();
     font-size: 1.2rem;
     width: 14rem;
-    height: 2.3rem;
+    height: 2.5rem;
     @include center-content();
-
     border-radius: 0.1rem;
   }
 
@@ -603,7 +602,6 @@ body {
   &__headline {
     font-size: 1.7rem;
     color: white;
-    text-decoration: underline;
     text-align: center;
   }
 
@@ -643,7 +641,7 @@ body {
 
 .contact-section {
   @include column-flex-direction();
-  margin: 5rem 0;
+  margin: 7rem 0 5rem 0;
   padding: 0 5%;
 
   &__headline {
@@ -652,11 +650,18 @@ body {
     color: white;
   }
 
+  &__contact-info-div {
+    width: 100%;
+    margin: 10rem 0 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   &__contact-div {
     @include column-flex-direction-left-side();
-    width: 100%;
-    margin: 3rem 0;
-    padding: 3rem 0;
+    width: 50%;
+    padding: 3rem 0 3rem 7%;
   }
 
   &__question-headline {
@@ -666,7 +671,7 @@ body {
   }
 
   &__text {
-    margin: 3rem 0 0 5%;
+    margin: 2rem 0 0 5%;
     font-size: 1.3rem;
     color: white;
   }
@@ -708,6 +713,18 @@ body {
   &__linkedin-img {
     width: 2.3rem;
     margin-top: 0.1rem;
+  }
+
+  &__img-div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 15rem;
+    border: 0.4rem solid white;
+    border-radius: 0.2rem;
   }
 }
 
