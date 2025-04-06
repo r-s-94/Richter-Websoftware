@@ -213,11 +213,7 @@ a:hover {
     }
 
     &__sozial-media-div {
-      width: 12rem;
-      margin: 0.5rem 0 0 3%;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
+      margin: 0.5rem 0 0 1.3rem;
     }
 
     &__sozial-media-link {
@@ -238,16 +234,16 @@ a:hover {
     }
 
     &__button {
-      font-size: 1.1rem;
-      width: 13rem;
-      height: 2.5rem;
+      font-size: 1.2rem;
+      width: 15rem;
+      height: 2.7rem;
       column-gap: 0.3rem;
       transition: ease-in-out;
       border-radius: 0.1rem;
     }
 
     &__icon {
-      width: 1.6rem;
+      width: 1.7rem;
       height: auto;
     }
 
@@ -290,7 +286,7 @@ a:hover {
 
     &__text {
       font-size: 1.5rem;
-      margin: 3rem 5% 0 5%;
+      margin: 3rem 30% 0 30%;
       color: white;
     }
 
@@ -321,22 +317,12 @@ a:hover {
     }
 
     .crm-headline {
-      margin-left: 19%;
-    }
-
-    .shop-headline {
-      margin-bottom: -5rem;
-      margin-right: 4%;
+      margin: 0 0 -2.5rem 15%;
     }
 
     .italiener-headline {
       margin-bottom: -4rem;
       margin-left: 18%;
-    }
-
-    .note-headline {
-      margin-bottom: -4rem;
-      margin-right: 3%;
     }
 
     &__headline-right {
@@ -345,6 +331,16 @@ a:hover {
       text-align: center;
       width: 30rem;
       color: white;
+    }
+
+    .shop-headline {
+      margin-bottom: -5rem;
+      margin-right: -1%;
+    }
+
+    .note-headline {
+      margin-bottom: -4rem;
+      margin-right: -1%;
     }
 
     &__application-img-description-div-reverse {
@@ -363,7 +359,7 @@ a:hover {
       align-items: start;
       justify-content: center;
       width: 50%;
-      margin: 0 auto;
+      margin: 0;
       row-gap: 2rem;
       box-sizing: border-box;
     }
@@ -377,17 +373,23 @@ a:hover {
     }
 
     &__application-description-left {
-      padding: 0 10% 0 15%;
+      padding: 0 13% 0 15%;
     }
 
     &__application-description-right {
-      padding: 0 7%;
+      padding: 0 13% 0 7%;
+    }
+
+    .crm-description-div {
+      margin-left: 0;
+    }
+
+    .crm-description-detail {
+      padding-left: 10%;
     }
 
     &__application-technology-div-left,
     &__application-technology-div-right {
-      width: 100%;
-      max-width: 43rem;
       display: flex;
       margin: 0;
       padding: 0.5rem 0 0 5%;
@@ -400,6 +402,10 @@ a:hover {
 
     &__application-technology-div-right {
       padding-left: 6.7%;
+    }
+
+    .crm-technology-div {
+      padding-left: 10%;
     }
 
     &__application-technology {
@@ -417,8 +423,12 @@ a:hover {
       box-sizing: border-box;
     }
 
+    .crm-img-div {
+      margin-right: 3%;
+    }
+
     &__crm-carousel {
-      height: 25rem;
+      height: 22rem;
       margin: 0;
       overflow: hidden;
     }
@@ -462,11 +472,11 @@ a:hover {
     }
 
     &__carousel-prev-button {
-      margin: 0 1rem 0 0.7rem;
+      margin: 2.5rem 1rem 0 0.7rem;
     }
 
     &__carousel-next-button {
-      margin: 0 0.7rem 0 1rem;
+      margin: 2.5rem 0.7rem 0 1rem;
     }
 
     &__shop-carousel-prev-button,
@@ -507,8 +517,8 @@ a:hover {
   }*/
 
     .crm-img {
-      width: 850px;
-      height: 22.5rem;
+      width: 840px;
+      height: 22rem;
       object-fit: cover;
     }
 
@@ -539,13 +549,14 @@ a:hover {
     &__button-div-right {
       display: flex;
       justify-content: right;
-      margin: -5rem 35% 0 0;
+      margin: -5rem 30% 0 0;
       padding-right: 3rem;
       column-gap: 10rem;
       width: 100%;
     }
 
     .crm-button-div {
+      margin: -3.5rem 0 0 6.5%;
     }
 
     .shop-button-div {
@@ -567,7 +578,7 @@ a:hover {
       @include blue-button-style();
       font-size: 1.3rem;
       width: 16rem;
-      height: 2.5rem;
+      height: 2.7rem;
       @include center-content();
       border-radius: 0.1rem;
     }
@@ -721,11 +732,7 @@ a:hover {
     }
 
     &__sozial-media-div {
-      width: 12rem;
-      margin: 0.5rem 0 0 3%;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
+      margin: 0.5rem 0 0 1.3rem;
     }
 
     &__sozial-media-link {
@@ -746,16 +753,16 @@ a:hover {
     }
 
     &__button {
-      font-size: 1.1rem;
-      width: 13rem;
-      height: 2.5rem;
+      font-size: 1.2rem;
+      width: 15rem;
+      height: 2.7rem;
       column-gap: 0.3rem;
       transition: ease-in-out;
       border-radius: 0.1rem;
     }
 
     &__icon {
-      width: 1.6rem;
+      width: 1.7rem;
       height: auto;
     }
 
@@ -798,7 +805,7 @@ a:hover {
 
     &__text {
       font-size: 1.5rem;
-      margin: 3rem 5% 0 5%;
+      margin: 3.5rem 27% 0 27%;
       color: white;
     }
 
@@ -829,7 +836,7 @@ a:hover {
     }
 
     .crm-headline {
-      margin-left: 17%;
+      margin: 0 0 0 16%;
     }
 
     .shop-headline {
@@ -864,14 +871,18 @@ a:hover {
     }
 
     &__application-description-div {
+      width: 50%;
       display: flex;
       flex-direction: column;
       align-items: start;
       justify-content: center;
-      width: 50%;
       margin: 0 auto;
       row-gap: 2rem;
       box-sizing: border-box;
+    }
+
+    .crm-description-div {
+      margin-left: 0;
     }
 
     &__application-description-left,
@@ -883,21 +894,37 @@ a:hover {
     }
 
     &__application-description-left {
-      padding: 0 10% 0 10%;
+      padding: 0 10%;
+    }
+
+    .crm-description-detail {
+      margin-bottom: -1rem;
     }
 
     &__application-description-right {
-      padding: 0 7%;
+      padding: 0 10% 0 7%;
     }
 
-    &__application-technology-div-left,
-    &__application-technology-div-right {
-      width: 100%;
-      max-width: 43rem;
+    &__application-technology-div-left {
       display: flex;
       margin: 0;
       padding: 0.5rem 0 0 5%;
       column-gap: 0.7rem;
+    }
+
+    .crm-technology-div {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin: 0;
+      gap: 0.7rem;
+    }
+
+    &__application-technology-div-right {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin: 0;
+      padding: 0.5rem 0 0 5%;
+      gap: 0.7rem;
     }
 
     &__application-technology-div-left {
@@ -905,7 +932,7 @@ a:hover {
     }
 
     &__application-technology-div-right {
-      padding-left: 6.7%;
+      padding: 0 6.7%;
     }
 
     &__application-technology {
@@ -918,14 +945,18 @@ a:hover {
 
     &__img-div {
       width: 50%;
-      margin: 0 auto;
+      margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
+    .crm-img-div {
+      margin-right: 4%;
+    }
+
     &__crm-carousel {
-      height: 25rem;
-      margin: 0;
+      height: 19.3rem;
+      margin: -2.5rem 0 0 0;
       overflow: hidden;
     }
 
@@ -978,13 +1009,13 @@ a:hover {
     &__shop-carousel-prev-button,
     &__website-carousel-prev-button,
     &__note-carousel-prev-button {
-      margin-right: 3rem;
+      margin: 2.5rem 3rem 0 0;
     }
 
     &__shop-carousel-next-button,
     &__website-carousel-next-button,
     &__note-carousel-next-button {
-      margin-left: 3rem;
+      margin: 2.5rem 0 0 3rem;
     }
 
     /*.carousel-button:hover {
@@ -1013,8 +1044,8 @@ a:hover {
   }*/
 
     .crm-img {
-      width: 850px;
-      height: 22.5rem;
+      width: 750px;
+      height: 19.3rem;
       object-fit: cover;
     }
 
@@ -1045,10 +1076,14 @@ a:hover {
     &__button-div-right {
       display: flex;
       justify-content: right;
-      margin: -5rem 27% 0 0;
+      margin: -5rem 25% 0 0;
       padding-right: 3rem;
       column-gap: 10rem;
       width: 100%;
+    }
+
+    .crm-button-div {
+      margin: -3rem 0 1.5rem 6%;
     }
 
     &__link {
@@ -1061,7 +1096,7 @@ a:hover {
       @include blue-button-style();
       font-size: 1.3rem;
       width: 16rem;
-      height: 2.5rem;
+      height: 2.7rem;
       @include center-content();
       border-radius: 0.1rem;
     }
@@ -1355,11 +1390,7 @@ a:hover {
     }
 
     &__sozial-media-div {
-      width: 12rem;
-      margin: 1rem 0 0 3%;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
+      margin: 1rem 0 0 2.7%;
     }
 
     &__sozial-media-link {
@@ -1381,8 +1412,8 @@ a:hover {
 
     &__button {
       font-size: 1.1rem;
-      width: 13rem;
-      height: 2.5rem;
+      width: 15rem;
+      height: 2.7rem;
       column-gap: 0.3rem;
       transition: ease-in-out;
       border-radius: 0.1rem;
@@ -1431,7 +1462,7 @@ a:hover {
 
     &__text {
       font-size: 1.3rem;
-      margin: 3rem 5% 0 5%;
+      margin: 2.5rem 27% 0 27%;
       color: white;
     }
 
@@ -1516,13 +1547,9 @@ a:hover {
     }
 
     &__application-description-div {
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      justify-content: center;
-      width: 95%;
-      max-width: 1100px;
-      margin: 0 auto;
+      width: 100%;
+      margin: 0;
+      padding: 0 13%;
       row-gap: 2rem;
       box-sizing: border-box;
     }
@@ -1544,7 +1571,6 @@ a:hover {
 
     &__application-technology-div-left,
     &__application-technology-div-right {
-      width: 100%;
       display: flex;
       margin: 0;
       column-gap: 0.7rem;
@@ -1666,6 +1692,7 @@ a:hover {
       width: 1095px;
       height: 30rem;
       object-fit: cover;
+      margin: 0 auto;
     }
 
     .mobile-img {
@@ -1692,6 +1719,10 @@ a:hover {
       width: 100%;
     }
 
+    .crm-button-div {
+      margin-top: 7rem;
+    }
+
     &__button-div-right {
       display: flex;
       justify-content: center;
@@ -1711,7 +1742,7 @@ a:hover {
       @include blue-button-style();
       font-size: 1.3rem;
       width: 16rem;
-      height: 2.5rem;
+      height: 2.7rem;
       @include center-content();
       border-radius: 0.1rem;
     }
@@ -2007,8 +2038,7 @@ a:hover {
     }
 
     &__sozial-media-div {
-      width: 12rem;
-      margin: 1rem 0 0 3%;
+      margin: 1rem 0 0 2.7%;
     }
 
     &__sozial-media-link {
@@ -2030,8 +2060,8 @@ a:hover {
 
     &__button {
       font-size: 1.1rem;
-      width: 12rem;
-      height: 2.3rem;
+      width: 14rem;
+      height: 2.5rem;
       column-gap: 0.3rem;
       transition: ease-in-out;
       border-radius: 0.1rem;
@@ -2080,7 +2110,7 @@ a:hover {
 
     &__text {
       font-size: 1.3rem;
-      margin: 2rem 5% 0 5%;
+      margin: 2rem 17% 0 17%;
       color: white;
     }
 
@@ -2161,12 +2191,8 @@ a:hover {
     }
 
     &__application-description-div {
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      justify-content: center;
-      margin: 0 auto;
-      max-width: 900px;
+      margin: 0;
+      padding: 0 7%;
       row-gap: 2rem;
       box-sizing: border-box;
     }
@@ -2188,7 +2214,6 @@ a:hover {
 
     &__application-technology-div-left,
     &__application-technology-div-right {
-      width: 100%;
       display: flex;
       margin: 0;
       column-gap: 0.7rem;
@@ -2336,6 +2361,10 @@ a:hover {
       width: 100%;
     }
 
+    .crm-button-div {
+      margin-top: 5rem;
+    }
+
     &__button-div-right {
       display: flex;
       justify-content: center;
@@ -2355,7 +2384,7 @@ a:hover {
       @include blue-button-style();
       font-size: 1.1rem;
       width: 14rem;
-      height: 2.3rem;
+      height: 2.5rem;
       @include center-content();
       border-radius: 0.1rem;
     }
@@ -2708,8 +2737,7 @@ a:hover {
     }
 
     &__sozial-media-div {
-      width: 11rem;
-      margin: 1rem 0 0 3%;
+      margin: 1rem 0 0 2.7%;
     }
 
     &__sozial-media-link {
@@ -2731,8 +2759,8 @@ a:hover {
 
     &__button {
       font-size: 1.1rem;
-      width: 12rem;
-      height: 2.3rem;
+      width: 14rem;
+      height: 2.5rem;
       column-gap: 0.3rem;
       transition: ease-in-out;
       border-radius: 0.1rem;
@@ -2781,7 +2809,7 @@ a:hover {
 
     &__text {
       font-size: 1.2rem;
-      margin: 1.5rem 5%;
+      margin: 1.5rem 10%;
       color: white;
     }
 
@@ -2862,19 +2890,15 @@ a:hover {
     }
 
     &__application-description-div {
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      justify-content: center;
-      max-width: 600px;
-      margin: 0 auto;
+      margin: 0;
+      padding: 0 7%;
       row-gap: 2rem;
       box-sizing: border-box;
     }
 
     &__application-description-left,
     &__application-description-right {
-      margin: 1.5rem auto 0 auto;
+      margin: 2.5rem auto 0 auto;
       padding: 0;
       font-size: 1.1rem;
       color: white;
@@ -2889,7 +2913,6 @@ a:hover {
 
     &__application-technology-div-left,
     &__application-technology-div-right {
-      width: 100%;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       margin: 0;
@@ -3037,6 +3060,10 @@ a:hover {
       width: 100%;
     }
 
+    .crm-button-div {
+      margin-top: 4rem;
+    }
+
     &__button-div-right {
       display: flex;
       justify-content: center;
@@ -3055,8 +3082,8 @@ a:hover {
     &__button {
       @include blue-button-style();
       font-size: 1.05rem;
-      width: 13rem;
-      height: 2.3rem;
+      width: 14rem;
+      height: 2.5rem;
       @include center-content();
       border-radius: 0.1rem;
     }
@@ -3391,8 +3418,7 @@ a:hover {
     }
 
     &__sozial-media-div {
-      width: 10rem;
-      margin: 0.5rem 0 0 5%;
+      margin: 0.5rem 0 0 2.7%;
     }
 
     &__sozial-media-link {
@@ -3414,8 +3440,8 @@ a:hover {
 
     &__button {
       font-size: 1rem;
-      width: 11rem;
-      height: 2.2rem;
+      width: 12rem;
+      height: 2.3rem;
       column-gap: 0.3rem;
       transition: ease-in-out;
       border-radius: 0.1rem;
@@ -3465,7 +3491,7 @@ a:hover {
 
     &__text {
       font-size: 1.1rem;
-      margin: 1rem 5% 1.5rem 5%;
+      margin: 1rem 7% 1.5rem 7%;
       color: white;
     }
 
@@ -3481,16 +3507,7 @@ a:hover {
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 43rem;
-    }
-
-    &__italiner {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 65rem;
+      height: 47rem;
     }
 
     &__online-shop {
@@ -3499,7 +3516,16 @@ a:hover {
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 60rem;
+      height: 63rem;
+    }
+
+    &__italiner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 73rem;
     }
 
     &__note-app {
@@ -3508,7 +3534,7 @@ a:hover {
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 63rem;
+      height: 65rem;
     }
 
     &__headline-left {
@@ -3548,19 +3574,14 @@ a:hover {
     }
 
     &__application-description-div {
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      justify-content: center;
-      max-width: 400px;
-      margin: 0 auto;
+      margin: 0;
+      padding: 0 10%;
       row-gap: 2rem;
     }
 
     &__application-description-left,
     &__application-description-right {
-      width: 100%;
-      margin: 1rem auto 0 auto;
+      margin: 2rem auto 0 auto;
       padding: 0;
       font-size: 1rem;
       color: white;
@@ -3575,7 +3596,6 @@ a:hover {
 
     &__application-technology-div-left,
     &__application-technology-div-right {
-      width: 100%;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       padding: 0;
@@ -3724,6 +3744,10 @@ a:hover {
       width: 15rem;
     }
 
+    .crm-button-div {
+      margin-top: 3rem;
+    }
+
     &__button-div-right {
       @include column-flex-direction();
       margin: 3rem auto;
@@ -3740,8 +3764,8 @@ a:hover {
     &__button {
       @include blue-button-style();
       font-size: 0.97rem;
-      width: 11.5rem;
-      height: 2.2rem;
+      width: 12rem;
+      height: 2.3rem;
       @include center-content();
       border-radius: 0.1rem;
     }
@@ -4085,8 +4109,7 @@ a:hover {
     }
 
     &__sozial-media-div {
-      width: 8rem;
-      margin: 0.5rem 0 0 7%;
+      margin: 0.5rem 0 0 2.7%;
     }
 
     &__sozial-media-link {
@@ -4107,8 +4130,8 @@ a:hover {
 
     &__button {
       font-size: 0.95rem;
-      width: 10.5rem;
-      height: 2.1rem;
+      width: 11rem;
+      height: 2.2rem;
       column-gap: 0.3rem;
       transition: ease-in-out;
       border-radius: 0.1rem;
@@ -4158,7 +4181,7 @@ a:hover {
 
     &__text {
       font-size: 1rem;
-      margin: 1.5rem 5%;
+      margin: 1rem 7% 2rem 7%;
       color: white;
     }
 
@@ -4174,7 +4197,7 @@ a:hover {
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 45rem;
+      height: 47rem;
     }
 
     &__italiner {
@@ -4183,7 +4206,7 @@ a:hover {
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 67rem;
+      height: 73rem;
     }
 
     &__online-shop {
@@ -4192,7 +4215,7 @@ a:hover {
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 60rem;
+      height: 63rem;
     }
 
     &__note-app {
@@ -4201,7 +4224,7 @@ a:hover {
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 63rem;
+      height: 67rem;
     }
 
     &__headline-left {
@@ -4239,18 +4262,15 @@ a:hover {
     }
 
     &__application-description-div {
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      justify-content: center;
-      margin: 0 auto;
+      margin: 0;
+      padding: 0 10%;
       row-gap: 2rem;
       box-sizing: border-box;
     }
 
     &__application-description-left,
     &__application-description-right {
-      margin-top: 1rem auto 0 auto;
+      margin-top: 1.5rem;
       padding: 0;
       font-size: 1rem;
       color: white;
@@ -4265,10 +4285,9 @@ a:hover {
 
     &__application-technology-div-left,
     &__application-technology-div-right {
-      width: 100%;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      margin: 0 3% 0 1%;
+      grid-template-columns: 1fr 1fr;
+      margin: 0 3% 0 0;
       padding: 0;
       gap: 0.4rem;
     }
@@ -4416,6 +4435,10 @@ a:hover {
       width: 15rem;
     }
 
+    .crm-button-div {
+      margin-top: 3rem;
+    }
+
     &__button-div-right {
       @include column-flex-direction();
       margin: 3rem auto;
@@ -4433,7 +4456,7 @@ a:hover {
       @include blue-button-style();
       font-size: 0.9rem;
       width: 11rem;
-      height: 2.1rem;
+      height: 2.2rem;
       @include center-content();
       border-radius: 0.1rem;
     }

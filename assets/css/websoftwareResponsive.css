@@ -129,11 +129,7 @@ a:hover {
     max-width: 50rem;
   }
   .head-section__sozial-media-div {
-    width: 12rem;
-    margin: 0.5rem 0 0 3%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    margin: 0.5rem 0 0 1.3rem;
   }
   .head-section__github-img {
     width: 2.7rem;
@@ -147,15 +143,15 @@ a:hover {
     width: 7rem;
   }
   .head-section__button {
-    font-size: 1.1rem;
-    width: 13rem;
-    height: 2.5rem;
+    font-size: 1.2rem;
+    width: 15rem;
+    height: 2.7rem;
     column-gap: 0.3rem;
     transition: ease-in-out;
     border-radius: 0.1rem;
   }
   .head-section__icon {
-    width: 1.6rem;
+    width: 1.7rem;
     height: auto;
   }
   .head-section__portrait-div {
@@ -230,7 +226,7 @@ a:hover {
   }
   .project-section__text {
     font-size: 1.5rem;
-    margin: 3rem 5% 0 5%;
+    margin: 3rem 30% 0 30%;
     color: white;
   }
   .project-section__project-div {
@@ -254,19 +250,11 @@ a:hover {
     width: 30rem;
   }
   .project-section .crm-headline {
-    margin-left: 19%;
-  }
-  .project-section .shop-headline {
-    margin-bottom: -5rem;
-    margin-right: 4%;
+    margin: 0 0 -2.5rem 15%;
   }
   .project-section .italiener-headline {
     margin-bottom: -4rem;
     margin-left: 18%;
-  }
-  .project-section .note-headline {
-    margin-bottom: -4rem;
-    margin-right: 3%;
   }
   .project-section__headline-right {
     font-size: 1.8rem;
@@ -274,6 +262,14 @@ a:hover {
     text-align: center;
     width: 30rem;
     color: white;
+  }
+  .project-section .shop-headline {
+    margin-bottom: -5rem;
+    margin-right: -1%;
+  }
+  .project-section .note-headline {
+    margin-bottom: -4rem;
+    margin-right: -1%;
   }
   .project-section__application-img-description-div-reverse {
     display: flex;
@@ -289,7 +285,7 @@ a:hover {
     align-items: start;
     justify-content: center;
     width: 50%;
-    margin: 0 auto;
+    margin: 0;
     row-gap: 2rem;
     box-sizing: border-box;
   }
@@ -300,14 +296,18 @@ a:hover {
     line-height: 1.7rem;
   }
   .project-section__application-description-left {
-    padding: 0 10% 0 15%;
+    padding: 0 13% 0 15%;
   }
   .project-section__application-description-right {
-    padding: 0 7%;
+    padding: 0 13% 0 7%;
+  }
+  .project-section .crm-description-div {
+    margin-left: 0;
+  }
+  .project-section .crm-description-detail {
+    padding-left: 10%;
   }
   .project-section__application-technology-div-left, .project-section__application-technology-div-right {
-    width: 100%;
-    max-width: 43rem;
     display: flex;
     margin: 0;
     padding: 0.5rem 0 0 5%;
@@ -318,6 +318,9 @@ a:hover {
   }
   .project-section__application-technology-div-right {
     padding-left: 6.7%;
+  }
+  .project-section .crm-technology-div {
+    padding-left: 10%;
   }
   .project-section__application-technology {
     background-color: #0086d0;
@@ -332,8 +335,11 @@ a:hover {
     padding: 0;
     box-sizing: border-box;
   }
+  .project-section .crm-img-div {
+    margin-right: 3%;
+  }
   .project-section__crm-carousel {
-    height: 25rem;
+    height: 22rem;
     margin: 0;
     overflow: hidden;
   }
@@ -366,10 +372,10 @@ a:hover {
     border-radius: 0.1rem;
   }
   .project-section__carousel-prev-button {
-    margin: 0 1rem 0 0.7rem;
+    margin: 2.5rem 1rem 0 0.7rem;
   }
   .project-section__carousel-next-button {
-    margin: 0 0.7rem 0 1rem;
+    margin: 2.5rem 0.7rem 0 1rem;
   }
   .project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__note-carousel-prev-button {
     margin-right: 3rem;
@@ -378,8 +384,8 @@ a:hover {
     margin-left: 3rem;
   }
   .project-section .crm-img {
-    width: 850px;
-    height: 22.5rem;
+    width: 840px;
+    height: 22rem;
     object-fit: cover;
   }
   .project-section .mobile-img {
@@ -397,10 +403,13 @@ a:hover {
   .project-section__button-div-right {
     display: flex;
     justify-content: right;
-    margin: -5rem 35% 0 0;
+    margin: -5rem 30% 0 0;
     padding-right: 3rem;
     column-gap: 10rem;
     width: 100%;
+  }
+  .project-section .crm-button-div {
+    margin: -3.5rem 0 0 6.5%;
   }
   .project-section__link {
     margin: 0;
@@ -413,7 +422,7 @@ a:hover {
     color: white;
     font-size: 1.3rem;
     width: 16rem;
-    height: 2.5rem;
+    height: 2.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -542,11 +551,7 @@ a:hover {
     max-width: 50rem;
   }
   .head-section__sozial-media-div {
-    width: 12rem;
-    margin: 0.5rem 0 0 3%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    margin: 0.5rem 0 0 1.3rem;
   }
   .head-section__github-img {
     width: 2.7rem;
@@ -560,15 +565,15 @@ a:hover {
     width: 7rem;
   }
   .head-section__button {
-    font-size: 1.1rem;
-    width: 13rem;
-    height: 2.5rem;
+    font-size: 1.2rem;
+    width: 15rem;
+    height: 2.7rem;
     column-gap: 0.3rem;
     transition: ease-in-out;
     border-radius: 0.1rem;
   }
   .head-section__icon {
-    width: 1.6rem;
+    width: 1.7rem;
     height: auto;
   }
   .head-section__portrait-div {
@@ -643,7 +648,7 @@ a:hover {
   }
   .project-section__text {
     font-size: 1.5rem;
-    margin: 3rem 5% 0 5%;
+    margin: 3.5rem 27% 0 27%;
     color: white;
   }
   .project-section__project-div {
@@ -667,7 +672,7 @@ a:hover {
     width: 30rem;
   }
   .project-section .crm-headline {
-    margin-left: 17%;
+    margin: 0 0 0 16%;
   }
   .project-section .shop-headline {
     margin-bottom: -5rem;
@@ -695,14 +700,17 @@ a:hover {
     flex-direction: row;
   }
   .project-section__application-description-div {
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 50%;
     margin: 0 auto;
     row-gap: 2rem;
     box-sizing: border-box;
+  }
+  .project-section .crm-description-div {
+    margin-left: 0;
   }
   .project-section__application-description-left, .project-section__application-description-right {
     margin-top: -3rem;
@@ -711,24 +719,38 @@ a:hover {
     line-height: 1.7rem;
   }
   .project-section__application-description-left {
-    padding: 0 10% 0 10%;
+    padding: 0 10%;
+  }
+  .project-section .crm-description-detail {
+    margin-bottom: -1rem;
   }
   .project-section__application-description-right {
-    padding: 0 7%;
+    padding: 0 10% 0 7%;
   }
-  .project-section__application-technology-div-left, .project-section__application-technology-div-right {
-    width: 100%;
-    max-width: 43rem;
+  .project-section__application-technology-div-left {
     display: flex;
     margin: 0;
     padding: 0.5rem 0 0 5%;
     column-gap: 0.7rem;
   }
+  .project-section .crm-technology-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0;
+    gap: 0.7rem;
+  }
+  .project-section__application-technology-div-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0.5rem 0 0 5%;
+    gap: 0.7rem;
+  }
   .project-section__application-technology-div-left {
     padding-left: 9.7%;
   }
   .project-section__application-technology-div-right {
-    padding-left: 6.7%;
+    padding: 0 6.7%;
   }
   .project-section__application-technology {
     background-color: #0086d0;
@@ -739,13 +761,16 @@ a:hover {
   }
   .project-section__img-div {
     width: 50%;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+  .project-section .crm-img-div {
+    margin-right: 4%;
+  }
   .project-section__crm-carousel {
-    height: 25rem;
-    margin: 0;
+    height: 19.3rem;
+    margin: -2.5rem 0 0 0;
     overflow: hidden;
   }
   .project-section__shop-carousel, .project-section__website-carousel, .project-section__note-carousel {
@@ -783,14 +808,14 @@ a:hover {
     margin: 0 0.7rem 0 1rem;
   }
   .project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__note-carousel-prev-button {
-    margin-right: 3rem;
+    margin: 2.5rem 3rem 0 0;
   }
   .project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__note-carousel-next-button {
-    margin-left: 3rem;
+    margin: 2.5rem 0 0 3rem;
   }
   .project-section .crm-img {
-    width: 850px;
-    height: 22.5rem;
+    width: 750px;
+    height: 19.3rem;
     object-fit: cover;
   }
   .project-section .mobile-img {
@@ -808,10 +833,13 @@ a:hover {
   .project-section__button-div-right {
     display: flex;
     justify-content: right;
-    margin: -5rem 27% 0 0;
+    margin: -5rem 25% 0 0;
     padding-right: 3rem;
     column-gap: 10rem;
     width: 100%;
+  }
+  .project-section .crm-button-div {
+    margin: -3rem 0 1.5rem 6%;
   }
   .project-section__link {
     margin: 0;
@@ -824,7 +852,7 @@ a:hover {
     color: white;
     font-size: 1.3rem;
     width: 16rem;
-    height: 2.5rem;
+    height: 2.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1081,11 +1109,7 @@ a:hover {
     max-width: 50rem;
   }
   .head-section__sozial-media-div {
-    width: 12rem;
-    margin: 1rem 0 0 3%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    margin: 1rem 0 0 2.7%;
   }
   .head-section__github-img {
     width: 2.7rem;
@@ -1100,8 +1124,8 @@ a:hover {
   }
   .head-section__button {
     font-size: 1.1rem;
-    width: 13rem;
-    height: 2.5rem;
+    width: 15rem;
+    height: 2.7rem;
     column-gap: 0.3rem;
     transition: ease-in-out;
     border-radius: 0.1rem;
@@ -1181,7 +1205,7 @@ a:hover {
   }
   .project-section__text {
     font-size: 1.3rem;
-    margin: 3rem 5% 0 5%;
+    margin: 2.5rem 27% 0 27%;
     color: white;
   }
   .project-section__project-div {
@@ -1252,13 +1276,9 @@ a:hover {
     flex-direction: column;
   }
   .project-section__application-description-div {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    width: 95%;
-    max-width: 1100px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
+    padding: 0 13%;
     row-gap: 2rem;
     box-sizing: border-box;
   }
@@ -1270,7 +1290,6 @@ a:hover {
     line-height: 1.7rem;
   }
   .project-section__application-technology-div-left, .project-section__application-technology-div-right {
-    width: 100%;
     display: flex;
     margin: 0;
     column-gap: 0.7rem;
@@ -1343,6 +1362,7 @@ a:hover {
     width: 1095px;
     height: 30rem;
     object-fit: cover;
+    margin: 0 auto;
   }
   .project-section .mobile-img {
     height: 35rem;
@@ -1355,6 +1375,9 @@ a:hover {
     padding-right: 3rem;
     column-gap: 10rem;
     width: 100%;
+  }
+  .project-section .crm-button-div {
+    margin-top: 7rem;
   }
   .project-section__button-div-right {
     display: flex;
@@ -1375,7 +1398,7 @@ a:hover {
     color: white;
     font-size: 1.3rem;
     width: 16rem;
-    height: 2.5rem;
+    height: 2.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1633,8 +1656,7 @@ a:hover {
     padding: 0 3%;
   }
   .head-section__sozial-media-div {
-    width: 12rem;
-    margin: 1rem 0 0 3%;
+    margin: 1rem 0 0 2.7%;
   }
   .head-section__github-img {
     width: 2.7rem;
@@ -1649,8 +1671,8 @@ a:hover {
   }
   .head-section__button {
     font-size: 1.1rem;
-    width: 12rem;
-    height: 2.3rem;
+    width: 14rem;
+    height: 2.5rem;
     column-gap: 0.3rem;
     transition: ease-in-out;
     border-radius: 0.1rem;
@@ -1740,7 +1762,7 @@ a:hover {
   }
   .project-section__text {
     font-size: 1.3rem;
-    margin: 2rem 5% 0 5%;
+    margin: 2rem 17% 0 17%;
     color: white;
   }
   .project-section__project-div {
@@ -1807,12 +1829,8 @@ a:hover {
     flex-direction: column;
   }
   .project-section__application-description-div {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 900px;
+    margin: 0;
+    padding: 0 7%;
     row-gap: 2rem;
     box-sizing: border-box;
   }
@@ -1824,7 +1842,6 @@ a:hover {
     line-height: 1.7rem;
   }
   .project-section__application-technology-div-left, .project-section__application-technology-div-right {
-    width: 100%;
     display: flex;
     margin: 0;
     column-gap: 0.7rem;
@@ -1896,6 +1913,9 @@ a:hover {
     column-gap: 7rem;
     width: 100%;
   }
+  .project-section .crm-button-div {
+    margin-top: 5rem;
+  }
   .project-section__button-div-right {
     display: flex;
     justify-content: center;
@@ -1915,7 +1935,7 @@ a:hover {
     color: white;
     font-size: 1.1rem;
     width: 14rem;
-    height: 2.3rem;
+    height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2231,8 +2251,7 @@ a:hover {
     padding: 0 3%;
   }
   .head-section__sozial-media-div {
-    width: 11rem;
-    margin: 1rem 0 0 3%;
+    margin: 1rem 0 0 2.7%;
   }
   .head-section__github-img {
     width: 2.3rem;
@@ -2247,8 +2266,8 @@ a:hover {
   }
   .head-section__button {
     font-size: 1.1rem;
-    width: 12rem;
-    height: 2.3rem;
+    width: 14rem;
+    height: 2.5rem;
     column-gap: 0.3rem;
     transition: ease-in-out;
     border-radius: 0.1rem;
@@ -2338,7 +2357,7 @@ a:hover {
   }
   .project-section__text {
     font-size: 1.2rem;
-    margin: 1.5rem 5%;
+    margin: 1.5rem 10%;
     color: white;
   }
   .project-section__project-div {
@@ -2405,24 +2424,19 @@ a:hover {
     flex-direction: column;
   }
   .project-section__application-description-div {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    max-width: 600px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0 7%;
     row-gap: 2rem;
     box-sizing: border-box;
   }
   .project-section__application-description-left, .project-section__application-description-right {
-    margin: 1.5rem auto 0 auto;
+    margin: 2.5rem auto 0 auto;
     padding: 0;
     font-size: 1.1rem;
     color: white;
     line-height: 1.7rem;
   }
   .project-section__application-technology-div-left, .project-section__application-technology-div-right {
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0;
@@ -2494,6 +2508,9 @@ a:hover {
     column-gap: 5rem;
     width: 100%;
   }
+  .project-section .crm-button-div {
+    margin-top: 4rem;
+  }
   .project-section__button-div-right {
     display: flex;
     justify-content: center;
@@ -2512,8 +2529,8 @@ a:hover {
     background-color: #006db5;
     color: white;
     font-size: 1.05rem;
-    width: 13rem;
-    height: 2.3rem;
+    width: 14rem;
+    height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2811,8 +2828,7 @@ a:hover {
     padding: 0 3%;
   }
   .head-section__sozial-media-div {
-    width: 10rem;
-    margin: 0.5rem 0 0 5%;
+    margin: 0.5rem 0 0 2.7%;
   }
   .head-section__github-img {
     width: 2.2rem;
@@ -2827,8 +2843,8 @@ a:hover {
   }
   .head-section__button {
     font-size: 1rem;
-    width: 11rem;
-    height: 2.2rem;
+    width: 12rem;
+    height: 2.3rem;
     column-gap: 0.3rem;
     transition: ease-in-out;
     border-radius: 0.1rem;
@@ -2919,7 +2935,7 @@ a:hover {
   }
   .project-section__text {
     font-size: 1.1rem;
-    margin: 1rem 5% 1.5rem 5%;
+    margin: 1rem 7% 1.5rem 7%;
     color: white;
   }
   .project-section__project-div {
@@ -2933,15 +2949,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 43rem;
-  }
-  .project-section__italiner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 65rem;
+    height: 47rem;
   }
   .project-section__online-shop {
     display: flex;
@@ -2949,7 +2957,15 @@ a:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 60rem;
+    height: 63rem;
+  }
+  .project-section__italiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 73rem;
   }
   .project-section__note-app {
     display: flex;
@@ -2957,7 +2973,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 63rem;
+    height: 65rem;
   }
   .project-section__headline-left {
     font-size: 1.4rem;
@@ -2988,24 +3004,18 @@ a:hover {
     flex-direction: column;
   }
   .project-section__application-description-div {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    max-width: 400px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0 10%;
     row-gap: 2rem;
   }
   .project-section__application-description-left, .project-section__application-description-right {
-    width: 100%;
-    margin: 1rem auto 0 auto;
+    margin: 2rem auto 0 auto;
     padding: 0;
     font-size: 1rem;
     color: white;
     line-height: 1.5rem;
   }
   .project-section__application-technology-div-left, .project-section__application-technology-div-right {
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
@@ -3078,6 +3088,9 @@ a:hover {
     row-gap: 1.3rem;
     width: 15rem;
   }
+  .project-section .crm-button-div {
+    margin-top: 3rem;
+  }
   .project-section__button-div-right {
     display: flex;
     flex-direction: column;
@@ -3097,8 +3110,8 @@ a:hover {
     background-color: #006db5;
     color: white;
     font-size: 0.97rem;
-    width: 11.5rem;
-    height: 2.2rem;
+    width: 12rem;
+    height: 2.3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3410,8 +3423,7 @@ a:hover {
     padding: 0 3%;
   }
   .head-section__sozial-media-div {
-    width: 8rem;
-    margin: 0.5rem 0 0 7%;
+    margin: 0.5rem 0 0 2.7%;
   }
   .head-section__github-img {
     width: 2.1rem;
@@ -3425,8 +3437,8 @@ a:hover {
   }
   .head-section__button {
     font-size: 0.95rem;
-    width: 10.5rem;
-    height: 2.1rem;
+    width: 11rem;
+    height: 2.2rem;
     column-gap: 0.3rem;
     transition: ease-in-out;
     border-radius: 0.1rem;
@@ -3517,7 +3529,7 @@ a:hover {
   }
   .project-section__text {
     font-size: 1rem;
-    margin: 1.5rem 5%;
+    margin: 1rem 7% 2rem 7%;
     color: white;
   }
   .project-section__project-div {
@@ -3531,7 +3543,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 45rem;
+    height: 47rem;
   }
   .project-section__italiner {
     display: flex;
@@ -3539,7 +3551,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 67rem;
+    height: 73rem;
   }
   .project-section__online-shop {
     display: flex;
@@ -3547,7 +3559,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 60rem;
+    height: 63rem;
   }
   .project-section__note-app {
     display: flex;
@@ -3555,7 +3567,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 63rem;
+    height: 67rem;
   }
   .project-section__headline-left {
     font-size: 1.4rem;
@@ -3584,26 +3596,22 @@ a:hover {
     flex-direction: column;
   }
   .project-section__application-description-div {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0 10%;
     row-gap: 2rem;
     box-sizing: border-box;
   }
   .project-section__application-description-left, .project-section__application-description-right {
-    margin-top: 1rem auto 0 auto;
+    margin-top: 1.5rem;
     padding: 0;
     font-size: 1rem;
     color: white;
     line-height: 1.5rem;
   }
   .project-section__application-technology-div-left, .project-section__application-technology-div-right {
-    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0 3% 0 1%;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 3% 0 0;
     padding: 0;
     gap: 0.4rem;
   }
@@ -3679,6 +3687,9 @@ a:hover {
     row-gap: 1rem;
     width: 15rem;
   }
+  .project-section .crm-button-div {
+    margin-top: 3rem;
+  }
   .project-section__button-div-right {
     display: flex;
     flex-direction: column;
@@ -3699,7 +3710,7 @@ a:hover {
     color: white;
     font-size: 0.9rem;
     width: 11rem;
-    height: 2.1rem;
+    height: 2.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
