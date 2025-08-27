@@ -240,7 +240,7 @@ a:hover {
   .project-section__italiner {
     height: 53rem;
   }
-  .project-section__online-shop, .project-section__note-app {
+  .project-section__online-shop, .project-section__open-pure-net {
     height: 53rem;
   }
   .project-section__headline-left {
@@ -267,7 +267,7 @@ a:hover {
     margin-bottom: -5rem;
     margin-right: -1%;
   }
-  .project-section .note-headline {
+  .project-section .platform-headline {
     margin-bottom: -4rem;
     margin-right: -1%;
   }
@@ -313,6 +313,12 @@ a:hover {
     padding: 0.5rem 0 0 5%;
     column-gap: 0.7rem;
   }
+  .project-section__application-technology-div-left--platform-technology-div, .project-section__application-technology-div-right--platform-technology-div {
+    margin: 0 0 0 3.7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+  }
   .project-section__application-technology-div-left {
     padding-left: 14.5%;
   }
@@ -343,12 +349,17 @@ a:hover {
     margin: 0;
     overflow: hidden;
   }
-  .project-section__shop-carousel, .project-section__website-carousel, .project-section__note-carousel {
+  .project-section__shop-carousel, .project-section__website-carousel {
     width: 310px;
     margin: 0;
     overflow: hidden;
   }
-  .project-section__crm-carousel-images, .project-section__shop-carousel-images, .project-section__website-carousel-images, .project-section__note-carousel-images {
+  .project-section__platform-carousel {
+    width: 323px;
+    margin: 0;
+    overflow: hidden;
+  }
+  .project-section__crm-carousel-images, .project-section__shop-carousel-images, .project-section__website-carousel-images, .project-section__platform-carousel-images {
     display: flex;
     transition: transform 0.5s ease-in-out;
   }
@@ -377,10 +388,10 @@ a:hover {
   .project-section__carousel-next-button {
     margin: 2.5rem 0.7rem 0 1rem;
   }
-  .project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__note-carousel-prev-button {
+  .project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__platform-carousel-prev-button {
     margin-right: 3rem;
   }
-  .project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__note-carousel-next-button {
+  .project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__platform-carousel-next-button {
     margin-left: 3rem;
   }
   .project-section .crm-img {
@@ -662,7 +673,7 @@ a:hover {
   .project-section__italiner {
     height: 55rem;
   }
-  .project-section__online-shop, .project-section__note-app {
+  .project-section__online-shop, .project-section__open-pure-net {
     height: 55rem;
   }
   .project-section__headline-left {
@@ -681,7 +692,7 @@ a:hover {
   .project-section .italiener-headline {
     margin: 0 0 -4rem 15%;
   }
-  .project-section .note-headline {
+  .project-section .platform-headline {
     margin-bottom: -4rem;
     margin-right: -8%;
   }
@@ -773,12 +784,12 @@ a:hover {
     margin: -2.5rem 0 0 0;
     overflow: hidden;
   }
-  .project-section__shop-carousel, .project-section__website-carousel, .project-section__note-carousel {
+  .project-section__shop-carousel, .project-section__website-carousel, .project-section__platform-carousel {
     width: 310px;
     margin: 0;
     overflow: hidden;
   }
-  .project-section__crm-carousel-images, .project-section__shop-carousel-images, .project-section__website-carousel-images, .project-section__note-carousel-images {
+  .project-section__crm-carousel-images, .project-section__shop-carousel-images, .project-section__website-carousel-images, .project-section__platform-carousel-images {
     display: flex;
     transition: transform 0.5s ease-in-out;
   }
@@ -807,10 +818,10 @@ a:hover {
   .project-section__carousel-next-button {
     margin: 0 0.7rem 0 1rem;
   }
-  .project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__note-carousel-prev-button {
+  .project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__platform-carousel-prev-button {
     margin: 2.5rem 3rem 0 0;
   }
-  .project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__note-carousel-next-button {
+  .project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__platform-carousel-next-button {
     margin: 2.5rem 0 0 3rem;
   }
   .project-section .crm-img {
@@ -839,7 +850,7 @@ a:hover {
     width: 100%;
   }
   .project-section .crm-button-div {
-    margin: -3rem 0 1.5rem 6%;
+    margin: -3rem 0 1.5rem 0;
   }
   .project-section__link {
     margin: 0;
@@ -1237,7 +1248,7 @@ a:hover {
     width: 100%;
     height: 77rem;
   }
-  .project-section__note-app {
+  .project-section__open-pure-net {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1263,7 +1274,7 @@ a:hover {
     margin: 5rem 0 2rem 0;
     text-align: center;
   }
-  .project-section .note-headline {
+  .project-section .platform-headline {
     margin: 5rem 0 2rem 0;
     text-align: center;
   }
@@ -1294,6 +1305,11 @@ a:hover {
     margin: 0;
     column-gap: 0.7rem;
   }
+  .project-section__application-technology-div-left--platform-technology-div, .project-section__application-technology-div-right--platform-technology-div {
+    margin: 0;
+    display: flex;
+    column-gap: 1rem;
+  }
   .project-section__application-technology-div-left {
     padding: 0;
   }
@@ -1318,12 +1334,17 @@ a:hover {
     margin: 0 auto;
     overflow: hidden;
   }
-  .project-section__shop-carousel, .project-section__website-carousel, .project-section__note-carousel {
+  .project-section__shop-carousel, .project-section__website-carousel {
     width: 311px;
     margin: 0;
     overflow: hidden;
   }
-  .project-section__crm-carousel-images, .project-section__shop-carousel-images, .project-section__website-carousel-images, .project-section__note-carousel-images {
+  .project-section__platform-carousel {
+    width: 323px;
+    margin: 0;
+    overflow: hidden;
+  }
+  .project-section__crm-carousel-images, .project-section__shop-carousel-images, .project-section__website-carousel-images, .project-section__platform-carousel-images {
     display: flex;
     transition: transform 0.5s ease-in-out;
   }
@@ -1352,10 +1373,10 @@ a:hover {
   .project-section__carousel-next-button {
     margin: 2.5rem 0 0 1.5rem;
   }
-  .project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__note-carousel-prev-button {
+  .project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__platform-carousel-prev-button {
     margin-right: 3rem;
   }
-  .project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__note-carousel-next-button {
+  .project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__platform-carousel-next-button {
     margin-left: 3rem;
   }
   .project-section .crm-img {
@@ -1708,7 +1729,7 @@ a:hover {
     }*/
     /*&__shop-carousel-images img,
     &__website-carousel-images img,
-    &__note-carousel-images img {
+    &__platform-carousel-images img {
       width: auto;
       height: 100%;
     }*/
@@ -1794,7 +1815,7 @@ a:hover {
     width: 100%;
     height: 73rem;
   }
-  .project-section__note-app {
+  .project-section__open-pure-net {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1817,7 +1838,7 @@ a:hover {
   .project-section .italiener-headline {
     margin: 4rem 0 2rem 0;
   }
-  .project-section .note-headline {
+  .project-section .platform-headline {
     margin: 4rem 0 2rem 0;
   }
   .project-section__application-img-description-div-reverse {
@@ -1864,12 +1885,17 @@ a:hover {
     margin: 0 auto;
     overflow: hidden;
   }
-  .project-section__shop-carousel, .project-section__website-carousel, .project-section__note-carousel {
+  .project-section__shop-carousel, .project-section__website-carousel {
     width: 310px;
     margin: 0;
     overflow: hidden;
   }
-  .project-section__crm-carousel-images, .project-section__shop-carousel-images, .project-section__website-carousel-images, .project-section__note-carousel-images {
+  .project-section__platform-carousel {
+    width: 323px;
+    margin: 0;
+    overflow: hidden;
+  }
+  .project-section__crm-carousel-images, .project-section__shop-carousel-images, .project-section__website-carousel-images, .project-section__platform-carousel-images {
     display: flex;
     transition: transform 0.5s ease-in-out;
   }
@@ -1890,10 +1916,10 @@ a:hover {
   .project-section__carousel-next-button {
     margin: 2.5rem 0 0 1.5rem;
   }
-  .project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__note-carousel-prev-button {
+  .project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__platform-carousel-prev-button {
     margin-right: 3rem;
   }
-  .project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__note-carousel-next-button {
+  .project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__platform-carousel-next-button {
     margin-left: 3rem;
   }
   .project-section .crm-img {
@@ -2303,7 +2329,7 @@ a:hover {
     }*/
     /*&__shop-carousel-images img,
     &__website-carousel-images img,
-    &__note-carousel-images img {
+    &__platform-carousel-images img {
       width: auto;
       height: 100%;
     }*/
@@ -2389,13 +2415,13 @@ a:hover {
     width: 100%;
     height: 67rem;
   }
-  .project-section__note-app {
+  .project-section__open-pure-net {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 67rem;
+    height: 77rem;
   }
   .project-section__headline-left {
     font-size: 1.6rem;
@@ -2412,7 +2438,7 @@ a:hover {
   .project-section .italiener-headline {
     margin: 3rem 0 2rem 0;
   }
-  .project-section .note-headline {
+  .project-section .platform-headline {
     margin: 4.5rem 0 2rem 0;
   }
   .project-section__application-img-description-div-reverse {
@@ -2442,6 +2468,11 @@ a:hover {
     margin: 0;
     gap: 0.5rem;
   }
+  .project-section__application-technology-div-left--platform-technology-div, .project-section__application-technology-div-right--platform-technology-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 1rem;
+  }
   .project-section__application-technology {
     background-color: #0086d0;
     border-radius: 0.5rem;
@@ -2459,12 +2490,17 @@ a:hover {
     margin: 0 auto;
     overflow: hidden;
   }
-  .project-section__shop-carousel, .project-section__website-carousel, .project-section__note-carousel {
+  .project-section__shop-carousel, .project-section__website-carousel {
     width: 267px;
     margin: 0;
     overflow: hidden;
   }
-  .project-section__crm-carousel-images, .project-section__shop-carousel-images, .project-section__website-carousel-images, .project-section__note-carousel-images {
+  .project-section__platform-carousel {
+    width: 277px;
+    margin: 0;
+    overflow: hidden;
+  }
+  .project-section__crm-carousel-images, .project-section__shop-carousel-images, .project-section__website-carousel-images, .project-section__platform-carousel-images {
     display: flex;
     transition: transform 0.5s ease-in-out;
   }
@@ -2485,10 +2521,10 @@ a:hover {
   .project-section__carousel-next-button {
     margin: 2.5rem 0 0 0.5rem;
   }
-  .project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__note-carousel-prev-button {
+  .project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__platform-carousel-prev-button {
     margin-right: 2rem;
   }
-  .project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__note-carousel-next-button {
+  .project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__platform-carousel-next-button {
     margin-left: 2rem;
   }
   .project-section .crm-img {
@@ -2881,7 +2917,7 @@ a:hover {
     }*/
     /*&__shop-carousel-images img,
     &__website-carousel-images img,
-    &__note-carousel-images img {
+    &__platform-carousel-images img {
       width: auto;
       height: 100%;
     }*/
@@ -2967,13 +3003,13 @@ a:hover {
     width: 100%;
     height: 73rem;
   }
-  .project-section__note-app {
+  .project-section__open-pure-net {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 65rem;
+    height: 77rem;
   }
   .project-section__headline-left {
     font-size: 1.4rem;
@@ -2992,7 +3028,7 @@ a:hover {
   .project-section .italiener-headline {
     margin: 3rem 0 1rem 0;
   }
-  .project-section .note-headline {
+  .project-section .platform-headline {
     margin: 2rem 0 1rem 0;
   }
   .project-section__application-img-description-div-reverse {
@@ -3015,11 +3051,18 @@ a:hover {
     color: white;
     line-height: 1.5rem;
   }
+  .project-section .crm-technology-div {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   .project-section__application-technology-div-left, .project-section__application-technology-div-right {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto 0 0;
     padding: 0;
     gap: 0.4rem;
+  }
+  .project-section__application-technology-div-left--platform-technology-div, .project-section__application-technology-div-right--platform-technology-div {
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .project-section__application-technology {
     background-color: #0086d0;
@@ -3038,12 +3081,17 @@ a:hover {
     margin: 0 auto;
     overflow: hidden;
   }
-  .project-section__shop-carousel, .project-section__website-carousel, .project-section__note-carousel {
+  .project-section__shop-carousel, .project-section__website-carousel {
     width: 222px;
     margin: 0;
     overflow: hidden;
   }
-  .project-section__crm-carousel-images, .project-section__shop-carousel-images, .project-section__website-carousel-images, .project-section__note-carousel-images {
+  .project-section__platform-carousel {
+    width: 231px;
+    margin: 0;
+    overflow: hidden;
+  }
+  .project-section__crm-carousel-images, .project-section__shop-carousel-images, .project-section__website-carousel-images, .project-section__platform-carousel-images {
     display: flex;
     transition: transform 0.5s ease-in-out;
   }
@@ -3064,10 +3112,10 @@ a:hover {
   .project-section__carousel-next-button {
     margin: 2.5rem 0 0 0.5rem;
   }
-  .project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__note-carousel-prev-button {
+  .project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__platform-carousel-prev-button {
     margin-right: 0.5rem;
   }
-  .project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__note-carousel-next-button {
+  .project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__platform-carousel-next-button {
     margin-left: 0.5rem;
   }
   .project-section .crm-img {
@@ -3308,7 +3356,7 @@ a:hover {
     font-size: 1.1rem;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
   .nav-section {
     height: 3.5rem;
   }
@@ -3475,7 +3523,7 @@ a:hover {
     }*/
     /*&__shop-carousel-images img,
     &__website-carousel-images img,
-    &__note-carousel-images img {
+    &__platform-carousel-images img {
       width: auto;
       height: 100%;
     }*/
@@ -3561,13 +3609,13 @@ a:hover {
     width: 100%;
     height: 63rem;
   }
-  .project-section__note-app {
+  .project-section__open-pure-net {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 67rem;
+    height: 77rem;
   }
   .project-section__headline-left {
     font-size: 1.4rem;
@@ -3584,7 +3632,7 @@ a:hover {
   .project-section .italiener-headline {
     margin: 3rem 0 1rem 0;
   }
-  .project-section .note-headline {
+  .project-section .platform-headline {
     margin: 2.5rem 0 1rem 0;
   }
   .project-section__application-img-description-div-reverse {
@@ -3611,9 +3659,14 @@ a:hover {
   .project-section__application-technology-div-left, .project-section__application-technology-div-right {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0 3% 0 0;
     padding: 0;
     gap: 0.4rem;
+  }
+  .project-section__application-technology-div-left--platform-technology-div, .project-section__application-technology-div-right--platform-technology-div {
+    grid-template-columns: 1fr 1fr;
+  }
+  .project-section .crm-technology-div {
+    grid-template-columns: 1fr 1fr;
   }
   .project-section__application-technology-div-left {
     padding: 0;
@@ -3638,12 +3691,17 @@ a:hover {
     margin: 0 auto;
     overflow: hidden;
   }
-  .project-section__shop-carousel, .project-section__website-carousel, .project-section__note-carousel {
+  .project-section__shop-carousel, .project-section__website-carouse {
     width: 200px;
     margin: 0;
     overflow: hidden;
   }
-  .project-section__crm-carousel-images, .project-section__shop-carousel-images, .project-section__website-carousel-images, .project-section__note-carousel-images {
+  .project-section__platform-carousel {
+    width: 212px;
+    margin: 0;
+    overflow: hidden;
+  }
+  .project-section__crm-carousel-images, .project-section__shop-carousel-images, .project-section__website-carousel-images, .project-section__platform-carousel-images {
     display: flex;
     transition: transform 0.5s ease-in-out;
   }
@@ -3664,10 +3722,10 @@ a:hover {
   .project-section__carousel-next-button {
     margin: 2.5rem 0 0 0.5rem;
   }
-  .project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__note-carousel-prev-button {
+  .project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__platform-carousel-prev-button {
     margin-right: 0.5rem;
   }
-  .project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__note-carousel-next-button {
+  .project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__platform-carousel-next-button {
     margin-left: 0.5rem;
   }
   .project-section .crm-img {

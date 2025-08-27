@@ -73,27 +73,27 @@ function websiteMoveSlide(step) {
   ).style.transform = `translateX(${offset}%)`;
 }
 
-let currentNoteIndex = 0;
+let currentPlatformIndex = 0;
 
-function noteAppMoveSlide(step) {
+function platformMoveSlide(step) {
   const images = document.querySelectorAll(
-    ".project-section__note-carousel-images img"
+    ".project-section__platform-carousel-images img"
   );
   const totalImages = images.length;
 
-  currentNoteIndex += step;
+  currentPlatformIndex += step;
 
-  if (currentNoteIndex < 0) {
-    currentNoteIndex = totalImages - 1;
+  if (currentPlatformIndex < 0) {
+    currentPlatformIndex = totalImages - 1;
   }
 
-  if (currentNoteIndex >= totalImages) {
-    currentNoteIndex = 0;
+  if (currentPlatformIndex >= totalImages) {
+    currentPlatformIndex = 0;
   }
 
-  const offset = -currentNoteIndex * 100;
+  const offset = -currentPlatformIndex * 100;
 
   document.querySelector(
-    ".project-section__note-carousel-images"
+    ".project-section__platform-carousel-images"
   ).style.transform = `translateX(${offset}%)`;
 }

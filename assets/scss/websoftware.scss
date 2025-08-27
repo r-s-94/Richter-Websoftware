@@ -322,7 +322,7 @@ body {
   }
 
   &__online-shop,
-  &__note-app {
+  &__open-pure-net {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -417,7 +417,7 @@ body {
 
   &__shop-carousel,
   &__website-carousel,
-  &__note-carousel {
+  &__platform-carousel {
     width: 265px;
     margin: 0;
     overflow: hidden;
@@ -427,7 +427,7 @@ body {
   &__crm-carousel-images,
   &__shop-carousel-images,
   &__website-carousel-images,
-  &__note-carousel-images {
+  &__platform-carousel-images {
     display: flex;
     transition: transform 0.5s ease-in-out;
   }
@@ -464,13 +464,13 @@ body {
 
   &__shop-carousel-prev-button,
   &__website-carousel-prev-button,
-  &__note-carousel-prev-button {
+  &__platform-carousel-prev-button {
     margin-right: 5rem;
   }
 
   &__shop-carousel-next-button,
   &__website-carousel-next-button,
-  &__note-carousel-next-button {
+  &__platform-carousel-next-button {
     margin-left: 5rem;
   }
 

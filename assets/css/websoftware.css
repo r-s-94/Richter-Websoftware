@@ -267,7 +267,7 @@ body {
   height: 50rem;
   background-color: #073b5a;
 }
-.project-section__online-shop, .project-section__note-app {
+.project-section__online-shop, .project-section__open-pure-net {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -345,13 +345,13 @@ body {
   overflow: hidden;
   border-radius: 0.1rem;
 }
-.project-section__shop-carousel, .project-section__website-carousel, .project-section__note-carousel {
+.project-section__shop-carousel, .project-section__website-carousel, .project-section__platform-carousel {
   width: 265px;
   margin: 0;
   overflow: hidden;
   border-radius: 0.1rem;
 }
-.project-section__crm-carousel-images, .project-section__shop-carousel-images, .project-section__website-carousel-images, .project-section__note-carousel-images {
+.project-section__crm-carousel-images, .project-section__shop-carousel-images, .project-section__website-carousel-images, .project-section__platform-carousel-images {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
@@ -380,10 +380,10 @@ body {
 .project-section__carousel-next-button {
   margin-left: 1rem;
 }
-.project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__note-carousel-prev-button {
+.project-section__shop-carousel-prev-button, .project-section__website-carousel-prev-button, .project-section__platform-carousel-prev-button {
   margin-right: 5rem;
 }
-.project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__note-carousel-next-button {
+.project-section__shop-carousel-next-button, .project-section__website-carousel-next-button, .project-section__platform-carousel-next-button {
   margin-left: 5rem;
 }
 .project-section .carousel-button:hover {
